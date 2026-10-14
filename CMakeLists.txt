@@ -10,6 +10,13 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE MinSizeRel)
 endif()
 
+if(WIN32)
+  # MSYS2 GCC 16: libstdc++-6.dll lacks some std::string members that the headers declare as
+  # explicitly instantiated (link error "undefined reference to basic_string(basic_string&&)" at
+  # -Os). _GLIBCXX_ASSERTIONS turns those declarations off (and adds cheap bounds checks).
+  add_compile_definitions(_GLIBCXX_ASSERTIONS)
+endif()
+
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(DEPS REQUIRED IMPORTED_TARGET libadwaita-1 gtk4 librsvg-2.0 json-glib-1.0)
 
