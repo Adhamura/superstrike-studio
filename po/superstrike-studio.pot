@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SuperStrike Studio\n"
 "Report-Msgid-Bugs-To: none\n"
-"POT-Creation-Date: 2026-10-14 17:57+0000\n"
+"POT-Creation-Date: 2026-10-14 18:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgstr ""
 msgid "state %s"
 msgstr ""
 
-#: src/io.cpp:120
+#: src/io.cpp:129
 msgid "not a SUPERSTRIKE backup file"
 msgstr ""
 
@@ -734,34 +734,34 @@ msgid "BUTTONS"
 msgstr ""
 
 #. TRANSLATORS: shown in the About dialog. Logitech is a trademark, keep the name as it is
-#: src/page_device.cpp:41
+#: src/page_device.cpp:42
 msgid "Not affiliated with or endorsed by Logitech."
 msgstr ""
 
 #. TRANSLATORS: battery row. %d is the charge in percent
-#: src/page_device.cpp:75
+#: src/page_device.cpp:76
 #, c-format
 msgid "%d %%"
 msgstr ""
 
 #. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
-#: src/page_device.cpp:77
+#: src/page_device.cpp:78
 #, c-format
 msgid "%d %% · %s"
 msgstr ""
 
-#: src/page_device.cpp:85
+#: src/page_device.cpp:86
 msgid "USB cable"
 msgstr ""
 
 #. TRANSLATORS: %d is the receiver slot number (1 to 6)
-#: src/page_device.cpp:87
+#: src/page_device.cpp:88
 #, c-format
 msgid "LIGHTSPEED receiver slot %d"
 msgstr ""
 
 #. TRANSLATORS: %d is the number of profile slots in the mouse
-#: src/page_device.cpp:93
+#: src/page_device.cpp:94
 #, c-format
 msgid "%d profile"
 msgid_plural "%d profiles"
@@ -769,13 +769,13 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: %d is the version number of the memory layout
-#: src/page_device.cpp:95
+#: src/page_device.cpp:96
 #, c-format
 msgid "format %d"
 msgstr ""
 
 #. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
-#: src/page_device.cpp:97
+#: src/page_device.cpp:98
 #, c-format
 msgid "%d sector × %d bytes"
 msgid_plural "%d sectors × %d bytes"
@@ -783,67 +783,79 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
-#: src/page_device.cpp:119
+#: src/page_device.cpp:120
 #, c-format
 msgid "index %d · v%d · flags 0x%s"
 msgstr ""
 
 #. TRANSLATORS: %d is the number of HID++ features the mouse reports
-#: src/page_device.cpp:127
+#: src/page_device.cpp:128
 #, c-format
 msgid "%d feature"
 msgid_plural "%d features"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/page_device.cpp:134
+#: src/page_device.cpp:135
 msgid "Language"
 msgstr ""
 
-#: src/page_device.cpp:136
+#: src/page_device.cpp:137
 msgid "System default"
 msgstr ""
 
-#: src/page_device.cpp:170
+#: src/page_device.cpp:171
 msgctxt "device info"
 msgid "Name"
 msgstr ""
 
-#: src/page_device.cpp:171
+#: src/page_device.cpp:172
 msgid "Connection"
 msgstr ""
 
-#: src/page_device.cpp:172
+#: src/page_device.cpp:173
 msgid "Battery"
 msgstr ""
 
-#: src/page_device.cpp:173
+#: src/page_device.cpp:174
 msgid "Firmware"
 msgstr ""
 
-#: src/page_device.cpp:174
+#: src/page_device.cpp:175
 msgid "Onboard memory"
 msgstr ""
 
-#: src/page_device.cpp:180
+#: src/page_device.cpp:181
 msgid "Mouse colour in the pictures"
 msgstr ""
 
-#: src/page_device.cpp:190
+#: src/page_device.cpp:191
 msgid "Feature table"
 msgstr ""
 
 #. TRANSLATORS: %s is the app name, SuperStrike Studio
-#: src/page_device.cpp:196
+#: src/page_device.cpp:197
 #, c-format
 msgid "About %s"
 msgstr ""
 
-#: src/page_device.cpp:203
+#: src/page_device.cpp:201
+msgid "Check for updates automatically"
+msgstr ""
+
+#: src/page_device.cpp:202
+msgid "At most once a day, one request to github.com"
+msgstr ""
+
+#: src/page_device.cpp:209
+msgid "Check for updates"
+msgstr ""
+
+#: src/page_device.cpp:216
 msgid "LOOK"
 msgstr ""
 
-#: src/page_device.cpp:203
+#: src/page_device.cpp:216
 msgid "HID++ FEATURES"
 msgstr ""
 
@@ -1532,6 +1544,42 @@ msgstr ""
 #: src/profile.cpp:420
 msgctxt "HITS preset"
 msgid "Silent feel"
+msgstr ""
+
+#. TRANSLATORS: %s is a version number, for example 1.2.0
+#: src/update.cpp:84
+#, c-format
+msgid "Version %s is available"
+msgstr ""
+
+#. TRANSLATORS: %s is the version number the user has now
+#: src/update.cpp:86
+#, c-format
+msgid "You have version %s. The new version is on GitHub."
+msgstr ""
+
+#: src/update.cpp:98
+msgid "Skip this version"
+msgstr ""
+
+#: src/update.cpp:98
+msgid "Later"
+msgstr ""
+
+#: src/update.cpp:99
+msgid "Open download page"
+msgstr ""
+
+#. TRANSLATORS: %s is a technical error message
+#: src/update.cpp:131
+#, c-format
+msgid "Update check failed: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is the version number the user has now
+#: src/update.cpp:137
+#, c-format
+msgid "You have the latest version (%s)"
 msgstr ""
 
 #: src/window.cpp:8

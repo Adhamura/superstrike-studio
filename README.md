@@ -7,7 +7,7 @@
 Actuation point, rapid trigger and **click haptics**, button actions, DPI and polling rate are
 written straight into the mouse's **onboard memory**. They keep working on any PC, in any game,
 with this app closed and no Logitech software installed. A small native app for **Linux** and
-**Windows**: no background service, no account, no network.
+**Windows**: no background service, no account, no telemetry.
 
 [![CI](https://github.com/Adhamura/SuperStrike-Studio/actions/workflows/ci.yml/badge.svg)](https://github.com/Adhamura/SuperStrike-Studio/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/Adhamura/SuperStrike-Studio?include_prereleases&sort=semver)](https://github.com/Adhamura/SuperStrike-Studio/releases)
@@ -19,7 +19,7 @@ with this app closed and no Logitech software installed. A small native app for 
 
 [**Download for Windows**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest) ·
 [Install on Linux](#linux) · [Screenshots](#screenshots) · [Why](#why-superstrike-studio) ·
-[Performance](#light-on-your-pc) · [FAQ](#faq)
+[Performance](#light-on-your-pc) · [Updates](#updates) · [FAQ](#faq)
 
 <img src="docs/promo/superstrike-studio.gif" width="860" alt="SuperStrike Studio: HITS tuning with rapid trigger and haptics, the live test pad, Save to mouse, button remapping, DPI stages and onboard profiles">
 
@@ -59,7 +59,9 @@ it, and puts the result where it belongs: in the mouse.
   mouse ROM, export / import JSON, and whole-memory backup and restore.
 - **🧪 Try it without the mouse.** `--demo` runs every page with a simulated PRO X3 SUPERSTRIKE.
 - **🌍 21 languages**, switchable while the app runs, right-to-left for Arabic and Urdu.
-- **🔓 Open and offline.** C++ with GTK 4 / libadwaita, MIT licensed, no telemetry, no account.
+- **🔄 Updates from GitHub.** The app tells you when a new release is out and opens its page;
+  one small request a day, and you can turn it off.
+- **🔓 Open and private.** C++ with GTK 4 / libadwaita, MIT licensed, no telemetry, no account.
 
 ### Made for competitive play
 
@@ -109,7 +111,7 @@ over 60 s with the window open and idle:
 | CPU and memory while you game | **0**: close the window, the settings stay in the mouse |
 | Program size | **≈ 370 KB** binary (Linux), plus GTK |
 | Processes at start-up | **none**: no service, no tray icon, no updater |
-| Network | **none** |
+| Network | **one HTTPS request a day** to api.github.com for the update check (can be turned off), nothing else |
 
 <sub>CPU from <code>/proc/PID/stat</code>, memory from <code>/proc/PID/status</code> and <code>smaps</code>. Your numbers depend on
 the GPU driver and the desktop. On Windows the app ships the GTK libraries in its folder.</sub>
@@ -125,7 +127,8 @@ the GPU driver and the desktop. On Windows the app ships the GTK libraries in it
 | Haptics kept in the onboard profiles | ✅ | ❌ ¹ |
 | Works with the app closed, no background service | ✅ | ➖ onboard mode only |
 | Pro presets and HITS codes | ✅ | ✅ |
-| Account, telemetry, update agent | none | optional account, background services |
+| Account, telemetry | none | optional account |
+| Update check | in the app, once a day, can be turned off | background update service |
 | Lighting, macros, other Logitech devices | ❌ | ✅ |
 | Open source | ✅ MIT | ❌ |
 
@@ -149,13 +152,14 @@ To build it yourself: [`tools/windows/README-windows.txt`](tools/windows/README-
 
 ### Linux
 
-Needs GTK 4, **libadwaita 1.7+**, librsvg, json-glib, CMake, gettext and a C++20 compiler:
+Needs GTK 4, **libadwaita 1.7+**, librsvg, json-glib, CMake, gettext and a C++20 compiler
+(glib-networking for the update check; most desktops have it):
 
 | Distro | Packages |
 |---|---|
-| Arch, CachyOS, Manjaro | `sudo pacman -S --needed gtk4 libadwaita librsvg json-glib cmake gettext base-devel` |
-| Fedora 42+ | `sudo dnf install gtk4-devel libadwaita-devel librsvg2-devel json-glib-devel cmake gettext gcc-c++` |
-| Ubuntu 25.04+, Debian 13 | `sudo apt install libgtk-4-dev libadwaita-1-dev librsvg2-dev libjson-glib-dev cmake gettext g++` |
+| Arch, CachyOS, Manjaro | `sudo pacman -S --needed gtk4 libadwaita librsvg json-glib glib-networking cmake gettext base-devel` |
+| Fedora 42+ | `sudo dnf install gtk4-devel libadwaita-devel librsvg2-devel json-glib-devel glib-networking cmake gettext gcc-c++` |
+| Ubuntu 25.04+, Debian 13 | `sudo apt install libgtk-4-dev libadwaita-1-dev librsvg2-dev libjson-glib-dev glib-networking cmake gettext g++` |
 
 ```bash
 git clone https://github.com/Adhamura/SuperStrike-Studio && cd SuperStrike-Studio
@@ -173,6 +177,21 @@ superstrike-studio --demo      # Windows: superstrike-studio.exe --demo
 
 Every page works with a simulated PRO X3 SUPERSTRIKE (five profiles, HITS, DPI, battery). Changes
 stay in memory and nothing is sent to a real mouse.
+
+## Updates
+
+SuperStrike Studio checks GitHub for a new release when it starts, **at most once a day**. When
+there is one, it shows the version and its release notes and offers **Open download page** (the
+GitHub release with the Windows zip; on Linux, `git pull && ./install.sh`), **Later** or **Skip
+this version**. **Device → Check for updates** checks right away; **Check for updates
+automatically** turns the daily check off.
+
+The check is one HTTPS request to `api.github.com/repos/Adhamura/SuperStrike-Studio/releases/latest`
+with the user agent `SuperStrike-Studio/<version>`. Nothing about you or your mouse is sent, and
+nothing is downloaded or installed by itself. `superstrike-studio --check-updates` does the same
+from a terminal.
+
+<p align="center"><img src="docs/screenshots/update.png" width="640" alt="Update dialog: version 1.2.0 is available, release notes, Open download page, Later, Skip this version"></p>
 
 ## How it works
 
@@ -256,6 +275,7 @@ version (`superstrike-studio --version`), the mouse firmware (Device page) and y
 
 - **1.0**: ✅ HITS (actuation, rapid trigger, haptics), buttons, DPI, polling, five onboard
   profiles with backup and restore, demo mode, 21 languages, Linux and Windows.
+- **1.1**: ✅ update check from GitHub releases.
 - **Ideas, not scheduled**: AUR package and Flatpak; Windows installer; more Logitech mice with HITS.
 
 Missing something? [Open an issue](https://github.com/Adhamura/SuperStrike-Studio/issues/new/choose).

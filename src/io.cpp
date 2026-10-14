@@ -19,6 +19,12 @@ void Config::load() {
         get("look", "shell", shell);
         get("look", "accent", accent);
         get("look", "lang", lang);
+        GError* e = nullptr;
+        gboolean on = g_key_file_get_boolean(kf, "updates", "auto", &e);
+        if (!e) update_auto = on;
+        g_clear_error(&e);
+        update_last = g_key_file_get_int64(kf, "updates", "last", nullptr);
+        get("updates", "skip", update_skip);
         presets.clear();
         gsize n = 0;
         if (gchar** keys = g_key_file_get_keys(kf, "presets", &n, nullptr)) {
@@ -38,6 +44,9 @@ void Config::save() const {
     g_key_file_set_string(kf, "look", "shell", shell.c_str());
     g_key_file_set_string(kf, "look", "accent", accent.c_str());
     g_key_file_set_string(kf, "look", "lang", lang.c_str());
+    g_key_file_set_boolean(kf, "updates", "auto", update_auto);
+    g_key_file_set_int64(kf, "updates", "last", update_last);
+    g_key_file_set_string(kf, "updates", "skip", update_skip.c_str());
     for (auto& [name, code] : presets) g_key_file_set_string(kf, "presets", name.c_str(), code.c_str());
     std::string path = config_path();
     gchar* dir = g_path_get_dirname(path.c_str());

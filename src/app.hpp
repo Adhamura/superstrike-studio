@@ -27,6 +27,9 @@ struct Config {  // ~/.config/superstrike/studio.ini
     std::string shell = "#ffffff", accent = "#3b9cff";
     std::string lang = "system";  // "system" or a code from LANGUAGES (i18n.hpp)
     std::vector<std::pair<std::string, std::string>> presets;  // user presets: name -> HITS code
+    bool update_auto = true;        // check GitHub for a new release at most once a day
+    long long update_last = 0;      // unix time of the last automatic check
+    std::string update_skip;        // version the user chose to skip, e.g. "1.2.0"
     void load();
     void save() const;
 };
