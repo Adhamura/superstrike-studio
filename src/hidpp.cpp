@@ -7,6 +7,7 @@
 #include <cstdio>
 
 #include "hid_backend.hpp"
+#include "hid_sim.hpp"
 
 using Clock = std::chrono::steady_clock;
 
@@ -16,13 +17,14 @@ constexpr uint8_t SHORT_REPORT = 0x10, LONG_REPORT = 0x11;
 
 Transport::Transport(const std::string& path)
     : long_only(hid_long_only()), path_(path), swid_((uint8_t)(2 + hid_process_id() % 14)) {
-    dev_ = hid_open(path);
+    if (path != SIM_PATH) dev_ = hid_open(path);
 }
 
 Transport::~Transport() { hid_close(dev_); }
 
 void Transport::drain() {
-    while (!hid_read(dev_, 0).empty()) {}
+    sim_q_.clear();
+    while (dev_ && !hid_read(dev_, 0).empty()) {}
 }
 
 Bytes Transport::request(uint8_t dev, uint8_t feat, uint8_t func, const Bytes& params, int timeout_ms,
@@ -32,15 +34,18 @@ Bytes Transport::request(uint8_t dev, uint8_t feat, uint8_t func, const Bytes& p
     Bytes msg = {use_long ? LONG_REPORT : SHORT_REPORT, dev, feat, fs_byte};
     msg.resize(use_long ? 20 : 7, 0);
     std::copy_n(params.begin(), std::min(params.size(), msg.size() - 4), msg.begin() + 4);
-    hid_write(dev_, msg);
+    if (dev_) hid_write(dev_, msg);
+    else for (auto& r : sim_request(msg)) sim_q_.push_back(std::move(r));
 
     char tag[48];
     std::snprintf(tag, sizeof tag, "feat=%#x func=%d", feat, func);
     const auto deadline = Clock::now() + std::chrono::milliseconds(timeout_ms);
     for (;;) {
         auto left = std::chrono::duration_cast<std::chrono::milliseconds>(deadline - Clock::now()).count();
-        if (left <= 0) throw HidppError(std::string("timeout ") + tag, 0, true);
-        Bytes r = hid_read(dev_, (int)left);
+        if (left <= 0 || (!dev_ && sim_q_.empty())) throw HidppError(std::string("timeout ") + tag, 0, true);
+        Bytes r;
+        if (dev_) r = hid_read(dev_, (int)left);
+        else r = std::move(sim_q_.front()), sim_q_.pop_front();
         if (r.size() < 4 || (r[0] != SHORT_REPORT && r[0] != LONG_REPORT) || r[1] != dev) continue;
         if (r.size() >= 6 && r[2] == 0xFF && r[3] == feat && r[4] == fs_byte)
             throw HidppError(std::string("hid++2 error ") + std::to_string(r[5]) + " " + tag, r[5]);

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+<title>SuperStrike Studio</title>
+<desc>Top view of the PRO X3 SUPERSTRIKE mouse with the left button lit in the accent colour and a haptic wave.</desc>
+<defs>
+<linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2d36"/><stop offset="1" stop-color="#16181d"/></linearGradient>
+<linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="3"/></filter>
+<linearGradient id="acc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cc0ff"/><stop offset="1" stop-color="#3b9cff"/></linearGradient>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c9cfdc"/></linearGradient>
+<linearGradient id="hi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#3b9cff" stop-opacity=".7"/><stop offset="1" stop-color="#3b9cff" stop-opacity="0"/></radialGradient>
+<clipPath id="cl"><rect x="8" y="8" width="112" height="112" rx="26"/></clipPath></defs>
+<rect x="10" y="13" width="108" height="108" rx="26" fill="#000" opacity=".4" filter="url(#sh)"/>
+<rect x="8" y="8" width="112" height="112" rx="26" fill="url(#base)"/>
+<rect x="8.5" y="8.5" width="111" height="111" rx="25.5" fill="none" stroke="url(#rim)"/>
+<g clip-path="url(#cl)">
+<ellipse cx="46" cy="40" rx="30" ry="34" fill="url(#glow)"/>
+<path d="M35.2 31.8A15 15 0 0 1 35.2 50.2" fill="none" stroke="#3b9cff" stroke-width="2.6" stroke-linecap="round" opacity="1"/><path d="M29.7 27.5A22 22 0 0 1 29.7 54.5" fill="none" stroke="#3b9cff" stroke-width="2.6" stroke-linecap="round" opacity="0.62"/><path d="M24.1 23.1A29 29 0 0 1 24.1 58.9" fill="none" stroke="#3b9cff" stroke-width="2.6" stroke-linecap="round" opacity="0.3"/>
+</g>
+<g transform="translate(38.50 15.40) scale(0.1)">
+<path d="M24.5 459.5C28 497.9 26 539.1 21.8 577.4C20.4 590.6 16.6 603.5 15.3 616.8C9.8 670.6 10.2 754 24.1 805.9C33.5 841.1 53.3 871.7 77.8 898.4C98.5 920.9 121.9 941.5 149.2 955.7C225.7 995.6 327.1 987 394.8 933.5C424.2 910.3 451.4 881 469.1 848C501.1 788.6 500.8 684.9 494.8 618.2C493.7 604.9 489.9 592 488.3 578.8C485.8 557.7 485.6 536 484.9 514.9C484.3 498.3 483.8 481.4 485.1 464.9C486 452.2 488.4 439.7 488.7 427.1C489 414.7 483.9 403.8 484 391.6C484.2 357.1 489.4 322.4 490.9 287.9C492 259.1 491.4 230.6 490.6 201.9C490.2 188.6 491.4 175.1 488.1 162.1C485.7 152.9 477.6 148.6 474.3 140.4C469.2 127.9 465.9 115.5 458.6 103.8C427.6 54.8 369.6 29.2 314.6 18.4C281.9 11.9 248.2 10.6 215.1 15.1C153.6 23.3 86 49.1 51.4 103.8C44.1 115.5 40.8 127.9 35.7 140.4C32.4 148.6 24.3 152.9 21.9 162.1C18.6 175.1 19.8 188.7 19.4 201.9C18.4 236.7 18.2 271.1 20 305.9C20.6 316.9 14.5 332.2 13.3 344.1C10.6 370.6 11.4 397.5 14.2 423.9C14.7 428.3 18.5 457.6 20.9 459C22 459.6 23.3 459.3 24.5 459.5Z" fill="url(#body)"/>
+<path d="M251 286.6C243.7 286.6 235.3 287.8 228.6 284.4C216.6 278.2 217.8 265.7 217.8 254L217.8 203.8L217.8 153.6C217.8 141.9 216.6 129.4 228.6 123.2C235.3 119.8 243.7 121 251 121C246.6 85.1 250.9 48.5 246.4 12.5C246.4 12.4 236.5 12.9 228.9 13.6C210.6 15.2 192.3 18.3 174.6 23.1C122.7 37 69.4 65.7 44.8 115.7C41 123.5 36.8 132.7 35.4 141.4C34.8 145.2 37.9 155.2 38.4 159.7C39.7 170.9 40.2 182.3 40.5 193.7C41.9 250 46 306.2 52.5 362.2C55 383.6 53.9 425.1 66.9 441.7C73.3 449.9 86 450.1 95.4 450C104.8 449.9 114.1 448.7 123.5 448.5C142.8 448.1 162.1 448.6 181.3 448.6L233.4 448.8L251 448.8C251.1 394.7 250.9 340.7 251 286.6Z" fill="url(#acc)"/>
+<path d="M251 286.6C243.7 286.6 235.3 287.8 228.6 284.4C216.6 278.2 217.8 265.7 217.8 254L217.8 203.8L217.8 153.6C217.8 141.9 216.6 129.4 228.6 123.2C235.3 119.8 243.7 121 251 121C246.6 85.1 250.9 48.5 246.4 12.5C246.4 12.4 236.5 12.9 228.9 13.6C210.6 15.2 192.3 18.3 174.6 23.1C122.7 37 69.4 65.7 44.8 115.7C41 123.5 36.8 132.7 35.4 141.4C34.8 145.2 37.9 155.2 38.4 159.7C39.7 170.9 40.2 182.3 40.5 193.7C41.9 250 46 306.2 52.5 362.2C55 383.6 53.9 425.1 66.9 441.7C73.3 449.9 86 450.1 95.4 450C104.8 449.9 114.1 448.7 123.5 448.5C142.8 448.1 162.1 448.6 181.3 448.6L233.4 448.8L251 448.8C251.1 394.7 250.9 340.7 251 286.6Z" fill="url(#hi)"/>
+<g fill="none" stroke="#1b1e26" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+<path d="M255 12.4V121M255 287V448.8"/>
+<path d="M35.4 141.4C41.9 171.5 39.8 203.2 41.7 234 44.6 279.6 48 325.9 53.6 371.3 55.7 388.6 55.5 436.4 71.1 445.6 84.3 453.4 110.1 448.5 125 448.5H385C399.9 448.5 425.7 453.4 438.9 445.6 454.5 436.4 454.3 388.6 456.4 371.3 462 325.9 465.4 279.6 468.3 234 470.2 203.2 468.1 171.5 474.6 141.4"/>
+<path d="M255 450V975" stroke-width="9" opacity=".4"/>
+</g>
+<rect x="224" y="112" width="62" height="182" rx="31" fill="#1b1e26"/>
+<rect x="238" y="126" width="34" height="154" rx="17" fill="#6a7184"/>
+<g stroke="#1b1e26" stroke-width="9" stroke-linecap="round"><path d="M243 160H267M243 190H267M243 220H267M243 250H267"/></g>
+</g>
+<circle cx="52.00" cy="48.40" r="2.6" fill="#fff"/><circle cx="52.00" cy="48.40" r="6.6" fill="none" stroke="#fff" stroke-width="1.8" opacity=".9"/>
+</svg>

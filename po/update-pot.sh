@@ -5,6 +5,6 @@ set -e
 cd "$(dirname "$0")/.."
 xgettext --language=C++ --from-code=UTF-8 \
     --keyword=_ --keyword=N_ --keyword=C_:1c,2 --keyword=NC_:1c,2 --keyword=ngettext:1,2 \
-    --add-comments=TRANSLATORS --package-name="SUPERSTRIKE Studio" \
+    --add-comments=TRANSLATORS --package-name="SuperStrike Studio" \
     --msgid-bugs-address=none -o po/superstrike-studio.pot $(cat po/POTFILES)
 echo "po/superstrike-studio.pot: $(grep -c '^msgid ' po/superstrike-studio.pot) msgids (incl. header)"

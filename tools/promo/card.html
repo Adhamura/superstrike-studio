@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- Promo video frames, 1920x1080. compose.py screenshots this page with Chromium:
+     card.html?s=title|stats|outro       full-screen cards
+     card.html?s=scene&h=Title&p=Text    background + caption for an app recording (placed at 305,196) -->
+<html><head><meta charset="utf-8"><style>
+  * { margin: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; }
+  body { font-family: Inter, sans-serif; color: #f4f6fa; background: #0f1115;
+         background-image: radial-gradient(1100px 620px at 50% -8%, rgba(59,156,255,.30), transparent 70%),
+                           radial-gradient(900px 500px at 50% 112%, rgba(59,156,255,.14), transparent 70%); }
+  .center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .lockup { width: 640px; filter: drop-shadow(0 24px 60px rgba(0,0,0,.55)); }
+  h1 { font-size: 78px; font-weight: 800; letter-spacing: -.02em; line-height: 1.05; }
+  h2 { font-size: 40px; font-weight: 500; color: #c9d2e3; margin-top: 26px; line-height: 1.3; }
+  .accent { color: #3b9cff; }
+  .chips { display: flex; gap: 16px; margin-top: 48px; }
+  .chip { font-size: 28px; font-weight: 600; padding: 12px 28px; border-radius: 999px; background: rgba(255,255,255,.07);
+          border: 1px solid rgba(255,255,255,.12); color: #e6ebf5; }
+  .chip.on { background: #3b9cff; border-color: #3b9cff; color: #fff; }
+  .stats { display: flex; gap: 32px; margin-top: 64px; }
+  .stat { width: 420px; padding: 36px 28px; border-radius: 28px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.10); }
+  .stat b { display: block; font-size: 76px; font-weight: 800; color: #3b9cff; letter-spacing: -.02em; }
+  .stat span { display: block; font-size: 28px; color: #c9d2e3; margin-top: 10px; line-height: 1.3; }
+  .cap { position: absolute; left: 0; right: 0; top: 46px; text-align: center; }
+  .cap h3 { font-size: 52px; font-weight: 800; letter-spacing: -.015em; }
+  .cap p { font-size: 30px; color: #c9d2e3; margin-top: 10px; }
+  .frame { position: absolute; left: 305px; top: 196px; width: 1310px; height: 850px; border-radius: 14px;
+           box-shadow: 0 30px 90px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.08); background: #1d1f24; }
+  .url { font-size: 34px; font-weight: 600; margin-top: 54px; color: #e6ebf5; }
+  .small { font-size: 24px; color: #8a93a6; margin-top: 18px; }
+</style></head><body>
+<div id="root"></div>
+<script>
+  const q = new URLSearchParams(location.search), s = q.get('s') || 'title';
+  const R = document.getElementById('root');
+  const lockup = '<img class="lockup" src="../../assets/logo-lockup.svg">';
+  if (s === 'title') R.innerHTML = `<div class="center">${lockup}
+      <h2 style="margin-top:56px">The lightweight settings app for the<br><b style="color:#fff">Logitech PRO X3 / X2 SUPERSTRIKE</b></h2>
+      <div class="chips"><span class="chip">Linux</span><span class="chip">Windows</span><span class="chip on">Free &amp; open source</span></div></div>`;
+  if (s === 'stats') R.innerHTML = `<div class="center">
+      <h1>Close the app. <span class="accent">Play.</span></h1>
+      <h2>Haptics, actuation, rapid trigger, DPI and buttons stay in the mouse.</h2>
+      <div class="stats">
+        <div class="stat"><b>0</b><span>background processes<br>while you game</span></div>
+        <div class="stat"><b>≈0.05%</b><span>CPU while the app<br>is open and idle</span></div>
+        <div class="stat"><b>370 KB</b><span>native app, no service,<br>no account, no network</span></div>
+      </div></div>`;
+  if (s === 'outro') R.innerHTML = `<div class="center">${lockup}
+      <div class="chips"><span class="chip">Linux</span><span class="chip">Windows</span><span class="chip">21 languages</span><span class="chip">MIT license</span></div>
+      <div class="url">github.com/Adhamura/SuperStrike-Studio</div>
+      <div class="small">Not affiliated with or endorsed by Logitech.</div></div>`;
+  if (s === 'scene') R.innerHTML = `<div class="cap"><h3>${q.get('h')}</h3><p>${q.get('p')}</p></div><div class="frame"></div>`;
+</script>
+</body></html>

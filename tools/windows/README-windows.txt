@@ -1,8 +1,14 @@
-SUPERSTRIKE Studio on Windows 10 / 11 (64 bit)
+SuperStrike Studio on Windows 10 / 11 (64 bit)
 ==============================================
 
-You build the program once on your PC. After that you get a portable folder
-and a zip file. You can copy them to any Windows PC. No installer is needed.
+Most people do not need to build anything: download the ready zip
+(SuperStrike-Studio-<version>-windows-x64.zip) from
+https://github.com/Adhamura/SuperStrike-Studio/releases/latest
+unzip it and run superstrike-studio.exe.
+
+The steps below build the same thing yourself. You build the program once on
+your PC. After that you get a portable folder and a zip file. You can copy
+them to any Windows PC. No installer is needed.
 
 
 1. Install MSYS2
@@ -50,8 +56,8 @@ Check that you are in the right place. This command must list CMakeLists.txt:
 The first build takes a few minutes. The script prints each step. When it
 ends it shows the result:
 
-  dist/SUPERSTRIKE-Studio/superstrike-studio.exe       the program
-  dist/SUPERSTRIKE-Studio-windows-x64.zip              the same folder, zipped
+  dist/SuperStrike-Studio/superstrike-studio.exe       the program
+  dist/SuperStrike-Studio-windows-x64.zip              the same folder, zipped
 
 You can run the script again at any time. It rebuilds the dist folder.
 
@@ -61,9 +67,9 @@ You can run the script again at any time. It rebuilds the dist folder.
 Plug in the mouse or its LIGHTSPEED receiver first.
 Then run (in the shell):
 
-  dist/SUPERSTRIKE-Studio/superstrike-studio.exe
+  dist/SuperStrike-Studio/superstrike-studio.exe
 
-Or open the folder dist\SUPERSTRIKE-Studio in Windows Explorer and
+Or open the folder dist\SuperStrike-Studio in Windows Explorer and
 double-click superstrike-studio.exe. You can move or copy the whole folder
 (keep all files together) or unzip the zip on another PC. That PC needs no
 MSYS2.
@@ -72,7 +78,7 @@ MSYS2.
 Notes
 -----
 * Close Logitech G HUB first (also in the tray, near the clock). G HUB can
-  keep the receiver busy, and then SUPERSTRIKE Studio shows "Mouse not found".
+  keep the receiver busy, and then SuperStrike Studio shows "Mouse not found".
   Use "Retry" after you close it.
 
 * The mouse or the receiver must be plugged in and awake. Move the mouse
@@ -94,12 +100,15 @@ Notes
   does not allow a program to read the mouse buttons in the background the
   way the Linux version does. Everything else works the same.
 
+* No mouse at hand? Try every page with a simulated mouse:
+    dist/SuperStrike-Studio/superstrike-studio.exe --demo
+
 * The language follows Windows. You can pick another one on the "Device" page.
 
 * If the window stays empty or the program stops at start-up, graphics drivers
   may be the cause. Start it from the shell with the software renderer:
-    GSK_RENDERER=cairo dist/SUPERSTRIKE-Studio/superstrike-studio.exe
+    GSK_RENDERER=cairo dist/SuperStrike-Studio/superstrike-studio.exe
 
 * To check only the connection (no changes are made to the mouse), run this in
   the shell and read the last line. It must say PASS:
-    dist/SUPERSTRIKE-Studio/sscheck.exe
+    dist/SuperStrike-Studio/sscheck.exe

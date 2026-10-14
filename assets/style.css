@@ -1,4 +1,4 @@
-/* SUPERSTRIKE Studio — design tokens (see DESIGN.md). 8 px grid. */
+/* SuperStrike Studio — design tokens (see DESIGN.md). 8 px grid. */
 /* Own UI font: some desktop fonts (e.g. Selawik) report a too small ascent and GTK clips the
    tops of the letters. Adwaita Sans / Noto Sans have correct metrics. */
 window, popover, dialog, tooltip { font-family: "Adwaita Sans", "Noto Sans", "Cantarell", sans-serif; font-size: 10.5pt; }

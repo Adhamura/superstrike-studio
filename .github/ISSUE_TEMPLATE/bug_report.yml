@@ -1,0 +1,48 @@
+name: Bug report
+description: Something does not work with your PRO X3 / PRO X2 SUPERSTRIKE
+labels: [bug]
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: "SuperStrike Studio version (`superstrike-studio --version`, or Device → About), mouse model and firmware (Device page)"
+      placeholder: "SuperStrike Studio 1.0.0, PRO X3 SUPERSTRIKE, Main MPM 27.02"
+    validations: {required: true}
+  - type: dropdown
+    id: os
+    attributes:
+      label: System
+      options:
+        - Linux
+        - Windows 11
+        - Windows 10
+    validations: {required: true}
+  - type: input
+    id: system
+    attributes: {label: Distro / Windows build, placeholder: "Arch Linux, GNOME 49, Wayland / Windows 11 24H2"}
+  - type: dropdown
+    id: link
+    attributes:
+      label: Connection
+      options:
+        - LIGHTSPEED receiver
+        - USB cable
+    validations: {required: true}
+  - type: textarea
+    id: what
+    attributes: {label: What happened, and what did you expect?, description: "The page and the setting you changed, and what the mouse did."}
+    validations: {required: true}
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output
+      description: "The output of `superstrike-studio` started from a terminal, and of `sscheck` (read-only device check, it never writes)."
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: Logitech G HUB is closed (also in the tray), or not installed
+        - label: The problem also happens after "Retry" / restarting the app

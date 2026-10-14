@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Build SUPERSTRIKE Studio on Windows and make a portable folder + zip.
+# Build SuperStrike Studio on Windows and make a portable folder + zip.
 # Usage (inside the "MSYS2 UCRT64" shell):  tools/windows/build-windows.sh
-# Result: dist/SUPERSTRIKE-Studio/superstrike-studio.exe and dist/SUPERSTRIKE-Studio-windows-x64.zip
+# Result: dist/SuperStrike-Studio/superstrike-studio.exe and dist/SuperStrike-Studio-windows-x64.zip
 # Safe to run again: the build folder is reused, the dist folder is rebuilt from scratch.
 set -euo pipefail
 
@@ -20,8 +20,8 @@ done
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PREFIX="$MSYSTEM_PREFIX"   # /ucrt64
 BUILD="$ROOT/build/windows"
-OUT="$ROOT/dist/SUPERSTRIKE-Studio"
-ZIP="$ROOT/dist/SUPERSTRIKE-Studio-windows-x64.zip"
+OUT="$ROOT/dist/SuperStrike-Studio"
+ZIP="$ROOT/dist/SuperStrike-Studio-windows-x64.zip"
 
 step "Configure (Ninja, MinSizeRel) in $BUILD"
 cmake -S "$ROOT" -B "$BUILD" -G Ninja -DCMAKE_BUILD_TYPE=MinSizeRel
@@ -84,7 +84,7 @@ if [ -n "$missing" ]; then echo "WARNING: DLLs not found:"; echo "$missing"; fi
 
 step "Create $ZIP"
 mkdir -p "$ROOT/dist"
-(cd "$ROOT/dist" && cmake -E tar cf "$ZIP" --format=zip SUPERSTRIKE-Studio)
+(cd "$ROOT/dist" && cmake -E tar cf "$ZIP" --format=zip SuperStrike-Studio)
 
 step "Done"
 echo "folder: $OUT ($(du -sh "$OUT" | cut -f1))"

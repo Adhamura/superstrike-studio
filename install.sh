@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build SUPERSTRIKE Studio (C++) and install it for the current user: app menu entry, icon,
+# Build SuperStrike Studio (C++) and install it for the current user: app menu entry, icon,
 # desktop launcher. Optional: sudo ./install.sh --udev  (hidraw access rule for the seat user).
 set -e
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -22,7 +22,7 @@ cp "$HERE/assets/io.github.superstrike.Studio.svg" "$ICONS/"
 
 DESK="[Desktop Entry]
 Type=Application
-Name=SUPERSTRIKE Studio
+Name=SuperStrike Studio
 GenericName=Mouse settings
 Comment=HITS actuation, rapid trigger, haptics, buttons, DPI and onboard memory for the PRO X SUPERSTRIKE
 Exec=$HERE/build/release/superstrike-studio
@@ -32,9 +32,9 @@ Categories=Settings;HardwareSettings;
 Keywords=logitech;mouse;superstrike;hits;haptics;dpi;
 StartupWMClass=io.github.superstrike.Studio"
 echo "$DESK" > "$APPS/io.github.superstrike.Studio.desktop"
-for f in "$HOME/Desktop/SUPERSTRIKE Studio.desktop" "$HERE/../SUPERSTRIKE Studio.desktop"; do
+for f in "$HOME/Desktop/SuperStrike Studio.desktop" "$HERE/../SuperStrike Studio.desktop"; do
     echo "$DESK" > "$f"; chmod +x "$f"; gio set "$f" metadata::trusted true 2>/dev/null || true
 done
 update-desktop-database "$APPS" 2>/dev/null || true
 gtk-update-icon-cache -q "$HOME/.local/share/icons/hicolor" 2>/dev/null || true
-echo "Installed: SUPERSTRIKE Studio (app menu, desktop, superstrike-studio)"
+echo "Installed: SuperStrike Studio (app menu, desktop, superstrike-studio)"

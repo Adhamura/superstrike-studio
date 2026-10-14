@@ -357,6 +357,7 @@ struct MouseView::Impl {
 
 MouseView::Impl::Impl(MouseView* m) : mv(m) {
     area = gtk_drawing_area_new();
+    gtk_widget_set_name(area, "mouse-view");
     gtk_widget_set_hexpand(area, TRUE);
     gtk_widget_set_vexpand(area, TRUE);
     gtk_widget_set_size_request(area, 520, 420);
