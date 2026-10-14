@@ -22,7 +22,7 @@ jobs:
       - name: Install packages
         run: |
           pacman -Syu --noconfirm --needed base-devel cmake gettext gtk4 libadwaita librsvg json-glib \
-            xorg-server-xvfb xorg-xauth inter-font git
+            xorg-server-xvfb xorg-xauth inter-font git glib-networking ca-certificates
       - uses: actions/checkout@v4
       - name: Build
         run: |
@@ -50,6 +50,13 @@ jobs:
             test -s "shots/linux-$page.png" || { echo "::error::no screenshot of $page"; exit 1; }
           done
           ls -la shots
+      - name: Update check reaches GitHub (HTTPS)
+        shell: bash
+        run: |
+          # 0 = got the latest release; 2 = GitHub answered with an error (rate limit, no release yet);
+          # 1 = no connection or TLS failure, which is a bug in the app
+          rc=0; build/release/superstrike-studio --check-updates || rc=$?
+          [ "$rc" != 1 ] || { echo "::error::update check could not reach api.github.com"; exit 1; }
       - uses: actions/upload-artifact@v4
         with:
           name: screenshots-linux
@@ -85,6 +92,11 @@ jobs:
             test -s "shots/windows-$page.png" || { echo "::error::no screenshot of $page on Windows"; exit 1; }
           done
           ls -la shots
+      - name: Update check reaches GitHub (WinHTTP)
+        run: |
+          rc=0; timeout 60 dist/SuperStrike-Studio/superstrike-studio.exe --check-updates > update.txt 2>&1 || rc=$?
+          cat update.txt; echo "exit code $rc"
+          [ "$rc" != 1 ] && [ "$rc" != 124 ] || { echo "::error::update check could not reach api.github.com"; exit 1; }
       - uses: actions/upload-artifact@v4
         with:
           name: screenshots-windows

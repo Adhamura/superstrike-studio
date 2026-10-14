@@ -10,8 +10,13 @@ report, without details).
   `/dev/hidraw*` on Linux and the Win32 HID API on Windows. It runs as your user. On Linux,
   `sudo ./install.sh --udev` adds one udev rule (`TAG+="uaccess"` for Logitech hidraw nodes) so the
   logged-in user can open them without root.
-- **No network.** The app sends and receives nothing over the network. There is no update check,
-  telemetry or account.
+- **Network: only the update check.** At start-up, at most once a day, the app sends one HTTPS
+  GET to `api.github.com/repos/Adhamura/SuperStrike-Studio/releases/latest` (user agent
+  `SuperStrike-Studio/<version>`) and reads the version, page link and notes of the latest
+  release. Nothing about you or the mouse is sent, and nothing is downloaded or installed
+  automatically: **Open download page** only opens the release page in your browser. Turn it off
+  on the Device page (**Check for updates automatically**). TLS is checked by the system
+  (glib-networking on Linux, WinHTTP on Windows). There is no telemetry and no account.
 - **No background service.** Nothing is installed to run at start-up. When the window is closed,
   no part of the app runs; the mouse keeps its settings in its own memory.
 - **Files.** Settings in `~/.config/superstrike/studio.ini` (Windows: `%LOCALAPPDATA%\superstrike`),

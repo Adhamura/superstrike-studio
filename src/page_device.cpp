@@ -5,6 +5,7 @@
 #include "app.hpp"
 #include "i18n.hpp"
 #include "ui.hpp"
+#include "update.hpp"
 
 namespace {
 
@@ -196,8 +197,20 @@ GtkWidget* page_device(App& app) {
     adw_preferences_row_set_title(ADW_PREFERENCES_ROW(about), fmt(_("About %s"), "SuperStrike Studio").c_str());
     adw_button_row_set_start_icon_name(ADW_BUTTON_ROW(about), "help-about-symbolic");
     ui::on(about, "activated", [&app] { show_about(app); });
+    GtkWidget* auto_row = adw_switch_row_new();
+    adw_preferences_row_set_title(ADW_PREFERENCES_ROW(auto_row), _("Check for updates automatically"));
+    adw_action_row_set_subtitle(ADW_ACTION_ROW(auto_row), _("At most once a day, one request to github.com"));
+    adw_switch_row_set_active(ADW_SWITCH_ROW(auto_row), app.cfg.update_auto);
+    ui::notify(auto_row, "active", [&app, auto_row] {
+        app.cfg.update_auto = adw_switch_row_get_active(ADW_SWITCH_ROW(auto_row));
+        app.cfg.save();
+    });
+    GtkWidget* check = adw_button_row_new();
+    adw_preferences_row_set_title(ADW_PREFERENCES_ROW(check), _("Check for updates"));
+    adw_button_row_set_start_icon_name(ADW_BUTTON_ROW(check), "view-refresh-symbolic");
+    ui::on(check, "activated", [&app] { update_check(app, true); });
     GtkWidget* about_list = boxed_list();
-    gtk_list_box_append(GTK_LIST_BOX(about_list), about);
+    for (GtkWidget* r : {auto_row, check, about}) gtk_list_box_append(GTK_LIST_BOX(about_list), r);
 
     GtkWidget* col = ui::vbox(16);
     ui::add(col, {info, panel(_("LOOK"), look_list), panel(_("HID++ FEATURES"), feature_list), about_list});

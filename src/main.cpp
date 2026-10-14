@@ -9,6 +9,7 @@
 #include "hid_sim.hpp"
 #include "i18n.hpp"
 #include "ui.hpp"
+#include "update.hpp"
 
 static App g_app;
 static std::string shot_page, shot_file;
@@ -59,6 +60,8 @@ static void take_shot() {
             g_strfreev(v);
             return false;
         });
+    if (g_getenv("SS_SHOT_UPDATE"))  // debug: run "Check for updates" (with SS_UPDATE_TEST_JSON: offline)
+        ui::every(2500, [] { update_check(g_app, true); return false; });
     if (const char* lang = g_getenv("SS_SHOT_LANG"))  // debug: switch language while running
         ui::every(2500, [lang] { g_app.set_language(lang); return false; });
     if (const char* path = g_getenv("SS_SHOT_DUMP"))  // debug: widget positions, every 300 ms
@@ -100,10 +103,19 @@ int main(int argc, char** argv) {
         } else if (!strcmp(argv[i], "--version")) {
             std::printf("SuperStrike Studio %s\n", SS_VERSION);
             return 0;
+        } else if (!strcmp(argv[i], "--check-updates")) {  // also the CI test of the HTTPS code
+            ReleaseInfo rel;
+            std::string err;
+            int rc = fetch_latest_release(rel, err);
+            if (rc) std::printf("Update check failed: %s\n", err.c_str());
+            else std::printf("Latest release: %s (%s)\nThis version: %s%s\n", rel.version.c_str(), rel.url.c_str(), SS_VERSION,
+                             version_newer(rel.version, SS_VERSION) ? " - an update is available" : " - up to date");
+            return rc;
         } else if (!strcmp(argv[i], "--help") || !strcmp(argv[i], "-h")) {
-            std::printf("Usage: superstrike-studio [--demo] [--version]\n"
-                        "  --demo     try the app with a simulated PRO X3 SUPERSTRIKE (no mouse needed)\n"
-                        "  --version  print the version\n");
+            std::printf("Usage: superstrike-studio [--demo] [--check-updates] [--version]\n"
+                        "  --demo           try the app with a simulated PRO X3 SUPERSTRIKE (no mouse needed)\n"
+                        "  --check-updates  ask GitHub for the latest release and print it\n"
+                        "  --version        print the version\n");
             return 0;
         }
     }
@@ -119,6 +131,7 @@ int main(int argc, char** argv) {
         window_build(g_app, GTK_APPLICATION(gapp));
         app_start(g_app);
         if (!shot_file.empty()) take_shot();
+        else update_check(g_app, false);  // at most once a day, when on (Device page)
     });
     char* args[] = {argv[0], nullptr};
     int rc = g_application_run(G_APPLICATION(gapp), 1, args);

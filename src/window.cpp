@@ -128,6 +128,7 @@ static GtkWidget* build_sidebar(App& app) {
     GtkWidget* st = ui::hbox(6);
     p.status_dot = ui::css(ui::label("●"), {"ss-dot"});
     p.status_text = ui::label(_("Searching for the mouse…"), {"ss-hint"});
+    gtk_label_set_ellipsize(GTK_LABEL(p.status_text), PANGO_ELLIPSIZE_END);  // or it widens the sidebar
     ui::add(st, {p.status_dot, p.status_text});
     ui::add(info, {p.device_name, st});
     gtk_widget_set_valign(info, GTK_ALIGN_CENTER);

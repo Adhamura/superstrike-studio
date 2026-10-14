@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SuperStrike Studio\n"
 "Report-Msgid-Bugs-To: none\n"
-"POT-Creation-Date: 2026-10-14 17:57+0000\n"
+"POT-Creation-Date: 2026-10-14 18:36+0000\n"
 "PO-Revision-Date: 2026-10-14 19:56+0300\n"
 "Last-Translator: SuperStrike Studio translators\n"
 "Language-Team: id\n"
@@ -143,7 +143,7 @@ msgstr "galat pengisian"
 msgid "state %s"
 msgstr "status %s"
 
-#: src/io.cpp:120
+#: src/io.cpp:129
 msgid "not a SUPERSTRIKE backup file"
 msgstr "bukan berkas cadangan SUPERSTRIKE"
 
@@ -737,113 +737,125 @@ msgid "BUTTONS"
 msgstr "TOMBOL"
 
 #. TRANSLATORS: shown in the About dialog. Logitech is a trademark, keep the name as it is
-#: src/page_device.cpp:41
+#: src/page_device.cpp:42
 msgid "Not affiliated with or endorsed by Logitech."
 msgstr "Tidak berafiliasi dengan atau didukung oleh Logitech."
 
 #. TRANSLATORS: battery row. %d is the charge in percent
-#: src/page_device.cpp:75
+#: src/page_device.cpp:76
 #, c-format
 msgid "%d %%"
 msgstr "%d %%"
 
 #. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
-#: src/page_device.cpp:77
+#: src/page_device.cpp:78
 #, c-format
 msgid "%d %% · %s"
 msgstr "%d %% · %s"
 
-#: src/page_device.cpp:85
+#: src/page_device.cpp:86
 msgid "USB cable"
 msgstr "Kabel USB"
 
 #. TRANSLATORS: %d is the receiver slot number (1 to 6)
-#: src/page_device.cpp:87
+#: src/page_device.cpp:88
 #, c-format
 msgid "LIGHTSPEED receiver slot %d"
 msgstr "Slot penerima LIGHTSPEED %d"
 
 #. TRANSLATORS: %d is the number of profile slots in the mouse
-#: src/page_device.cpp:93
+#: src/page_device.cpp:94
 #, c-format
 msgid "%d profile"
 msgid_plural "%d profiles"
 msgstr[0] "%d profil"
 
 #. TRANSLATORS: %d is the version number of the memory layout
-#: src/page_device.cpp:95
+#: src/page_device.cpp:96
 #, c-format
 msgid "format %d"
 msgstr "format %d"
 
 #. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
-#: src/page_device.cpp:97
+#: src/page_device.cpp:98
 #, c-format
 msgid "%d sector × %d bytes"
 msgid_plural "%d sectors × %d bytes"
 msgstr[0] "%d sektor × %d byte"
 
 #. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
-#: src/page_device.cpp:119
+#: src/page_device.cpp:120
 #, c-format
 msgid "index %d · v%d · flags 0x%s"
 msgstr "indeks %d · v%d · flag 0x%s"
 
 #. TRANSLATORS: %d is the number of HID++ features the mouse reports
-#: src/page_device.cpp:127
+#: src/page_device.cpp:128
 #, c-format
 msgid "%d feature"
 msgid_plural "%d features"
 msgstr[0] "%d fitur"
 
-#: src/page_device.cpp:134
+#: src/page_device.cpp:135
 msgid "Language"
 msgstr "Bahasa"
 
-#: src/page_device.cpp:136
+#: src/page_device.cpp:137
 msgid "System default"
 msgstr "Default sistem"
 
-#: src/page_device.cpp:170
+#: src/page_device.cpp:171
 msgctxt "device info"
 msgid "Name"
 msgstr "Nama"
 
-#: src/page_device.cpp:171
+#: src/page_device.cpp:172
 msgid "Connection"
 msgstr "Koneksi"
 
-#: src/page_device.cpp:172
+#: src/page_device.cpp:173
 msgid "Battery"
 msgstr "Baterai"
 
-#: src/page_device.cpp:173
+#: src/page_device.cpp:174
 msgid "Firmware"
 msgstr "Firmware"
 
-#: src/page_device.cpp:174
+#: src/page_device.cpp:175
 msgid "Onboard memory"
 msgstr "Memori onboard"
 
-#: src/page_device.cpp:180
+#: src/page_device.cpp:181
 msgid "Mouse colour in the pictures"
 msgstr "Warna mouse pada gambar"
 
-#: src/page_device.cpp:190
+#: src/page_device.cpp:191
 msgid "Feature table"
 msgstr "Tabel fitur"
 
 #. TRANSLATORS: %s is the app name, SuperStrike Studio
-#: src/page_device.cpp:196
+#: src/page_device.cpp:197
 #, c-format
 msgid "About %s"
 msgstr "Tentang %s"
 
-#: src/page_device.cpp:203
+#: src/page_device.cpp:201
+msgid "Check for updates automatically"
+msgstr "Periksa pembaruan secara otomatis"
+
+#: src/page_device.cpp:202
+msgid "At most once a day, one request to github.com"
+msgstr "Paling banyak sekali sehari, satu permintaan ke github.com"
+
+#: src/page_device.cpp:209
+msgid "Check for updates"
+msgstr "Periksa pembaruan"
+
+#: src/page_device.cpp:216
 msgid "LOOK"
 msgstr "TAMPILAN"
 
-#: src/page_device.cpp:203
+#: src/page_device.cpp:216
 msgid "HID++ FEATURES"
 msgstr "FITUR HID++"
 
@@ -1550,6 +1562,42 @@ msgstr "Umpan balik kuat"
 msgctxt "HITS preset"
 msgid "Silent feel"
 msgstr "Terasa senyap"
+
+#. TRANSLATORS: %s is a version number, for example 1.2.0
+#: src/update.cpp:84
+#, c-format
+msgid "Version %s is available"
+msgstr "Versi %s tersedia"
+
+#. TRANSLATORS: %s is the version number the user has now
+#: src/update.cpp:86
+#, c-format
+msgid "You have version %s. The new version is on GitHub."
+msgstr "Anda memakai versi %s. Versi baru ada di GitHub."
+
+#: src/update.cpp:98
+msgid "Skip this version"
+msgstr "Lewati versi ini"
+
+#: src/update.cpp:98
+msgid "Later"
+msgstr "Nanti"
+
+#: src/update.cpp:99
+msgid "Open download page"
+msgstr "Buka halaman unduhan"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/update.cpp:131
+#, c-format
+msgid "Update check failed: %s"
+msgstr "Pemeriksaan pembaruan gagal: %s"
+
+#. TRANSLATORS: %s is the version number the user has now
+#: src/update.cpp:137
+#, c-format
+msgid "You have the latest version (%s)"
+msgstr "Anda memakai versi terbaru (%s)"
 
 #: src/window.cpp:8
 msgctxt "page"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SuperStrike Studio\n"
 "Report-Msgid-Bugs-To: none\n"
-"POT-Creation-Date: 2026-10-14 17:57+0000\n"
+"POT-Creation-Date: 2026-10-14 18:36+0000\n"
 "PO-Revision-Date: 2026-10-14 20:30+0300\n"
 "Last-Translator: Claude <noreply@anthropic.com>\n"
 "Language-Team: Chinese (Taiwan)\n"
@@ -139,7 +139,7 @@ msgstr "充電錯誤"
 msgid "state %s"
 msgstr "狀態 %s"
 
-#: src/io.cpp:120
+#: src/io.cpp:129
 msgid "not a SUPERSTRIKE backup file"
 msgstr "不是 SUPERSTRIKE 備份檔案"
 
@@ -731,113 +731,125 @@ msgid "BUTTONS"
 msgstr "按鍵"
 
 #. TRANSLATORS: shown in the About dialog. Logitech is a trademark, keep the name as it is
-#: src/page_device.cpp:41
+#: src/page_device.cpp:42
 msgid "Not affiliated with or endorsed by Logitech."
 msgstr "與 Logitech 無關聯，亦未獲 Logitech 認可。"
 
 #. TRANSLATORS: battery row. %d is the charge in percent
-#: src/page_device.cpp:75
+#: src/page_device.cpp:76
 #, c-format
 msgid "%d %%"
 msgstr "%d%%"
 
 #. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
-#: src/page_device.cpp:77
+#: src/page_device.cpp:78
 #, c-format
 msgid "%d %% · %s"
 msgstr "%d%% · %s"
 
-#: src/page_device.cpp:85
+#: src/page_device.cpp:86
 msgid "USB cable"
 msgstr "USB 傳輸線"
 
 #. TRANSLATORS: %d is the receiver slot number (1 to 6)
-#: src/page_device.cpp:87
+#: src/page_device.cpp:88
 #, c-format
 msgid "LIGHTSPEED receiver slot %d"
 msgstr "LIGHTSPEED 接收器（插槽 %d）"
 
 #. TRANSLATORS: %d is the number of profile slots in the mouse
-#: src/page_device.cpp:93
+#: src/page_device.cpp:94
 #, c-format
 msgid "%d profile"
 msgid_plural "%d profiles"
 msgstr[0] "%d 個設定檔"
 
 #. TRANSLATORS: %d is the version number of the memory layout
-#: src/page_device.cpp:95
+#: src/page_device.cpp:96
 #, c-format
 msgid "format %d"
 msgstr "格式 %d"
 
 #. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
-#: src/page_device.cpp:97
+#: src/page_device.cpp:98
 #, c-format
 msgid "%d sector × %d bytes"
 msgid_plural "%d sectors × %d bytes"
 msgstr[0] "%d 個磁區 × %d 位元組"
 
 #. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
-#: src/page_device.cpp:119
+#: src/page_device.cpp:120
 #, c-format
 msgid "index %d · v%d · flags 0x%s"
 msgstr "索引 %d · v%d · 旗標 0x%s"
 
 #. TRANSLATORS: %d is the number of HID++ features the mouse reports
-#: src/page_device.cpp:127
+#: src/page_device.cpp:128
 #, c-format
 msgid "%d feature"
 msgid_plural "%d features"
 msgstr[0] "%d 項功能"
 
-#: src/page_device.cpp:134
+#: src/page_device.cpp:135
 msgid "Language"
 msgstr "語言"
 
-#: src/page_device.cpp:136
+#: src/page_device.cpp:137
 msgid "System default"
 msgstr "系統預設"
 
-#: src/page_device.cpp:170
+#: src/page_device.cpp:171
 msgctxt "device info"
 msgid "Name"
 msgstr "名稱"
 
-#: src/page_device.cpp:171
+#: src/page_device.cpp:172
 msgid "Connection"
 msgstr "連線"
 
-#: src/page_device.cpp:172
+#: src/page_device.cpp:173
 msgid "Battery"
 msgstr "電池"
 
-#: src/page_device.cpp:173
+#: src/page_device.cpp:174
 msgid "Firmware"
 msgstr "韌體"
 
-#: src/page_device.cpp:174
+#: src/page_device.cpp:175
 msgid "Onboard memory"
 msgstr "內建記憶體"
 
-#: src/page_device.cpp:180
+#: src/page_device.cpp:181
 msgid "Mouse colour in the pictures"
 msgstr "圖片中的滑鼠顏色"
 
-#: src/page_device.cpp:190
+#: src/page_device.cpp:191
 msgid "Feature table"
 msgstr "功能清單"
 
 #. TRANSLATORS: %s is the app name, SuperStrike Studio
-#: src/page_device.cpp:196
+#: src/page_device.cpp:197
 #, c-format
 msgid "About %s"
 msgstr "關於 %s"
 
-#: src/page_device.cpp:203
+#: src/page_device.cpp:201
+msgid "Check for updates automatically"
+msgstr "自動檢查更新"
+
+#: src/page_device.cpp:202
+msgid "At most once a day, one request to github.com"
+msgstr "每天最多一次，向 github.com 發出一個請求"
+
+#: src/page_device.cpp:209
+msgid "Check for updates"
+msgstr "檢查更新"
+
+#: src/page_device.cpp:216
 msgid "LOOK"
 msgstr "外觀"
 
-#: src/page_device.cpp:203
+#: src/page_device.cpp:216
 msgid "HID++ FEATURES"
 msgstr "HID++ 功能"
 
@@ -1530,6 +1542,42 @@ msgstr "強烈回饋"
 msgctxt "HITS preset"
 msgid "Silent feel"
 msgstr "靜音手感"
+
+#. TRANSLATORS: %s is a version number, for example 1.2.0
+#: src/update.cpp:84
+#, c-format
+msgid "Version %s is available"
+msgstr "版本 %s 已推出"
+
+#. TRANSLATORS: %s is the version number the user has now
+#: src/update.cpp:86
+#, c-format
+msgid "You have version %s. The new version is on GitHub."
+msgstr "您目前的版本是 %s。新版本在 GitHub 上。"
+
+#: src/update.cpp:98
+msgid "Skip this version"
+msgstr "略過此版本"
+
+#: src/update.cpp:98
+msgid "Later"
+msgstr "稍後"
+
+#: src/update.cpp:99
+msgid "Open download page"
+msgstr "開啟下載頁面"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/update.cpp:131
+#, c-format
+msgid "Update check failed: %s"
+msgstr "檢查更新失敗：%s"
+
+#. TRANSLATORS: %s is the version number the user has now
+#: src/update.cpp:137
+#, c-format
+msgid "You have the latest version (%s)"
+msgstr "已是最新版本（%s）"
 
 #: src/window.cpp:8
 msgctxt "page"

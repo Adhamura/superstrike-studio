@@ -89,7 +89,7 @@ jobs:
           ./install.sh               # app menu entry + desktop launcher
           sudo ./install.sh --udev   # once, if the app says it has no permission for /dev/hidraw*
           \`\`\`
-          Needs GTK 4, libadwaita 1.7+, librsvg, json-glib, cmake, gettext and a C++20 compiler.
+          Needs GTK 4, libadwaita 1.7+, librsvg, json-glib, glib-networking, cmake, gettext and a C++20 compiler.
 
           **No mouse yet?** Start it with \`--demo\` to try every page with a simulated PRO X3 SUPERSTRIKE.
 

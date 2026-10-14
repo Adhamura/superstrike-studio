@@ -43,5 +43,6 @@ shot buttons       buttons  SS_SHOT_PROFILE=4 SS_SHOT_SELECT=side
 shot sensor        sensor   SS_SHOT_PROFILE=3
 shot profiles      profiles SS_SHOT_CLEAN=
 shot device        device
+shot update        device   SS_SHOT_UPDATE=1 SS_UPDATE_TEST_JSON="$ROOT/tools/screenshots/update-example.json"
 shot lang-ja       profiles LANG=ja_JP.UTF-8 LANGUAGE=ja
 shot lang-ar       sensor   LANG=ar_SA.UTF-8 LANGUAGE=ar

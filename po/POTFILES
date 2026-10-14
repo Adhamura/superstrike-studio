@@ -14,4 +14,5 @@ src/page_hits.cpp
 src/page_profiles.cpp
 src/page_sensor.cpp
 src/profile.cpp
+src/update.cpp
 src/window.cpp

@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.0
+
+- **Check for updates from GitHub.** When the app starts it asks GitHub for the latest release, at
+  most once a day. If there is a newer version it shows the version and its release notes, with
+  **Open download page** (the release on GitHub), **Later** and **Skip this version**.
+- **Device → Check for updates** checks right away; **Check for updates automatically** turns the
+  daily check off. `superstrike-studio --check-updates` does it from a terminal.
+- Privacy: the check is one HTTPS request to `api.github.com`; nothing about you or the mouse is
+  sent and nothing is installed by itself. TLS is handled by the system (glib-networking on Linux,
+  WinHTTP on Windows), so the app gains no new libraries.
+- CI also checks that the app reaches GitHub over HTTPS on Linux and on Windows.
+- Fix: the sidebar no longer changes width from one start to the next (the long "Searching for the
+  mouse…" status widened it), so the HITS tabs are never cut off.
+
 ## 1.0.0
 
 The first release of **SuperStrike Studio**, a native editor for the Logitech **PRO X3 / PRO X2

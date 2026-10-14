@@ -138,8 +138,9 @@ Two columns, no outer scroll (fits 1280×800):
 
 Boxed lists: Name, Connection, Battery, Firmware (multi-line), Onboard memory; `LOOK` panel:
 mouse colour (`GtkColorDialogButton`, saves cfg.shell, calls reload); `HID++ FEATURES`
-expander with one row per feature; an "About SuperStrike Studio" button row (AdwAboutDialog:
-version, website, issue link, MIT license).
+expander with one row per feature; a boxed list with "Check for updates automatically"
+(switch), "Check for updates" and "About SuperStrike Studio" (button rows; About opens an
+AdwAboutDialog: version, website, issue link, MIT license).
 
 ## Behaviour rules
 
