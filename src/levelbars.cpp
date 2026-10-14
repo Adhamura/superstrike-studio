@@ -150,6 +150,7 @@ TravelBar* TravelBar::create() {
     auto* p = tb->p = new Impl;
     p->tb = tb;
     GtkWidget* a = p->area = gtk_drawing_area_new();
+    gtk_widget_set_name(a, "travel-bar");
     gtk_widget_set_size_request(a, 300, 130);
     gtk_widget_set_hexpand(a, TRUE);
     pointer_cursor(a);
@@ -231,6 +232,7 @@ LevelBar* LevelBar::create(int lo, int hi, const char* lo_text, const char* hi_t
     p->lb = lb, p->lo = lo, p->hi = std::max(lo, hi), p->v = lo - 1;
     p->lo_text = lo_text ? lo_text : "", p->hi_text = hi_text ? hi_text : "";
     GtkWidget* a = p->area = gtk_drawing_area_new();
+    gtk_widget_set_name(a, "level-bar");
     gtk_widget_set_size_request(a, 200, 52);
     gtk_widget_set_hexpand(a, TRUE);
     pointer_cursor(a);

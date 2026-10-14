@@ -26,6 +26,22 @@ std::string hex(const char* fmt, unsigned v) {
     return buf;
 }
 
+void show_about(App& app) {
+    AdwDialog* d = adw_about_dialog_new();
+    AdwAboutDialog* a = ADW_ABOUT_DIALOG(d);
+    adw_about_dialog_set_application_name(a, "SuperStrike Studio");
+    adw_about_dialog_set_application_icon(a, "io.github.superstrike.Studio");
+    adw_about_dialog_set_version(a, SS_VERSION);
+    adw_about_dialog_set_developer_name(a, "Adhamura");
+    adw_about_dialog_set_website(a, "https://github.com/Adhamura/SuperStrike-Studio");
+    adw_about_dialog_set_issue_url(a, "https://github.com/Adhamura/SuperStrike-Studio/issues/new/choose");
+    adw_about_dialog_set_license_type(a, GTK_LICENSE_MIT_X11);
+    adw_about_dialog_set_copyright(a, "© 2026 Adhamura");
+    // TRANSLATORS: shown in the About dialog. Logitech is a trademark, keep the name as it is
+    adw_about_dialog_set_comments(a, _("Not affiliated with or endorsed by Logitech."));
+    adw_dialog_present(d, GTK_WIDGET(app.window));
+}
+
 struct Device_page {
     explicit Device_page(App& a) : app(a) {}
     App& app;
@@ -175,8 +191,16 @@ GtkWidget* page_device(App& app) {
     GtkWidget* feature_list = boxed_list();
     gtk_list_box_append(GTK_LIST_BOX(feature_list), d->features);
 
+    GtkWidget* about = adw_button_row_new();
+    // TRANSLATORS: %s is the app name, SuperStrike Studio
+    adw_preferences_row_set_title(ADW_PREFERENCES_ROW(about), fmt(_("About %s"), "SuperStrike Studio").c_str());
+    adw_button_row_set_start_icon_name(ADW_BUTTON_ROW(about), "help-about-symbolic");
+    ui::on(about, "activated", [&app] { show_about(app); });
+    GtkWidget* about_list = boxed_list();
+    gtk_list_box_append(GTK_LIST_BOX(about_list), about);
+
     GtkWidget* col = ui::vbox(16);
-    ui::add(col, {info, panel(_("LOOK"), look_list), panel(_("HID++ FEATURES"), feature_list)});
+    ui::add(col, {info, panel(_("LOOK"), look_list), panel(_("HID++ FEATURES"), feature_list), about_list});
 
     app.on_reload.push_back([s] { s->refresh(); });
     app.on_status.push_back([s] { s->refresh_status(); });

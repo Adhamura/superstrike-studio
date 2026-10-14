@@ -1,6 +1,7 @@
 // HID++ 2.0 transport (no external deps). Linux: hidraw (hidpp_linux.cpp). Windows: Win32 HID API (hidpp_win.cpp).
 #pragma once
 #include <cstdint>
+#include <deque>
 #include <stdexcept>
 #include <string>
 #include <utility>
@@ -38,7 +39,8 @@ public:
                   int timeout_ms = 1000, bool long_ = true);
 
 private:
-    HidDev* dev_ = nullptr;
+    HidDev* dev_ = nullptr;   // nullptr for the demo mouse (hid_sim.hpp)
+    std::deque<Bytes> sim_q_;  // demo mouse replies not read yet
     std::string path_;
     uint8_t swid_;  // per process, 2..15, so two programs on one receiver do not mix replies
 };

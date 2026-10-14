@@ -1,0 +1,95 @@
+name: CI
+
+# Builds SuperStrike Studio on Linux (Arch: GTK 4 and libadwaita new enough) and on Windows
+# (MSYS2 UCRT64, the same script users run), then starts the real app with the demo mouse
+# (--demo, src/hid_sim.cpp) and renders every page to a PNG. The PNGs and the Windows zip are
+# kept as artifacts. Also used by release.yml.
+on:
+  push:
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linux:
+    name: Linux (Arch) build and smoke test
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install packages
+        run: |
+          pacman -Syu --noconfirm --needed base-devel cmake gettext gtk4 libadwaita librsvg json-glib \
+            xorg-server-xvfb xorg-xauth inter-font git
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          cmake -S . -B build/release -DCMAKE_BUILD_TYPE=MinSizeRel
+          cmake --build build/release -j"$(nproc)"
+          ls -la build/release/superstrike-studio
+          build/release/superstrike-studio --version
+      - name: Translations are complete
+        shell: bash
+        run: |
+          bad=0
+          for po in po/*.po; do
+            out=$(msgfmt --check --statistics -o /dev/null "$po" 2>&1)
+            echo "$po: $out"
+            case "$out" in *untranslated*|*fuzzy*) bad=1 ;; esac
+          done
+          exit $bad
+      - name: Smoke test with the demo mouse
+        shell: bash
+        run: |
+          mkdir -p shots
+          for page in hits buttons sensor profiles device; do
+            SS_SHOT_CLEAN=1 GSK_RENDERER=cairo timeout 60 xvfb-run -a -s "-screen 0 1600x1000x24" \
+              build/release/superstrike-studio --demo --shot "$page:$PWD/shots/linux-$page.png"
+            test -s "shots/linux-$page.png" || { echo "::error::no screenshot of $page"; exit 1; }
+          done
+          ls -la shots
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-linux
+          path: shots/
+
+  windows:
+    name: Windows build and smoke test
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja
+            mingw-w64-ucrt-x86_64-pkgconf mingw-w64-ucrt-x86_64-gtk4 mingw-w64-ucrt-x86_64-libadwaita
+            mingw-w64-ucrt-x86_64-librsvg mingw-w64-ucrt-x86_64-json-glib
+            mingw-w64-ucrt-x86_64-gettext-runtime mingw-w64-ucrt-x86_64-gettext-tools
+            mingw-w64-ucrt-x86_64-ntldd zip
+      - name: Build the portable folder and zip
+        run: tools/windows/build-windows.sh
+      - name: Smoke test with the demo mouse
+        run: |
+          mkdir -p shots
+          exe=dist/SuperStrike-Studio/superstrike-studio.exe
+          for page in hits buttons sensor profiles device; do
+            out="$(cygpath -w "$PWD/shots/windows-$page.png")"
+            SS_SHOT_CLEAN=1 GSK_RENDERER=cairo timeout 90 "$exe" --demo --shot "$page:$out" || true
+            test -s "shots/windows-$page.png" || { echo "::error::no screenshot of $page on Windows"; exit 1; }
+          done
+          ls -la shots
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-windows
+          path: shots/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SuperStrike-Studio-windows-x64
+          path: dist/SuperStrike-Studio/

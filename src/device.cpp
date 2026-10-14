@@ -1,4 +1,5 @@
 #include "device.hpp"
+#include "hid_sim.hpp"
 #include "i18n.hpp"
 
 #include <algorithm>
@@ -70,7 +71,7 @@ Device::Device(std::unique_ptr<Transport> t, int dev) : t_(std::move(t)), dev_(d
 
 std::unique_ptr<Device> Device::open() {
     std::string errors;
-    for (const auto& path : find_hidpp_nodes()) {
+    for (const auto& path : sim_enabled() ? std::vector<std::string>{SIM_PATH} : find_hidpp_nodes()) {
         std::unique_ptr<Transport> t;
         try {
             t = std::make_unique<Transport>(path);

@@ -1,13 +1,13 @@
 # Arabic translations for SUPERSTRIKE package.
 # Copyright (C) 2026 THE SUPERSTRIKE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+# This file is distributed under the same license as the SuperStrike Studio package.
 # Automatically generated, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Project-Id-Version: SuperStrike Studio\n"
 "Report-Msgid-Bugs-To: none\n"
-"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"POT-Creation-Date: 2026-10-14 17:57+0000\n"
 "PO-Revision-Date: 2026-10-14 19:56+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: Arabic\n"
@@ -19,127 +19,127 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
 
 #. TRANSLATORS: %s is a technical error message about the mouse connection
-#: src/app.cpp:74
+#: src/app.cpp:76
 #, c-format
 msgid "Mouse: %s"
 msgstr "الماوس: ⁨%s⁩"
 
-#: src/app.cpp:154
+#: src/app.cpp:156
 msgid "Loaded from the mouse"
 msgstr "تم التحميل من الماوس"
 
-#: src/app.cpp:166
+#: src/app.cpp:168
 msgid "Save this profile first"
 msgstr "احفظ ملف التعريف هذا أولًا"
 
 #. TRANSLATORS: %d is the profile number (1 to 5)
-#: src/app.cpp:175
+#: src/app.cpp:177
 #, c-format
 msgid "Profile %d is now active"
 msgstr "ملف التعريف %d نشط الآن"
 
-#: src/app.cpp:196
+#: src/app.cpp:198
 msgid "Writing to the mouse memory…"
 msgstr "جارٍ الكتابة في ذاكرة الماوس…"
 
-#: src/app.cpp:222
+#: src/app.cpp:224
 msgid "Saved in the mouse — it now works without this app"
 msgstr "تم الحفظ في الماوس — يعمل الآن بدون هذا التطبيق"
 
 #. TRANSLATORS: first %s is the error message, second %s is a folder path
-#: src/app.cpp:228
+#: src/app.cpp:230
 #, c-format
 msgid "Save failed: %s. Backups: %s"
 msgstr "فشل الحفظ: ⁨%s⁩. النسخ الاحتياطية: ⁨%s⁩"
 
-#: src/app.cpp:236
+#: src/app.cpp:238
 msgid "No button does Left click"
 msgstr "لا يوجد زر ينفّذ النقر الأيسر"
 
-#: src/app.cpp:237
+#: src/app.cpp:239
 msgid ""
 "After saving, no button on this profile sends a left click. Save anyway?"
 msgstr ""
 "بعد الحفظ، لن يرسل أي زر في ملف التعريف هذا النقر الأيسر. هل تريد الحفظ على "
 "أي حال؟"
 
-#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/app.cpp:240 src/page_buttons.cpp:215 src/page_hits.cpp:159
 #: src/page_profiles.cpp:375 src/window.cpp:169
 msgid "Cancel"
 msgstr "إلغاء"
 
-#: src/app.cpp:238
+#: src/app.cpp:240
 msgid "Save anyway"
 msgstr "احفظ على أي حال"
 
-#: src/device.cpp:144
+#: src/device.cpp:145
 msgctxt "firmware part"
 msgid "Main"
 msgstr "الرئيسي"
 
-#: src/device.cpp:144
+#: src/device.cpp:145
 msgctxt "firmware part"
 msgid "Bootloader"
 msgstr "محمّل الإقلاع"
 
-#: src/device.cpp:144
+#: src/device.cpp:145
 msgctxt "firmware part"
 msgid "Hardware"
 msgstr "العتاد"
 
-#: src/device.cpp:145
+#: src/device.cpp:146
 msgctxt "firmware part"
 msgid "Touchpad"
 msgstr "لوحة اللمس"
 
-#: src/device.cpp:145
+#: src/device.cpp:146
 msgctxt "firmware part"
 msgid "Optical sensor"
 msgstr "المستشعر البصري"
 
-#: src/device.cpp:146
+#: src/device.cpp:147
 msgctxt "firmware part"
 msgid "Softdevice"
 msgstr "Softdevice"
 
-#: src/device.cpp:146
+#: src/device.cpp:147
 msgctxt "firmware part"
 msgid "Sub-module"
 msgstr "وحدة فرعية"
 
-#: src/device.cpp:147
+#: src/device.cpp:148
 msgctxt "firmware part"
 msgid "Module"
 msgstr "وحدة"
 
 #. TRANSLATORS: unknown firmware part, %d is its numeric type
-#: src/device.cpp:154
+#: src/device.cpp:155
 #, c-format
 msgid "Type %d"
 msgstr "النوع %d"
 
-#: src/device.cpp:170
+#: src/device.cpp:171
 msgid "discharging"
 msgstr "قيد التفريغ"
 
-#: src/device.cpp:171
+#: src/device.cpp:172
 msgid "charging"
 msgstr "قيد الشحن"
 
-#: src/device.cpp:172
+#: src/device.cpp:173
 msgid "charging (slow)"
 msgstr "قيد الشحن (بطيء)"
 
-#: src/device.cpp:173
+#: src/device.cpp:174
 msgid "full"
 msgstr "ممتلئة"
 
-#: src/device.cpp:174
+#: src/device.cpp:175
 msgid "charge error"
 msgstr "خطأ في الشحن"
 
 #. TRANSLATORS: unknown battery state, %s is its numeric code
-#: src/device.cpp:176
+#: src/device.cpp:177
 #, c-format
 msgid "state %s"
 msgstr "الحالة %s"
@@ -563,31 +563,31 @@ msgctxt "keyboard key"
 msgid "Alt (alone)"
 msgstr "‏Alt فقط"
 
-#: src/levelbars.cpp:77
+#: src/levelbars.cpp:86
 msgctxt "travel bar"
 msgid "Short click"
 msgstr "نقرة قصيرة"
 
-#: src/levelbars.cpp:78
+#: src/levelbars.cpp:87
 msgctxt "travel bar"
 msgid "Long click"
 msgstr "نقرة طويلة"
 
 #. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
 #. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
-#: src/levelbars.cpp:103
+#: src/levelbars.cpp:112
 #, c-format
 msgid "clicks at %d (≈%.1f mm)"
 msgstr "النقر عند %d ⁦(≈%.1f mm)⁩"
 
 #. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
-#: src/levelbars.cpp:119
+#: src/levelbars.cpp:128
 #, c-format
 msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
 msgstr "الزناد السريع: نقرة جديدة بعد رفع %d/5 — اسحب ◀▶"
 
 #. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
-#: src/levelbars.cpp:125
+#: src/levelbars.cpp:134
 msgid "rapid trigger off: re-clicks only after release past the click point"
 msgstr ""
 "الزناد السريع متوقف: لا تتكرر النقرة إلا بعد التحرير متجاوزًا نقطة النقر"
@@ -736,30 +736,35 @@ msgstr "الإجراء"
 msgid "BUTTONS"
 msgstr "الأزرار"
 
+#. TRANSLATORS: shown in the About dialog. Logitech is a trademark, keep the name as it is
+#: src/page_device.cpp:41
+msgid "Not affiliated with or endorsed by Logitech."
+msgstr "غير تابع لشركة Logitech وغير معتمد منها."
+
 #. TRANSLATORS: battery row. %d is the charge in percent
-#: src/page_device.cpp:59
+#: src/page_device.cpp:75
 #, c-format
 msgid "%d %%"
 msgstr "%d %%"
 
 #. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
-#: src/page_device.cpp:61
+#: src/page_device.cpp:77
 #, c-format
 msgid "%d %% · %s"
 msgstr "%d %% · %s"
 
-#: src/page_device.cpp:69
+#: src/page_device.cpp:85
 msgid "USB cable"
 msgstr "كابل USB"
 
 #. TRANSLATORS: %d is the receiver slot number (1 to 6)
-#: src/page_device.cpp:71
+#: src/page_device.cpp:87
 #, c-format
 msgid "LIGHTSPEED receiver slot %d"
 msgstr "فتحة مستقبِل LIGHTSPEED %d"
 
 #. TRANSLATORS: %d is the number of profile slots in the mouse
-#: src/page_device.cpp:77
+#: src/page_device.cpp:93
 #, c-format
 msgid "%d profile"
 msgid_plural "%d profiles"
@@ -771,13 +776,13 @@ msgstr[4] "‏%d ملف تعريف"
 msgstr[5] "‏%d ملف تعريف"
 
 #. TRANSLATORS: %d is the version number of the memory layout
-#: src/page_device.cpp:79
+#: src/page_device.cpp:95
 #, c-format
 msgid "format %d"
 msgstr "التنسيق %d"
 
 #. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
-#: src/page_device.cpp:81
+#: src/page_device.cpp:97
 #, c-format
 msgid "%d sector × %d bytes"
 msgid_plural "%d sectors × %d bytes"
@@ -789,13 +794,13 @@ msgstr[4] "‏%d قطاعًا × %d بايت"
 msgstr[5] "‏%d قطاع × %d بايت"
 
 #. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
-#: src/page_device.cpp:103
+#: src/page_device.cpp:119
 #, c-format
 msgid "index %d · v%d · flags 0x%s"
 msgstr "الفهرس %d · v%d · العلامات 0x%s"
 
 #. TRANSLATORS: %d is the number of HID++ features the mouse reports
-#: src/page_device.cpp:111
+#: src/page_device.cpp:127
 #, c-format
 msgid "%d feature"
 msgid_plural "%d features"
@@ -806,48 +811,54 @@ msgstr[3] "‏%d ميزات"
 msgstr[4] "‏%d ميزة"
 msgstr[5] "‏%d ميزة"
 
-#: src/page_device.cpp:118
+#: src/page_device.cpp:134
 msgid "Language"
 msgstr "اللغة"
 
-#: src/page_device.cpp:120
+#: src/page_device.cpp:136
 msgid "System default"
 msgstr "افتراضي النظام"
 
-#: src/page_device.cpp:154
+#: src/page_device.cpp:170
 msgctxt "device info"
 msgid "Name"
 msgstr "الاسم"
 
-#: src/page_device.cpp:155
+#: src/page_device.cpp:171
 msgid "Connection"
 msgstr "الاتصال"
 
-#: src/page_device.cpp:156
+#: src/page_device.cpp:172
 msgid "Battery"
 msgstr "البطارية"
 
-#: src/page_device.cpp:157
+#: src/page_device.cpp:173
 msgid "Firmware"
 msgstr "البرنامج الثابت"
 
-#: src/page_device.cpp:158
+#: src/page_device.cpp:174
 msgid "Onboard memory"
 msgstr "الذاكرة المدمجة"
 
-#: src/page_device.cpp:164
+#: src/page_device.cpp:180
 msgid "Mouse colour in the pictures"
 msgstr "لون الماوس في الصور"
 
-#: src/page_device.cpp:174
+#: src/page_device.cpp:190
 msgid "Feature table"
 msgstr "جدول الميزات"
 
-#: src/page_device.cpp:179
+#. TRANSLATORS: %s is the app name, SuperStrike Studio
+#: src/page_device.cpp:196
+#, c-format
+msgid "About %s"
+msgstr "حول %s"
+
+#: src/page_device.cpp:203
 msgid "LOOK"
 msgstr "المظهر"
 
-#: src/page_device.cpp:179
+#: src/page_device.cpp:203
 msgid "HID++ FEATURES"
 msgstr "ميزات HID++"
 

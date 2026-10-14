@@ -256,7 +256,7 @@ void window_build(App& app, GtkApplication* gapp) {
 
     GtkWidget* win = adw_application_window_new(gapp);
     app.window = GTK_WINDOW(win);
-    gtk_window_set_title(app.window, "SUPERSTRIKE Studio");
+    gtk_window_set_title(app.window, "SuperStrike Studio");
     gtk_window_set_icon_name(app.window, "io.github.superstrike.Studio");
     gtk_window_set_default_size(app.window, 1320, 860);
     g_signal_connect(win, "close-request", G_CALLBACK(on_close), &app);

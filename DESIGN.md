@@ -1,4 +1,4 @@
-# SUPERSTRIKE Studio — UI design spec (C++ / GTK 4 / libadwaita 1.10)
+# SuperStrike Studio — UI design spec (C++ / GTK 4 / libadwaita 1.10)
 
 Goal: G HUB parity in function, cleaner than G HUB in layout. Dark first (libadwaita prefers
 dark), one accent (#3b9cff). Everything aligns to an 8 px grid. No emoji in the UI.
@@ -138,7 +138,8 @@ Two columns, no outer scroll (fits 1280×800):
 
 Boxed lists: Name, Connection, Battery, Firmware (multi-line), Onboard memory; `LOOK` panel:
 mouse colour (`GtkColorDialogButton`, saves cfg.shell, calls reload); `HID++ FEATURES`
-expander with one row per feature.
+expander with one row per feature; an "About SuperStrike Studio" button row (AdwAboutDialog:
+version, website, issue link, MIT license).
 
 ## Behaviour rules
 
