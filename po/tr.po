@@ -1,0 +1,1671 @@
+# Turkish translation of SUPERSTRIKE Studio.
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 20:30+0300\n"
+"Last-Translator: none\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "Fare: %s"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "Fareden yüklendi"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "Önce bu profili kaydedin"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "Profil %d artık etkin"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "Farenin belleğine yazılıyor…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "Fareye kaydedildi — artık bu uygulama olmadan çalışıyor"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "Kaydedilemedi: %s. Yedekler: %s"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "Sol tık atanmış düğme yok"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr ""
+"Kaydettikten sonra bu profildeki hiçbir düğme sol tık göndermeyecek. Yine de "
+"kaydedilsin mi?"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "Yine de kaydet"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "Ana"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "Önyükleyici"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "Donanım"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "Dokunmatik yüzey"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "Optik sensör"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "SoftDevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "Alt modül"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "Modül"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "Tür %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "deşarj oluyor"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "şarj oluyor"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "şarj oluyor (yavaş)"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "dolu"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "şarj hatası"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "durum %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "SUPERSTRIKE yedek dosyası değil"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "Sol tık"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "Sağ tık"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "Orta tık"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "Geri"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "İleri"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "Düğme 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "Düğme 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "Düğme 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "Sonraki DPI"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "Önceki DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "DPI döngüsü"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "Varsayılan DPI"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "DPI Shift (basılı tut)"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "Sonraki profil"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "Önceki profil"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "Profil döngüsü"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "Pil durumu"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "Aşağı kaydır"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "Yukarı kaydır"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "Tekerleği sola yatır"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "Tekerleği sağa yatır"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "Oynat / Duraklat"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "Sonraki parça"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "Önceki parça"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "Durdur"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "Sessiz"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "Sesi artır"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "Sesi azalt"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "Parlaklığı artır"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "Parlaklığı azalt"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "Hesap makinesi"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "Tarayıcı: ana sayfa"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "Tarayıcı: geri"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "Tarayıcı: ileri"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "Tarayıcı: yenile"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "E-posta"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "Dosya yöneticisi"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "Sağ Ctrl"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "Sağ Shift"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "Alt Gr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "Sağ Super"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "Sol düğme"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "Sağ düğme"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "Orta düğme (tekerlek tıklaması)"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "Geri (arka yan)"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "İleri (ön yan)"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "Boşluk"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "Sağ ok"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "Sol ok"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "Aşağı ok"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "Yukarı ok"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "Menü"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "Num 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "Num 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "Num 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "Num 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "Num 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "Num 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "Num 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "Num 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "Num 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "Num 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "Num Enter"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "Ctrl (tek başına)"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "Shift (tek başına)"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "Alt (tek başına)"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "Kısa tık"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "Uzun tık"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "%d noktasında tık (≈%.1f mm)"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "Rapid Trigger: %d/5 kalkınca yeniden tık — sürükleyin ◀▶"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr ""
+"Rapid Trigger kapalı: yeniden tık ancak tık noktasının ötesinde bırakınca"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "Sol yan"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "Üst"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "Sol"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "Sağ"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "Orta"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "Geri"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "İleri"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "Fare"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "Klavye"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "Medya"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "İşlev"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "Devre dışı"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "Varsayılan"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "Fabrika eylemini kullanıyor: %s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "Kaydedilen: %s"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "Bir tuşa basın"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr "Tuşa basın; isterseniz Ctrl, Shift, Alt veya Super ile birlikte."
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "Fareyi döndür"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "Normal"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "DPI Shift katmanı"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "DPI Shift atanmış bir düğmeye basılı tutulurken geçerli"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr ""
+"Değiştirmek için fare üzerindeki bir düğmeye tıklayın. Döndürmek için yana "
+"sürükleyin."
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "Fare düğmesi"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "Medya tuşu"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "İşlev"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "Tuş"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "Tuş kaydet…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "Makro veya özel veri (olduğu gibi korunur)"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "Fabrika eylemini geri yükle"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "EYLEM"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "DÜĞMELER"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%%%d"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%%%d · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "USB kablo"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "LIGHTSPEED alıcı yuvası %d"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "%d profil"
+msgstr[1] "%d profil"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "format %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "%d sektör × %d bayt"
+msgstr[1] "%d sektör × %d bayt"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "dizin %d · v%d · bayraklar 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "%d özellik"
+msgstr[1] "%d özellik"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "Dil"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "Sistem varsayılanı"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "Ad"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "Bağlantı"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "Pil"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "Firmware"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "Dahili bellek"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "Resimlerdeki fare rengi"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "Özellik tablosu"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "GÖRÜNÜM"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "HID++ ÖZELLİKLERİ"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "kapalı"
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "Aktivasyon %s   Rapid Trigger %s   Haptik %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr "“%s” ön ayarı uygulandı. Kalıcı olması için “Fareye kaydet”e basın."
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "≈ %.1f mm"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "/ 5"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "HITS kodu kopyalandı: %s"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "HITS kodunu içe aktar"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr ""
+"G HUB’dan, bir pro oyuncudan veya bir arkadaşınızdan aldığınız HITS kodunu "
+"yapıştırın."
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "Uygula"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "Geçersiz HITS kodu"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "Geçersiz HITS kodu: %s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "HITS kodu"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "HITS ön ayarını kaydet"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "Mevcut sol ve sağ düğme ayarları için bir ad."
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "Ön ayarım"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "Kaydet"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "“%s” ön ayarı kaydedildi"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "HITS kodunu kopyala"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "HITS kodunu içe aktar…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "HITS kodu %s"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "Ön ayarı sil"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "5’e sıfırla"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr ""
+"Tıkın, basış mesafesinin neresinde tetiklendiği. Kısa = daha hızlı, uzun = "
+"daha az yanlış tık."
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "Rapid Trigger"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "En hassas"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "En az"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr ""
+"Tıktan sonra düğmeyi bu kadar kaldırmak onu yeniden hazırlar; böylece hızlı "
+"tekrarlı tıklar daha az mesafe gerektirir."
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "Kapalı"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "En güçlü"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr "Tık hissinin gücü. Yüksek seviyeler daha çok pil harcar."
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "Mevcut ayarı ön ayar olarak kaydet…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "PRO ÖN AYARLARI"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "ÖN AYARLARINIZ"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "HITS YAPILANDIRMASI"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "Sol"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "Sağ"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "Her ikisi"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "Sol ve sağ farklı — değişiklikler ikisine de uygulanır"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "Aktivasyon"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "Rapid"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "Haptik"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "Ön ayarlar"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr ""
+"Sol %d · Sağ %d · Orta %d · Geri %d · İleri %d · %d tık/sn · basılı %d ms"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "Burada deneyin — herhangi bir düğmeyle tıklayın"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "Dosya yazılamadı: %s"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "Dosya okunamadı: %s"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "Profil %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "Döngüde en az bir profil kalmalı"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "Önce %d. profili kaydedin"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "Fabrika profili yüklenmedi"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "Profil %d fabrika ayarlarına sıfırlandı. Yazmak için kaydedin"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "Profil %d, Profil %d içine kopyalandı. Kalıcı olması için kaydedin"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "Profili dışa aktar"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "%s konumuna aktarıldı"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "Profili içe aktar"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "Geçerli bir profil dosyası değil"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "Profil %d içine aktarıldı. Yazmak için kaydedin"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "Fabrika ayarlarına sıfırla"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "Dışa aktar…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "İçe aktar…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "Ayarları şuradan kopyala"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "Diğer eylemler"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "Etkin"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "Kaydedilmedi"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "Profil döngüsünde"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "Düzenle"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "Etkinleştir"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "Dahili bellek modu"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr "Ana bilgisayar modu: geri dönene kadar kayıtlı profiller yok sayılır"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "Kontrol modu değiştirilemedi: %s"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "Bellek yedeğini kaydet"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "Yedek kaydedildi: %s"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "Yedekleme başarısız: %s"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "Bellek yedeğini aç"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr ""
+"Bu işlem, farenin içindeki profillerin üzerine %s dosyasının içeriğini "
+"yazar. Mevcut bellek önce yedek klasörüne kaydedilir."
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "Bellek geri yüklensin mi?"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "Geri yükle"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "Geri yükleme başarısız: %s"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "Bellek geri yüklendi"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr ""
+"Profiller farenin içinde durur ve bu uygulama olmadan herhangi bir "
+"bilgisayarda çalışır."
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "KONTROL MODU"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "Fareyi kim kontrol ediyor"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "Dahili bellek (önerilen)"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "Ana bilgisayar yazılımı"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "YEDEK"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "Tüm belleği yedekle…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "Tüm profiller, dizin ve fabrika profili tek bir dosyaya"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "Yedekten geri yükle…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "Kaydedilmiş sektörleri fareye geri yazar"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr ""
+"Uygulama ayrıca her oturumdaki ilk kayıttan önce otomatik olarak tam bir "
+"yedek alır: %s."
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "kapalı"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr ""
+"Fare şu an %d. seviyeyi kullanıyor — yeni DPI değerlerini hissetmek için "
+"kaydedin (Ctrl+S)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "Fare şu an %d. seviyeyi kullanıyor"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "En az bir seviye açık kalmalı"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "Bunun yerine varsayılan olarak başka bir seviye seçin"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "Önce bu profili etkinleştirin (Profiller sayfası)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "%d. seviye artık etkin (yeni değerleri kullanmak için kaydedin)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "%d. seviye artık etkin"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "Yüzey modu ayarlandı"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "Açılışta kullanılır"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "AKTİF"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "DPI SEVİYELERİ"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"Fareyi hemen o seviyeye geçirmek için bir seviyeye tıklayın. Yeni DPI "
+"değerleri “Fareye kaydet” (Ctrl+S) sonrasında hissedilir — fare DPI değerini "
+"yalnızca kendi belleğinden alır. ★ = açılıştaki seviye."
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "Etkin"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "X / Y ayrı"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "Düşük"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "Orta"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "Yüksek"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "Kaldırma mesafesi"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "Açılışta varsayılan"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "Bu seviyeyi şimdi kullan"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "RAPOR HIZI"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "Kablosuz"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "Kablo"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr "Hz. Yüksek hızlar daha akıcı hissettirir ve daha çok pil harcar."
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "İZLEME"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "Açı düzeltme"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "Yataya ve düşeye yakın çizgileri düzeltir"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "Oto"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "Açık"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "Kapalı"
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "Oyun yüzeyi modu"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "Hemen uygulanır. Cihaz ayarıdır, profile özgü değil"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "Kaydırma filtresi (ms)"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "Bunny hop kaydırma filtresi, 0 = kapalı"
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "GÜÇ"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "Düşük güce geçme süresi (sn)"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "Uyku süresi (sn)"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "Fare maskesi 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "tuş 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "Medya 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "İşlev 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "Fabrika varsayılanı"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "Makro / özel (%s)"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "HITS kodu değil"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "HITS kodu değil (bilinmeyen sürüm veya uzunluk)"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "HITS kodu değeri aralık dışında"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "Fabrika varsayılanı"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "Hassas tetik"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "Hızlı FPS"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "Dengeli"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "Derin basış"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "Güçlü geri bildirim"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "Sessiz his"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "HITS ayarı"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "Düğmeler"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "Sensör"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "Profiller"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "Cihaz"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "Profil %d · %s"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "Bağlı değil"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "%s · Etkin"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "%s · etkin değil"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "Fare aranıyor…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "Bağlı · %%%d · şarj oluyor"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "Bağlı · %%%d"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "Bağlı · şarj oluyor"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "Bağlı"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "%d kaydedilmemiş değişiklik"
+msgstr[1] "%d kaydedilmemiş değişiklik"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr "Fareye kaydedene kadar yalnızca bir önizleme (Ctrl+S)."
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "Vazgeç"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "Fareye kaydet"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "Değişiklikleri farenin belleğine yaz (Ctrl+S)"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "%s  (etkin)"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "Düzenlediğiniz profil"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "DÜZENLENEN"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "Kaydedilmemiş değişiklikler"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "Kapatmadan önce fareye yazılsın mı?"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr "PRO X3 SUPERSTRIKE aranıyor — fareyi açın veya alıcıyı takın"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "Yeniden dene"

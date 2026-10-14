@@ -1,0 +1,1660 @@
+# Vietnamese translation of SUPERSTRIKE Studio.
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 20:30+0300\n"
+"Last-Translator: Claude <noreply@anthropic.com>\n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "Chuột: %s"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "Đã tải từ chuột"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "Hãy lưu hồ sơ này trước"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "Đã kích hoạt hồ sơ %d"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "Đang ghi vào bộ nhớ chuột…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "Đã lưu vào chuột — giờ chuột hoạt động mà không cần ứng dụng này"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "Lưu không thành công: %s. Bản sao lưu: %s"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "Không có nút nào làm nhấp chuột trái"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr ""
+"Sau khi lưu, không nút nào trong hồ sơ này gửi thao tác nhấp chuột trái. Vẫn "
+"lưu?"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "Hủy"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "Vẫn lưu"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "Chính"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "Bootloader"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "Phần cứng"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "Bàn di chuột"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "Cảm biến quang"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "Softdevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "Mô-đun con"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "Mô-đun"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "Loại %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "đang xả"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "đang sạc"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "đang sạc (chậm)"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "đã đầy"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "lỗi sạc"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "trạng thái %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "không phải tệp sao lưu SUPERSTRIKE"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "Nhấp chuột trái"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "Nhấp chuột phải"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "Nhấp chuột giữa"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "Quay lại"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "Tiến"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "Nút 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "Nút 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "Nút 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "DPI tiếp theo"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "DPI trước"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "Chuyển vòng DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "DPI mặc định"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "Dịch DPI (giữ)"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "Hồ sơ tiếp theo"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "Hồ sơ trước"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "Chuyển vòng hồ sơ"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "Tình trạng pin"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "Cuộn xuống"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "Cuộn lên"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "Nghiêng con lăn sang trái"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "Nghiêng con lăn sang phải"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "Phát/Tạm dừng"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "Bài tiếp theo"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "Bài trước"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "Dừng"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "Tắt tiếng"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "Tăng âm lượng"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "Giảm âm lượng"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "Tăng độ sáng"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "Giảm độ sáng"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "Máy tính"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "Trang chủ trình duyệt"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "Lùi trình duyệt"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "Tiến trình duyệt"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "Làm mới trình duyệt"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "Thư"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "Trình quản lý tệp"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "Ctrl phải"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "Shift phải"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "AltGr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "Super phải"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "Nút trái"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "Nút phải"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "Nút giữa (nhấn con lăn)"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "Quay lại (phía sau)"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "Tiến (phía trước)"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "Space"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "Mũi tên phải"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "Mũi tên trái"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "Mũi tên xuống"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "Mũi tên lên"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "Phím Menu"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "Phím số 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "Phím số 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "Phím số 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "Phím số 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "Phím số 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "Phím số 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "Phím số 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "Phím số 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "Phím số 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "Phím số 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "Enter (phím số)"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "Chỉ Ctrl"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "Chỉ Shift"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "Chỉ Alt"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "Hành trình ngắn"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "Hành trình dài"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "nhấp tại %d (≈%.1f mm)"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "Rapid trigger: nhả %d/5 là nhấp lại được — kéo ◀▶"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr "Rapid trigger tắt: chỉ nhấp lại sau khi nhả qua điểm nhấp"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "Cạnh trái"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "Mặt trên"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "Trái"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "Phải"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "Giữa"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "Lùi"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "Tiến"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "Chuột"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "Bàn phím"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "Media"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "Chức năng"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "Tắt"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "Mặc định"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "Dùng thao tác mặc định của nhà máy: %s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "Đã ghi: %s"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "Nhấn một phím"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr "Nhấn phím, có thể kèm theo Ctrl, Shift, Alt hoặc Super."
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "Xoay chuột"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "Thường"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "Lớp dịch DPI"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "Dùng khi đang giữ nút được đặt là dịch DPI"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr "Nhấp vào một nút trên chuột để thay đổi. Kéo ngang để xoay."
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "Nút chuột"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "Phím đa phương tiện"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "Chức năng"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "Phím"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "Ghi một phím…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "Macro hoặc dữ liệu tùy chỉnh (giữ nguyên)"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "Khôi phục thao tác mặc định"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "Hành động"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "Nút"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%d%%"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%d%% · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "Cáp USB"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "Đầu thu LIGHTSPEED, khe %d"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "%d hồ sơ"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "định dạng %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "%d sector × %d byte"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "chỉ mục %d · v%d · cờ 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "%d tính năng"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "Mặc định của hệ thống"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "Tên"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "Kết nối"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "Pin"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "Firmware"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "Bộ nhớ tích hợp"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "Màu chuột trong hình minh họa"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "Bảng tính năng"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "Giao diện"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "Tính năng HID++"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "tắt"
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "Điểm kích hoạt %s   Rapid trigger %s   Xúc giác %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr "Đã áp dụng preset “%s”. Nhấn Lưu vào chuột để giữ lại."
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "≈ %.1f mm"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "/ 5"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "Đã sao chép mã HITS: %s"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "Nhập mã HITS"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr "Dán mã HITS từ G HUB, tuyển thủ chuyên nghiệp hoặc bạn bè."
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "Áp dụng"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "Mã HITS không hợp lệ"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "Mã HITS không hợp lệ: %s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "Mã HITS"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "Lưu preset HITS"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "Tên cho cài đặt hiện tại của nút trái và phải."
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "Preset của tôi"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "Lưu"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "Đã lưu preset “%s”"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "Sao chép mã HITS"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "Nhập mã HITS…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "Mã HITS %s"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "Xóa preset"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "Đặt lại về 5"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr ""
+"Chọn vị trí trên hành trình nhấn để tính là một cú nhấp. Ngắn thì phản hồi "
+"nhanh hơn, dài thì ít nhấp nhầm hơn."
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "Rapid trigger"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "Nhạy nhất"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "Kém nhạy nhất"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr ""
+"Sau một cú nhấp, chỉ cần nhả nút lên đến mức này là nút sẵn sàng nhấp lại, "
+"nên nhấp liên tiếp nhanh cần ít hành trình hơn."
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "Tắt"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "Mạnh nhất"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr "Độ mạnh của cảm giác nhấp. Mức càng cao càng tốn pin."
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "Lưu cài đặt hiện tại thành preset…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "Preset của tuyển thủ pro"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "Preset của bạn"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "Cấu hình HITS"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "Trái"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "Phải"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "Cả hai (L+R)"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "L và R khác nhau — thay đổi sẽ áp dụng cho cả hai"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "Kích hoạt"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "Rapid"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "Xúc giác"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "Preset"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr ""
+"Trái %d · Phải %d · Giữa %d · Lùi %d · Tiến %d · %d lần/giây · giữ %d ms"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "Thử tại đây — nhấp bằng bất kỳ nút nào"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "Không thể ghi tệp: %s"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "Không thể đọc tệp: %s"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "Hồ sơ %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "Phải giữ ít nhất một hồ sơ trong vòng chuyển"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "Hãy lưu hồ sơ %d trước"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "Chưa tải hồ sơ mặc định của nhà máy"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "Đã đặt hồ sơ %d về mặc định. Hãy lưu để ghi vào chuột"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "Đã sao chép hồ sơ %d sang hồ sơ %d. Hãy lưu để giữ lại"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "Xuất hồ sơ"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "Đã xuất ra %s"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "Nhập hồ sơ"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "Tệp hồ sơ không hợp lệ"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "Đã nhập vào hồ sơ %d. Hãy lưu để ghi vào chuột"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "Đặt lại về mặc định"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "Xuất…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "Nhập…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "Sao chép cài đặt từ"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "Thao tác khác"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "Đang dùng"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "Chưa lưu"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "Trong vòng chuyển"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "Sửa"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "Kích hoạt"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "Chế độ bộ nhớ tích hợp"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr "Chế độ phần mềm: hồ sơ đã lưu bị bỏ qua cho đến khi bạn chuyển lại"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "Không thể đổi chế độ điều khiển: %s"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "Lưu bản sao lưu bộ nhớ"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "Đã lưu bản sao lưu: %s"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "Sao lưu không thành công: %s"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "Mở bản sao lưu bộ nhớ"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr ""
+"Thao tác này ghi đè các hồ sơ trong chuột bằng nội dung của %s. Bộ nhớ hiện "
+"tại sẽ được lưu vào thư mục sao lưu trước."
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "Khôi phục bộ nhớ?"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "Khôi phục"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "Khôi phục không thành công: %s"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "Đã khôi phục bộ nhớ"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr ""
+"Hồ sơ được lưu ngay trong chuột và hoạt động trên mọi máy tính mà không cần "
+"ứng dụng này."
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "Chế độ điều khiển"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "Ai điều khiển chuột"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "Bộ nhớ chuột (nên dùng)"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "Phần mềm trên máy tính"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "Sao lưu"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "Sao lưu toàn bộ bộ nhớ…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "Tất cả hồ sơ, thư mục và hồ sơ mặc định của nhà máy vào một tệp"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "Khôi phục từ bản sao lưu…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "Ghi các sector đã lưu trở lại chuột"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr ""
+"Ứng dụng cũng tự động sao lưu toàn bộ vào %s trước lần lưu đầu tiên của mỗi "
+"phiên làm việc."
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "tắt"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr "Chuột đang dùng mức %d — hãy lưu (Ctrl+S) để dùng các giá trị DPI mới"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "Chuột đang dùng mức %d"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "Phải bật ít nhất một mức"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "Hãy chọn mức khác làm mặc định"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "Hãy kích hoạt hồ sơ này trước (trang Hồ sơ)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "Đã chuyển sang mức %d (hãy lưu để dùng giá trị mới)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "Đã chuyển sang mức %d"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "Đã đặt chế độ bề mặt"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "Dùng sau khi bật nguồn"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "Đang dùng"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "Mức DPI"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"Nhấp vào một mức để chuyển chuột sang mức đó ngay. Giá trị DPI mới chỉ có "
+"tác dụng sau khi Lưu vào chuột (Ctrl+S), vì chuột chỉ lấy DPI từ bộ nhớ của "
+"nó. ★ = mức dùng sau khi bật nguồn."
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "Bật"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "Tách riêng X / Y"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "Thấp"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "Trung bình"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "Cao"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "Khoảng cách nhấc chuột"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "Mặc định sau khi bật nguồn"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "Dùng mức này ngay"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "Tốc độ báo cáo"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "Không dây"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "Có dây"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr "Đơn vị: Hz. Tốc độ càng cao càng mượt nhưng càng tốn pin."
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "Theo dõi"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "Làm thẳng đường (angle snapping)"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "Làm thẳng các đường gần ngang và gần dọc"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "Tự động"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "Bật"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "Tắt"
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "Chế độ bề mặt chơi game"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "Áp dụng ngay. Là cài đặt của thiết bị, không theo từng hồ sơ"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "Bộ lọc cuộn (ms)"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "Lọc cuộn khi bunny-hop, 0 = tắt"
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "Nguồn"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "Vào chế độ tiết kiệm điện sau (giây)"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "Ngủ sau (giây)"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "Mặt nạ chuột 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "Phím 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "Media 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "Chức năng 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "Mặc định của nhà máy"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "Macro / tùy chỉnh (%s)"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "không phải mã HITS"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "không phải mã HITS (phiên bản hoặc độ dài không xác định)"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "Giá trị mã HITS nằm ngoài phạm vi"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "Mặc định của nhà máy"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "Hair trigger"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "FPS nhanh"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "Cân bằng"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "Nhấn sâu"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "Phản hồi mạnh"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "Cảm giác êm"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "Tinh chỉnh HITS"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "Nút"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "Cảm biến"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "Hồ sơ"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "Thiết bị"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "Hồ sơ %d · %s"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "Chưa kết nối"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "%s · Đang dùng"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "%s · chưa dùng"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "Đang tìm chuột…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "Đã kết nối · %d%% · đang sạc"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "Đã kết nối · %d%%"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "Đã kết nối · đang sạc"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "Đã kết nối"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "%d thay đổi chưa lưu"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr "Đây chỉ là bản xem trước cho đến khi bạn lưu vào chuột (Ctrl+S)."
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "Bỏ"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "Lưu vào chuột"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "Ghi các thay đổi vào bộ nhớ chuột (Ctrl+S)"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "%s (đang dùng)"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "Hồ sơ bạn đang chỉnh sửa"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "Đang sửa"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "Thay đổi chưa lưu"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "Ghi vào chuột trước khi đóng?"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr "Đang tìm PRO X3 SUPERSTRIKE — hãy bật chuột hoặc cắm đầu thu"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "Thử lại"

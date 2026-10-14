@@ -1,0 +1,1673 @@
+# Portuguese translations for SUPERSTRIKE package.
+# Copyright (C) 2026 THE SUPERSTRIKE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 19:56+0300\n"
+"Last-Translator: SUPERSTRIKE Studio translators\n"
+"Language-Team: pt_BR\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "Mouse: %s"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "Carregado do mouse"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "Salve este perfil primeiro"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "O perfil %d está ativo"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "Gravando na memória do mouse…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "Salvo no mouse: já funciona sem este aplicativo"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "Falha ao salvar: %s. Backups: %s"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "Nenhum botão faz clique esquerdo"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr ""
+"Depois de salvar, nenhum botão deste perfil enviará clique esquerdo. Salvar "
+"mesmo assim?"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "Salvar mesmo assim"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "Principal"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "Bootloader"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "Hardware"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "Sensor óptico"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "Softdevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "Submódulo"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "Módulo"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "Tipo %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "descarregando"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "carregando"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "carregando (lento)"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "completa"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "erro de carga"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "estado %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "não é um arquivo de backup do SUPERSTRIKE"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "Clique esquerdo"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "Clique direito"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "Clique do meio"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "Voltar"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "Avançar"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "Botão 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "Botão 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "Botão 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "Próximo DPI"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "DPI anterior"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "Alternar DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "DPI padrão"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "DPI Shift (segurar)"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "Próximo perfil"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "Perfil anterior"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "Alternar perfil"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "Status da bateria"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "Rolar para baixo"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "Rolar para cima"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "Inclinar para a esquerda"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "Inclinar para a direita"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "Reproduzir / Pausar"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "Próxima faixa"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "Faixa anterior"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "Parar"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "Silenciar"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "Aumentar volume"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "Diminuir volume"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "Aumentar brilho"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "Diminuir brilho"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "Calculadora"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "Página inicial do navegador"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "Voltar no navegador"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "Avançar no navegador"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "Atualizar navegador"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "E-mail"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "Gerenciador de arquivos"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "Ctrl direito"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "Shift direito"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "AltGr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "Super direito"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "Botão esquerdo"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "Botão direito"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "Botão do meio (clique da roda)"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "Voltar (lado traseiro)"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "Avançar (lado dianteiro)"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "Espaço"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "Seta direita"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "Seta esquerda"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "Seta para baixo"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "Seta para cima"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "Menu"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "Num 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "Num 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "Num 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "Num 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "Num 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "Num 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "Num 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "Num 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "Num 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "Num 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "Num Enter"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "Ctrl (sozinho)"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "Shift (sozinho)"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "Alt (sozinho)"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "Clique curto"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "Clique longo"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "clique em %d (≈%.1f mm)"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "Rapid Trigger: novo clique ao soltar %d/5 — arraste ◀▶"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr ""
+"Rapid Trigger desativado: novo clique só ao soltar além do ponto de clique"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "Lado esq."
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "Topo"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "Esquerdo"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "Direito"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "Meio"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "Voltar"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "Avançar"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "Mouse"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "Mídia"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "Função"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "Desativado"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "Padrão"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "Usa a ação de fábrica: %s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "Gravado: %s"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "Pressione uma tecla"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr "Pressione a tecla, com Ctrl, Shift, Alt ou Super se quiser."
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "Girar o mouse"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "Normal"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "Camada DPI Shift"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "Usada enquanto um botão configurado como DPI Shift está pressionado"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr ""
+"Clique em um botão do mouse para alterá-lo. Arraste para os lados para girar."
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "Botão do mouse"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "Tecla de mídia"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "Função"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "Tecla"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "Gravar uma tecla…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "Macro ou dados personalizados (mantidos como estão)"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "Restaurar ação de fábrica"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "AÇÃO"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "BOTÕES"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%d %%"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%d %% · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "Cabo USB"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "Slot %d do receptor LIGHTSPEED"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "%d perfil"
+msgstr[1] "%d perfis"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "formato %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "%d setor × %d bytes"
+msgstr[1] "%d setores × %d bytes"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "índice %d · v%d · flags 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "%d recurso"
+msgstr[1] "%d recursos"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "Idioma"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "Padrão do sistema"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "Nome"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "Conexão"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "Bateria"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "Firmware"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "Memória integrada"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "Cor do mouse nas imagens"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "Tabela de recursos"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "APARÊNCIA"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "RECURSOS HID++"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "desl."
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "Atuação %s   Rapid Trigger %s   Háptico %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr "Preset “%s” aplicado. Clique em Salvar no mouse para mantê-lo."
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "≈ %.1f mm"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "de 5"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "Código HITS copiado: %s"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "Importar código HITS"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr ""
+"Cole um código HITS do G HUB, de um jogador profissional ou de um amigo."
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "Aplicar"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "Código HITS inválido"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "Código HITS inválido: %s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "Código HITS"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "Salvar preset HITS"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "Nome para os ajustes atuais dos botões esquerdo e direito."
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "Meu preset"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "Salvar"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "Preset “%s” salvo"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "Copiar código HITS"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "Importar código HITS…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "Código HITS %s"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "Excluir preset"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "Redefinir para 5"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr ""
+"Em que ponto do curso o clique é disparado. Curto = mais rápido, longo = "
+"menos cliques acidentais."
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "Rapid Trigger"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "Mais sensível"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "Menos"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr ""
+"Depois de um clique, soltar o botão por essa distância o rearma, então "
+"cliques rápidos e repetidos precisam de menos curso."
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "Desligado"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "Máximo"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr ""
+"Intensidade da sensação do clique. Níveis mais altos gastam mais bateria."
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "Salvar atual como preset…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "PRESETS PRO"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "SEUS PRESETS"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "CONFIGURAÇÃO HITS"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "Esquerdo"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "Direito"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "Ambos (E+D)"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "E e D diferem — as alterações valem para ambos"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "Atuação"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "Rapid"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "Háptico"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "Presets"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr ""
+"E %d · D %d · M %d · Voltar %d · Av. %d · %d cliques/s · pressionado %d ms"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "Teste aqui — clique com qualquer botão"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "Não foi possível gravar o arquivo: %s"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "Não foi possível ler o arquivo: %s"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "Perfil %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "Pelo menos um perfil deve ficar no ciclo"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "Salve o perfil %d primeiro"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "Perfil de fábrica não carregado"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "Perfil %d redefinido para o padrão de fábrica. Salve para gravar"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "Perfil %d copiado para o perfil %d. Salve para manter"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "Exportar perfil"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "Exportado para %s"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "Importar perfil"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "Arquivo de perfil inválido"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "Importado no perfil %d. Salve para gravar"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "Redefinir para o padrão de fábrica"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "Exportar…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "Importar…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "Copiar ajustes de"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "Mais ações"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "Ativo"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "Não salvo"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "No ciclo de perfis"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "Editar"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "Ativar"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "Modo de memória integrada"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr "Modo host: os perfis salvos são ignorados até você voltar"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "Não foi possível alterar o modo de controle: %s"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "Salvar backup da memória"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "Backup salvo: %s"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "Falha no backup: %s"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "Abrir backup da memória"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr ""
+"Isso sobrescreve os perfis do mouse com o conteúdo de %s. A memória atual é "
+"salva antes na pasta de backups."
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "Restaurar a memória?"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "Restaurar"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "Falha ao restaurar: %s"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "Memória restaurada"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr ""
+"Os perfis ficam dentro do mouse e funcionam em qualquer computador sem este "
+"aplicativo."
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "MODO DE CONTROLE"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "Quem controla o mouse"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "Memória integrada (recomendado)"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "Software do host"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "BACKUP"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "Fazer backup de toda a memória…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "Todos os perfis, o diretório e o perfil de fábrica, em um arquivo"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "Restaurar de um backup…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "Grava de volta no mouse os setores salvos"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr ""
+"O aplicativo também faz um backup completo automaticamente antes do primeiro "
+"salvamento de cada sessão, em %s."
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "desl."
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr ""
+"O mouse agora usa o nível %d — salve (Ctrl+S) para sentir seus novos valores "
+"de DPI"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "O mouse agora usa o nível %d"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "Pelo menos um nível deve ficar ativado"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "Escolha outro nível como padrão"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "Ative este perfil primeiro (página Perfis)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "O nível %d está ativo (salve para usar os novos valores)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "O nível %d está ativo"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "Modo de superfície definido"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "Usado após ligar"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "EM USO"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "NÍVEIS DE DPI"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"Clique em um nível para mudar o mouse para ele agora. Os novos valores de "
+"DPI só são sentidos depois de Salvar no mouse (Ctrl+S) — o mouse lê o DPI "
+"apenas da memória. ★ = nível ao ligar."
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "Ativado"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "X / Y separados"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "Baixa"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "Média"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "Alta"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "Distância de elevação"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "Padrão ao ligar"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "Usar este nível agora"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "TAXA DE POLLING"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "Sem fio"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "Cabo"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr ""
+"Hz. Taxas maiores deixam o movimento mais fluido e gastam mais bateria."
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "RASTREAMENTO"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "Ajuste de ângulo"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "Endireita linhas quase horizontais e verticais"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "Auto"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "Ligado"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "Desligado"
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "Modo de superfície para jogos"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "Aplicado na hora. Ajuste do dispositivo, não do perfil"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "Filtro de rolagem (ms)"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "Filtro de rolagem para bunny hop, 0 = desligado"
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "ENERGIA"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "Baixo consumo após (s)"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "Suspender após (s)"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "Máscara do mouse 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "tecla 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "Mídia 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "Função 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "Padrão de fábrica"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "Macro / personalizado (%s)"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "não é um código HITS"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "não é um código HITS (versão ou tamanho desconhecido)"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "valor do código HITS fora do intervalo"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "Padrão de fábrica"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "Hair trigger"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "FPS rápido"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "Equilibrado"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "Pressão profunda"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "Feedback forte"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "Toque silencioso"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "Ajuste HITS"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "Botões"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "Sensor"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "Perfis"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "Dispositivo"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "Perfil %d · %s"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "Não conectado"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "%s · Ativo"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "%s · inativo"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "Procurando o mouse…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "Conectado · %d %% · carregando"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "Conectado · %d %%"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "Conectado · carregando"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "Conectado"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "%d alteração não salva"
+msgstr[1] "%d alterações não salvas"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr "Apenas uma prévia até você salvar no mouse (Ctrl+S)."
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "Descartar"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "Salvar no mouse"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "Grava as alterações na memória do mouse (Ctrl+S)"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "%s  (ativo)"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "O perfil que você está editando"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "EDITANDO"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "Alterações não salvas"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "Gravar no mouse antes de fechar?"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr "Procurando o PRO X3 SUPERSTRIKE — ligue o mouse ou conecte o receptor"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "Tentar novamente"

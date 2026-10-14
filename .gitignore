@@ -1,0 +1,23 @@
+# build output
+/build/
+/dist/
+*.o
+*.obj
+*.exe
+*.dll
+
+# generated at build time (msgfmt from po/*.po)
+/assets/locale/
+
+# editor / OS clutter
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# never commit mouse memory backups or local configs
+*backup*.json
+auto-*.json
+studio.ini

@@ -1,0 +1,1679 @@
+# Ukrainian translation of SUPERSTRIKE Studio.
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 20:30+0300\n"
+"Last-Translator: none\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "Миша: %s"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "Завантажено з миші"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "Спершу збережіть цей профіль"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "Профіль %d тепер активний"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "Запис у пам’ять миші…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "Збережено в миші — тепер вона працює без цього застосунку"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "Не вдалося зберегти: %s. Резервні копії: %s"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "Немає кнопки для лівого кліку"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr ""
+"Після збереження жодна кнопка цього профілю не надсилатиме лівий клік. Усе "
+"одно зберегти?"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "Усе одно зберегти"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "Основна"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "Завантажувач"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "Апаратна частина"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "Сенсорна панель"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "Оптичний сенсор"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "SoftDevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "Підмодуль"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "Модуль"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "Тип %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "розряджається"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "заряджається"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "заряджається (повільно)"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "заряджено"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "помилка заряджання"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "стан %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "це не файл резервної копії SUPERSTRIKE"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "Лівий клік"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "Правий клік"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "Середній клік"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "Назад"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "Вперед"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "Кнопка 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "Кнопка 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "Кнопка 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "Наступний DPI"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "Попередній DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "Цикл DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "DPI за замовчуванням"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "DPI Shift (утримувати)"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "Наступний профіль"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "Попередній профіль"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "Цикл профілів"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "Заряд батареї"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "Прокручування вниз"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "Прокручування вгору"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "Нахил колеса вліво"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "Нахил колеса вправо"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "Відтворення / пауза"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "Наступна доріжка"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "Попередня доріжка"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "Стоп"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "Вимкнути звук"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "Збільшити гучність"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "Зменшити гучність"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "Збільшити яскравість"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "Зменшити яскравість"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "Калькулятор"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "Браузер: домашня сторінка"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "Браузер: назад"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "Браузер: вперед"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "Браузер: оновити"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "Пошта"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "Файловий менеджер"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "Правий Ctrl"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "Правий Shift"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "AltGr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "Правий Super"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "Ліва кнопка"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "Права кнопка"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "Середня кнопка (натискання колеса)"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "Назад (задня бічна)"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "Вперед (передня бічна)"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "Пробіл"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "Стрілка праворуч"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "Стрілка ліворуч"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "Стрілка вниз"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "Стрілка вгору"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "Меню"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "Num 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "Num 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "Num 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "Num 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "Num 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "Num 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "Num 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "Num 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "Num 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "Num 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "Num Enter"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "Ctrl (окремо)"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "Shift (окремо)"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "Alt (окремо)"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "Короткий клік"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "Довгий клік"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "клік на %d (≈%.1f mm)"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "Rapid Trigger: повторний клік після підняття на %d/5 — тягніть ◀▶"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr ""
+"Rapid Trigger вимк.: повторний клік лише після повернення вище точки кліку"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "Зліва"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "Згори"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "Ліва"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "Права"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "Середня"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "Назад"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "Вперед"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "Миша"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "Клавіатура"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "Медіа"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "Функція"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "Типова"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "Використовується заводська дія: %s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "Записано: %s"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "Натисніть клавішу"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr "Натисніть клавішу — за потреби разом із Ctrl, Shift, Alt або Super."
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "Повернути мишу"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "Звичайний"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "Шар DPI Shift"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "Діє, поки утримується кнопка з функцією DPI Shift"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr ""
+"Клацніть кнопку на миші, щоб змінити її. Перетягніть убік, щоб повернути "
+"мишу."
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "Кнопка миші"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "Медіаклавіша"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "Функція"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "Клавіша"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "Записати клавішу…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "Макрос або нетипові дані (залишаються без змін)"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "Повернути заводську дію"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "ДІЯ"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "КНОПКИ"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%d %%"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%d %% · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "USB-кабель"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "Приймач LIGHTSPEED, слот %d"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "%d профіль"
+msgstr[1] "%d профілі"
+msgstr[2] "%d профілів"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "формат %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "%d сектор × %d байтів"
+msgstr[1] "%d сектори × %d байтів"
+msgstr[2] "%d секторів × %d байтів"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "індекс %d · v%d · прапорці 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "%d функція"
+msgstr[1] "%d функції"
+msgstr[2] "%d функцій"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "Мова"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "Системна"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "Назва"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "З’єднання"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "Батарея"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "Прошивка"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "Вбудована пам’ять"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "Колір миші на зображеннях"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "Таблиця функцій"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "ВИГЛЯД"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "ФУНКЦІЇ HID++"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "вимк."
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "Спрацювання %s   Rapid Trigger %s   Відгук %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr ""
+"Пресет «%s» застосовано. Натисніть «Зберегти в мишу», щоб закріпити його."
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "≈ %.1f mm"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "із 5"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "Код HITS скопійовано: %s"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "Імпорт коду HITS"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr "Вставте код HITS із G HUB, від кіберспортсмена чи друга."
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "Застосувати"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "Недійсний код HITS"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "Недійсний код HITS: %s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "Код HITS"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "Зберегти пресет HITS"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "Назва для поточних налаштувань лівої та правої кнопок."
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "Мій пресет"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "Зберегти"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "Пресет «%s» збережено"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "Копіювати код HITS"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "Імпортувати код HITS…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "Код HITS: %s"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "Видалити пресет"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "Скинути до 5"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr ""
+"У якій точці натискання спрацьовує клік. Ближче — швидше, глибше — менше "
+"випадкових кліків."
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "Rapid Trigger"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "Максимум"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "Мінімум"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr ""
+"Після кліку достатньо трохи підняти кнопку, щоб вона знову спрацювала, тож "
+"для частих кліків потрібен менший хід."
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "Вимк."
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "Максимум"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr ""
+"Сила тактильного відгуку під час кліку. Чим вищий рівень, тим швидше "
+"розряджається батарея."
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "Зберегти поточні налаштування як пресет…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "ПРЕСЕТИ ПРОФІ"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "ВАШІ ПРЕСЕТИ"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "КОНФІГУРАЦІЯ HITS"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "Ліва"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "Права"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "Обидві (Л+П)"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "Л і П відрізняються — зміни застосуються до обох"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "Поріг"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "Rapid"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "Відгук"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "Пресети"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr "Л %d · П %d · С %d · Назад %d · Вперед %d · %d кл/с · утримання %d ms"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "Перевірте тут — клікайте будь-якою кнопкою"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "Не вдалося записати файл: %s"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "Не вдалося прочитати файл: %s"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "Профіль %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "У циклі має лишитися хоча б один профіль"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "Спершу збережіть профіль %d"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "Заводський профіль не завантажено"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "Профіль %d скинуто до заводського. Збережіть, щоб записати"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "Профіль %d скопійовано в профіль %d. Збережіть, щоб залишити"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "Експорт профілю"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "Експортовано до %s"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "Імпорт профілю"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "Недійсний файл профілю"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "Імпортовано в профіль %d. Збережіть, щоб записати"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "Скинути до заводського"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "Експорт…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "Імпорт…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "Копіювати налаштування з"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "Інші дії"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "Активний"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "Не збережено"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "У циклі профілів"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "Змінити"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "Активувати"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "Режим вбудованої пам’яті"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr ""
+"Режим хоста: збережені профілі ігноруються, доки ви не перемкнетеся назад"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "Не вдалося змінити режим керування: %s"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "Зберегти копію пам’яті"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "Копію збережено: %s"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "Не вдалося створити копію: %s"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "Відкрити копію пам’яті"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr ""
+"Профілі в миші буде перезаписано вмістом файлу %s. Поточну пам’ять спершу "
+"буде збережено до теки резервних копій."
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "Відновити пам’ять?"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "Відновити"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "Не вдалося відновити: %s"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "Пам’ять відновлено"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr ""
+"Профілі зберігаються в самій миші й працюють на будь-якому комп’ютері без "
+"цього застосунку."
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "РЕЖИМ КЕРУВАННЯ"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "Хто керує мишею"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "Пам’ять миші (краще)"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "Програма на комп’ютері"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "РЕЗЕРВНА КОПІЯ"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "Копія всієї пам’яті…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "Усі профілі, каталог і заводський профіль — у файл"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "Відновити з копії…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "Записує збережені сектори назад у мишу"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr ""
+"Застосунок також автоматично робить повну резервну копію перед першим "
+"збереженням за сеанс — у %s."
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "вимк."
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr ""
+"Миша тепер використовує рівень %d — збережіть (Ctrl+S), щоб відчути нові "
+"значення DPI"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "Миша тепер використовує рівень %d"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "Принаймні один рівень має лишатися ввімкненим"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "Натомість виберіть інший рівень за замовчуванням"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "Спершу активуйте цей профіль (сторінка «Профілі»)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "Рівень %d тепер активний (збережіть, щоб застосувати нові значення)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "Рівень %d тепер активний"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "Режим поверхні задано"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "Використовується після ввімкнення"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "АКТИВНИЙ"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "РІВНІ DPI"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"Клацніть рівень, щоб одразу перемкнути на нього мишу. Нові значення DPI "
+"почнуть діяти після «Зберегти в мишу» (Ctrl+S) — миша бере DPI лише зі своєї "
+"пам’яті. ★ = рівень після ввімкнення."
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "Ввімкнено"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "Окремо X / Y"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "Низька"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "Середня"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "Висока"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "Відстань відриву"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "За замовчуванням після ввімкнення"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "Використати цей рівень зараз"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "ЧАСТОТА ОПИТУВАННЯ"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "Бездротово"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "Кабелем"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr ""
+"Hz. Що вища частота, то плавніший курсор і то швидше розряджається батарея."
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "ВІДСТЕЖЕННЯ"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "Вирівнювання траєкторії"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "Випрямляє майже горизонтальні та вертикальні лінії"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "Авто"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "Увімк."
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "Вимк."
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "Режим ігрової поверхні"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "Застосовується одразу. Налаштування пристрою, а не профілю"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "Фільтр прокручування (ms)"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "Фільтр прокручування для банніхопу, 0 = вимк."
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "ЖИВЛЕННЯ"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "Енергозбереження через (с)"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "Сон через (с)"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "Маска миші 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "клавіша 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "Медіа 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "Функція 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "Заводське значення"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "Макрос / нетипове (%s)"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "не код HITS"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "не код HITS (невідома версія або довжина)"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "значення коду HITS поза припустимим діапазоном"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "Заводські"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "Чутливий спуск"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "Швидкий FPS"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "Збалансований"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "Глибоке натискання"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "Сильний відгук"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "Тихий відгук"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "Налаштування HITS"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "Сенсор"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "Профілі"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "Пристрій"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "Профіль %d · %s"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "Не під’єднано"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "%s · активний"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "%s · неактивний"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "Пошук миші…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "Під’єднано · %d %% · заряджається"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "Під’єднано · %d %%"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "Під’єднано · заряджається"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "Під’єднано"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "%d незбережена зміна"
+msgstr[1] "%d незбережені зміни"
+msgstr[2] "%d незбережених змін"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr ""
+"Це лише попередній перегляд, доки ви не збережете зміни в мишу (Ctrl+S)."
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "Відкинути"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "Зберегти в мишу"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "Записати зміни в пам’ять миші (Ctrl+S)"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "%s  (активний)"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "Профіль, який ви редагуєте"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "РЕДАГУВАННЯ"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "Незбережені зміни"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "Записати їх у мишу перед закриттям?"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr "Пошук PRO X3 SUPERSTRIKE — увімкніть мишу або під’єднайте приймач"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "Повторити"

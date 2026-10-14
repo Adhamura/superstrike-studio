@@ -1,0 +1,1660 @@
+# Korean translation of SUPERSTRIKE Studio.
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 20:30+0300\n"
+"Last-Translator: Claude <noreply@anthropic.com>\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "마우스: %s"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "마우스에서 불러왔습니다"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "먼저 이 프로필을 저장하세요"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "프로필 %d번이 활성화되었습니다"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "마우스 메모리에 기록하는 중…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "마우스에 저장했습니다. 이제 이 앱 없이도 작동합니다"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "저장하지 못했습니다: %s. 백업: %s"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "왼쪽 클릭 버튼이 없습니다"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr ""
+"저장하면 이 프로필에는 왼쪽 클릭을 보내는 버튼이 없게 됩니다. 그래도 저장하시"
+"겠습니까?"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "취소"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "그래도 저장"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "메인"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "부트로더"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "하드웨어"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "터치패드"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "광학 센서"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "Softdevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "하위 모듈"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "모듈"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "유형 %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "방전 중"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "충전 중"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "충전 중(느림)"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "완충"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "충전 오류"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "상태 %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "SUPERSTRIKE 백업 파일이 아닙니다"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "왼쪽 클릭"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "오른쪽 클릭"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "가운데 클릭"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "뒤로"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "앞으로"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "버튼 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "버튼 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "버튼 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "다음 DPI"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "이전 DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "DPI 순환"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "기본 DPI"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "DPI 시프트(누르는 동안)"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "다음 프로필"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "이전 프로필"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "프로필 순환"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "배터리 상태"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "아래로 스크롤"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "위로 스크롤"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "휠 왼쪽 틸트"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "휠 오른쪽 틸트"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "재생/일시 정지"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "다음 곡"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "이전 곡"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "정지"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "음소거"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "볼륨 높이기"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "볼륨 낮추기"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "밝기 높이기"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "밝기 낮추기"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "계산기"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "브라우저 홈"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "브라우저 뒤로"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "브라우저 앞으로"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "브라우저 새로 고침"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "메일"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "파일 관리자"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "오른쪽 Ctrl"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "오른쪽 Shift"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "AltGr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "오른쪽 Super"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "왼쪽 버튼"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "오른쪽 버튼"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "가운데 버튼(휠 클릭)"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "뒤로(뒤쪽)"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "앞으로(앞쪽)"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "스페이스"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "오른쪽 화살표"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "왼쪽 화살표"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "아래쪽 화살표"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "위쪽 화살표"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "메뉴 키"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "숫자패드 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "숫자패드 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "숫자패드 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "숫자패드 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "숫자패드 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "숫자패드 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "숫자패드 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "숫자패드 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "숫자패드 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "숫자패드 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "숫자패드 Enter"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "Ctrl 단독"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "Shift 단독"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "Alt 단독"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "얕게"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "깊게"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "%d에서 클릭 (≈%.1f mm)"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "래피드 트리거: %d/5만큼 떼면 다시 클릭 — ◀▶ 드래그"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr "래피드 트리거 꺼짐: 클릭 지점을 지나 뗀 뒤에야 다시 클릭됩니다"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "왼쪽 측면"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "상단"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "왼쪽"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "오른쪽"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "가운데"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "뒤로"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "앞으로"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "마우스"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "키보드"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "미디어"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "기능"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "사용 안 함"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "기본"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "출고 시 동작을 사용합니다: %s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "기록됨: %s"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "키를 누르세요"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr ""
+"키를 누르세요. 필요하면 Ctrl, Shift, Alt, Super를 함께 누를 수 있습니다."
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "마우스 회전"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "일반"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "DPI 시프트 레이어"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "DPI 시프트로 설정한 버튼을 누르고 있는 동안 사용됩니다"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr "마우스에서 버튼을 클릭해 변경하세요. 좌우로 드래그하면 회전합니다."
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "마우스 버튼"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "미디어 키"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "기능"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "키"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "키 기록…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "매크로 또는 사용자 지정 데이터(그대로 유지)"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "출고 시 동작으로 복원"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "동작"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "버튼"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%d%%"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%d%% · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "USB 케이블"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "LIGHTSPEED 수신기 슬롯 %d"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "프로필 %d개"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "형식 %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "%d개 섹터 × %d바이트"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "인덱스 %d · v%d · 플래그 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "기능 %d개"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "언어"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "시스템 기본값"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "이름"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "연결"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "배터리"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "펌웨어"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "온보드 메모리"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "그림 속 마우스 색상"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "기능 테이블"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "외관"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "HID++ 기능"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "꺼짐"
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "액추에이션 %s   래피드 트리거 %s   햅틱 %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr "프리셋을 적용했습니다: “%s”. 유지하려면 ‘마우스에 저장’을 누르세요."
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "≈ %.1f mm"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "/ 5"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "HITS 코드를 복사했습니다: %s"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "HITS 코드 가져오기"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr "G HUB, 프로 선수 또는 친구에게서 받은 HITS 코드를 붙여넣으세요."
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "적용"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "올바르지 않은 HITS 코드"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "올바르지 않은 HITS 코드: %s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "HITS 코드"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "HITS 프리셋 저장"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "현재 왼쪽·오른쪽 버튼 설정의 이름입니다."
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "내 프리셋"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "저장"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "프리셋을 저장했습니다: “%s”"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "HITS 코드 복사"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "HITS 코드 가져오기…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "HITS 코드 %s"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "프리셋 삭제"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "5로 재설정"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr ""
+"누르는 동안 어느 지점에서 클릭이 입력될지 정합니다. 짧을수록 빠르고, 길수록 "
+"오클릭이 줄어듭니다."
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "래피드 트리거"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "가장 민감"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "가장 둔감"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr ""
+"클릭한 뒤 버튼을 이만큼만 떼면 다시 입력 대기 상태가 되므로, 빠른 연타에 필요"
+"한 이동 거리가 줄어듭니다."
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "꺼짐"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "가장 강함"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr "클릭 느낌의 세기입니다. 레벨이 높을수록 배터리를 더 많이 사용합니다."
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "현재 설정을 프리셋으로 저장…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "프로 선수 프리셋"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "내 프리셋"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "HITS 설정"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "왼쪽"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "오른쪽"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "둘 다 (L+R)"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "L과 R이 서로 다릅니다. 변경 사항이 둘 모두에 적용됩니다"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "액추에이션"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "래피드"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "햅틱"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "프리셋"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr ""
+"왼 %d · 오른 %d · 가운데 %d · 뒤로 %d · 앞으로 %d · 초당 %d회 · 누름 %d ms"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "여기서 테스트 — 아무 버튼이나 클릭하세요"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "파일을 쓸 수 없습니다: %s"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "파일을 읽을 수 없습니다: %s"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "프로필 %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "순환에는 프로필이 최소 하나 있어야 합니다"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "먼저 프로필 %d번을 저장하세요"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "출고 시 프로필을 불러오지 못했습니다"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "프로필 %d번을 출고 상태로 되돌렸습니다. 저장해야 기록됩니다"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "프로필 %d번을 프로필 %d번에 복사했습니다. 저장해야 유지됩니다"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "프로필 내보내기"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "내보냈습니다: %s"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "프로필 가져오기"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "올바른 프로필 파일이 아닙니다"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "프로필 %d번으로 가져왔습니다. 저장해야 기록됩니다"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "출고 상태로 되돌리기"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "내보내기…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "가져오기…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "설정 복사 원본"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "추가 작업"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "사용 중"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "저장 안 됨"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "순환에 포함"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "편집"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "활성화"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "온보드 메모리 모드"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr "호스트 모드: 다시 전환하기 전까지 저장된 프로필은 무시됩니다"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "제어 모드를 바꿀 수 없습니다: %s"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "메모리 백업 저장"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "백업을 저장했습니다: %s"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "백업하지 못했습니다: %s"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "메모리 백업 열기"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr ""
+"마우스의 프로필을 %s의 내용으로 덮어씁니다. 현재 메모리는 먼저 백업 폴더에 저"
+"장됩니다."
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "메모리를 복원하시겠습니까?"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "복원"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "복원하지 못했습니다: %s"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "메모리를 복원했습니다"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr ""
+"프로필은 마우스 안에 저장되어, 이 앱 없이도 어떤 컴퓨터에서나 작동합니다."
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "제어 모드"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "마우스 제어 주체"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "온보드 메모리(권장)"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "호스트 소프트웨어"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "백업"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "메모리 전체 백업…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "모든 프로필, 디렉터리, 출고 시 프로필을 파일 하나로 저장"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "백업에서 복원…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "저장된 섹터를 마우스에 다시 기록합니다"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr ""
+"이 앱은 매 세션에서 처음 저장하기 전에 %s에 전체 백업도 자동으로 만듭니다."
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "꺼짐"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr "마우스 현재 단계: %d. 새 DPI 값을 적용하려면 저장하세요(Ctrl+S)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "마우스 현재 단계: %d"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "최소 한 단계는 사용 설정되어 있어야 합니다"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "대신 다른 단계를 기본값으로 선택하세요"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "먼저 이 프로필을 활성화하세요(프로필 페이지)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "현재 단계: %d (새 값을 사용하려면 저장하세요)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "현재 단계: %d"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "표면 모드를 설정했습니다"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "전원을 켠 뒤 사용"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "사용 중"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "DPI 단계"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"단계를 클릭하면 마우스가 즉시 그 단계로 전환됩니다. 새 DPI 값은 ‘마우스에 저"
+"장’(Ctrl+S) 후에 적용됩니다. 마우스는 자체 메모리에서만 DPI를 읽기 때문입니"
+"다. ★는 전원을 켠 뒤 사용되는 단계입니다."
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "사용"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "X / Y 개별 설정"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "낮음"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "중간"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "높음"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "리프트오프 거리"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "전원 켤 때 기본값"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "지금 이 단계 사용"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "폴링 레이트"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "무선"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "유선"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr "단위: Hz. 속도가 높을수록 부드럽지만 배터리를 더 많이 소모합니다."
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "트래킹"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "각도 스냅"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "수평·수직에 가까운 선을 곧게 보정합니다"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "자동"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "켬"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "끔"
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "게이밍 표면 모드"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "즉시 적용됩니다. 프로필별이 아닌 장치 설정입니다"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "스크롤 필터(ms)"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "버니합 스크롤 필터, 0 = 끔"
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "전원"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "저전력 모드 진입 시간(초)"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "절전 모드 진입 시간(초)"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "마우스 마스크 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "키 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "컨슈머 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "기능 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "출고 시 기본값"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "매크로 / 사용자 지정(%s)"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "HITS 코드가 아닙니다"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "HITS 코드가 아닙니다(버전 또는 길이를 알 수 없음)"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "HITS 코드 값이 범위를 벗어났습니다"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "출고 시 기본값"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "헤어 트리거"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "빠른 FPS"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "균형"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "깊게 누르기"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "강한 피드백"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "조용한 느낌"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "HITS 튜닝"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "버튼"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "센서"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "프로필"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "장치"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "프로필 %d · %s"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "연결되지 않음"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "%s · 활성"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "%s · 비활성"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "마우스를 찾는 중…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "연결됨 · %d%% · 충전 중"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "연결됨 · %d%%"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "연결됨 · 충전 중"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "연결됨"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "저장하지 않은 변경 %d개"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr "마우스에 저장(Ctrl+S)하기 전까지는 미리 보기일 뿐입니다."
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "버리기"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "마우스에 저장"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "변경 사항을 마우스 메모리에 기록합니다(Ctrl+S)"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "%s(활성)"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "편집 중인 프로필"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "편집 중"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "저장하지 않은 변경 사항"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "닫기 전에 마우스에 기록하시겠습니까?"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr ""
+"PRO X3 SUPERSTRIKE를 찾는 중입니다. 마우스를 켜거나 수신기를 연결하세요"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "다시 시도"

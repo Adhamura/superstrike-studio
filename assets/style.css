@@ -1,0 +1,79 @@
+/* SUPERSTRIKE Studio — design tokens (see DESIGN.md). 8 px grid. */
+/* Own UI font: some desktop fonts (e.g. Selawik) report a too small ascent and GTK clips the
+   tops of the letters. Adwaita Sans / Noto Sans have correct metrics. */
+window, popover, dialog, tooltip { font-family: "Adwaita Sans", "Noto Sans", "Cantarell", sans-serif; font-size: 10.5pt; }
+row .subtitle, .property .subtitle, .dim-label { opacity: 0.78; }
+row .title { opacity: 1; }
+@define-color ss_accent #3b9cff;
+@define-color accent_bg_color #3b9cff;
+@define-color accent_color #6cb6ff;
+
+.ss-sidebar { background: alpha(black, 0.10); }
+.ss-device-card { padding: 4px 0; }
+.ss-device-glyph { color: @ss_accent; }
+.ss-dot { font-size: 10px; color: alpha(currentColor, 0.35); }
+.ss-dot.ok { color: #3ddc84; }
+.ss-nav row { border-radius: 10px; min-height: 40px; }
+.ss-nav row:selected { background: alpha(@ss_accent, 0.18); color: @accent_color; }
+
+.ss-panel {
+  background: alpha(white, 0.045);
+  border: 1px solid alpha(white, 0.07);
+  border-radius: 16px;
+  padding: 20px;
+}
+.ss-title { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; opacity: 0.72; }
+.ss-value { font-size: 30px; font-weight: 800; font-feature-settings: "tnum"; }
+.ss-unit { font-size: 13px; opacity: 0.75; }
+.ss-hint { font-size: 12.5px; opacity: 0.78; }
+
+.ss-chip {
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: alpha(white, 0.06);
+  font-weight: 600;
+}
+.ss-chip:hover { background: alpha(white, 0.10); }
+.ss-chip:checked { background: @ss_accent; color: white; }
+.ss-chip.dim { opacity: 0.5; }
+
+.ss-row-selected { background: alpha(@ss_accent, 0.16); }
+.ss-row-selected:hover { background: alpha(@ss_accent, 0.22); }
+
+.ss-pad {
+  border: 2px dashed alpha(@ss_accent, 0.45);
+  border-radius: 14px;
+  background: alpha(@ss_accent, 0.07);
+  min-height: 72px;
+}
+.ss-pad.pressed { background: alpha(@ss_accent, 0.25); }
+
+.ss-badge { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: alpha(white, 0.08); }
+.ss-badge.accent { background: alpha(@ss_accent, 0.22); color: @accent_color; }
+.ss-badge.warn { background: alpha(#ffa348, 0.20); color: #ffbe6f; }
+
+
+label.ss-badge { min-height: 0; }
+flowboxchild { padding: 0; background: none; }
+flowboxchild:hover, flowboxchild:focus { background: none; outline: none; }
+
+/* unsaved-changes bar (stays bright when the window is not focused) */
+.ss-savebar, .ss-savebar:backdrop {
+  padding: 12px 24px;
+  background: alpha(@ss_accent, 0.20);
+  border-top: 2px solid @ss_accent;
+}
+.ss-savebar-icon { color: @accent_color; }
+.ss-savebar button.pill { padding: 8px 28px; font-weight: 800; }
+.ss-savebar label:backdrop, .ss-savebar-icon:backdrop { color: white; opacity: 1; }
+.ss-savebar button.suggested-action:backdrop { background: @ss_accent; color: white; }
+
+/* smooth state changes (CSS transitions run only while something changes: no idle CPU) */
+.ss-chip, .ss-nav row, row.activatable, .ss-row-selected, button, .ss-pad, .ss-panel {
+  transition: background-color 180ms ease-out, color 180ms ease-out, box-shadow 180ms ease-out,
+              border-color 180ms ease-out, opacity 180ms ease-out;
+}
+.ss-nav row:selected image { color: @ss_accent; }
+.ss-star { font-size: 10px; color: #ffbe6f; }
+.ss-inuse { font-size: 9px; font-weight: 800; letter-spacing: 0.08em; color: #3ddc84; }
+.ss-chip:checked .ss-inuse { color: white; }

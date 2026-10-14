@@ -1,0 +1,1647 @@
+# Chinese (Taiwan) translation of SUPERSTRIKE Studio.
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 20:30+0300\n"
+"Last-Translator: Claude <noreply@anthropic.com>\n"
+"Language-Team: Chinese (Taiwan)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "滑鼠：%s"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "已從滑鼠載入"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "請先儲存此設定檔"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "設定檔 %d 已啟用"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "正在寫入滑鼠記憶體…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "已儲存至滑鼠，現在不需要此應用程式也能使用"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "儲存失敗：%s。備份位置：%s"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "沒有任何按鍵設為左鍵點擊"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr "儲存後，此設定檔中將沒有任何按鍵會送出左鍵點擊。仍要儲存嗎？"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "取消"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "仍要儲存"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "主程式"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "開機載入程式"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "硬體"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "觸控板"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "光學感測器"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "Softdevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "子模組"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "模組"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "類型 %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "放電中"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "充電中"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "充電中（慢速）"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "已充飽"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "充電錯誤"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "狀態 %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "不是 SUPERSTRIKE 備份檔案"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "左鍵點擊"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "右鍵點擊"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "中鍵點擊"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "後退"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "前進"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "按鍵 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "按鍵 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "按鍵 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "下一檔 DPI"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "上一檔 DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "循環切換 DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "預設 DPI"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "DPI 暫時切換（按住）"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "下一個設定檔"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "上一個設定檔"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "循環切換設定檔"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "電池狀態"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "向下捲動"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "向上捲動"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "滾輪左傾"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "滾輪右傾"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "播放/暫停"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "下一首"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "上一首"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "停止"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "靜音"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "調高音量"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "調低音量"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "調高亮度"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "調低亮度"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "計算機"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "瀏覽器首頁"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "瀏覽器上一頁"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "瀏覽器下一頁"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "瀏覽器重新整理"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "郵件"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "檔案管理員"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "右 Ctrl"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "右 Shift"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "AltGr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "右 Super"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "左鍵"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "右鍵"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "中鍵（按下滾輪）"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "後退（後側鍵）"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "前進（前側鍵）"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "空白鍵"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "右方向鍵"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "左方向鍵"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "下方向鍵"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "上方向鍵"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "選單鍵"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "數字鍵盤 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "數字鍵盤 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "數字鍵盤 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "數字鍵盤 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "數字鍵盤 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "數字鍵盤 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "數字鍵盤 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "數字鍵盤 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "數字鍵盤 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "數字鍵盤 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "數字鍵盤 Enter"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "單獨 Ctrl"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "單獨 Shift"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "單獨 Alt"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "短行程"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "長行程"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "於 %d 觸發（≈%.1f mm）"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "快速觸發：抬起 %d/5 即可再次點擊，拖曳 ◀▶ 調整"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr "快速觸發已關閉：需放開越過觸發點後才能再次點擊"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "左側"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "頂部"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "左鍵"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "右鍵"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "中鍵"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "後退"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "前進"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "滑鼠"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "鍵盤"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "媒體"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "功能"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "已停用"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "預設"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "使用出廠操作：%s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "已錄製：%s"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "請按下一個按鍵"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr "請按下按鍵，需要時也可同時按住 Ctrl、Shift、Alt 或 Super。"
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "旋轉滑鼠"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "一般"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "DPI 暫時切換層"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "按住設為 DPI 暫時切換的按鍵時使用"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr "點擊滑鼠上的按鍵即可變更。左右拖曳可旋轉。"
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "滑鼠按鍵"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "媒體鍵"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "功能"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "按鍵"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "錄製按鍵…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "巨集或自訂資料（保持原樣）"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "還原出廠操作"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "操作"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "按鍵"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%d%%"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%d%% · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "USB 傳輸線"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "LIGHTSPEED 接收器（插槽 %d）"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "%d 個設定檔"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "格式 %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "%d 個磁區 × %d 位元組"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "索引 %d · v%d · 旗標 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "%d 項功能"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "語言"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "系統預設"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "名稱"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "連線"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "電池"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "韌體"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "內建記憶體"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "圖片中的滑鼠顏色"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "功能清單"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "外觀"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "HID++ 功能"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "關閉"
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "觸發點 %s   快速觸發 %s   觸覺回饋 %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr "已套用預設組「%s」。按下「儲存至滑鼠」即可保留。"
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "≈ %.1f mm"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "/ 5"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "已複製 HITS 代碼：%s"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "匯入 HITS 代碼"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr "貼上來自 G HUB、職業選手或朋友的 HITS 代碼。"
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "套用"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "無效的 HITS 代碼"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "無效的 HITS 代碼：%s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "HITS 代碼"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "儲存 HITS 預設組"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "目前左右鍵設定的名稱。"
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "我的預設組"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "儲存"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "已儲存預設組「%s」"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "複製 HITS 代碼"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "匯入 HITS 代碼…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "HITS 代碼 %s"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "刪除預設組"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "重設為 5"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr "按下行程中的哪個位置觸發點擊。行程短反應較快，行程長較不易誤觸。"
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "快速觸發"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "最靈敏"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "最不靈敏"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr ""
+"點擊後，按鍵只要回彈到這個幅度就會重新就緒，連續快速點擊所需的行程更短。"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "關閉"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "最強"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr "點擊觸感的強度。等級越高越耗電。"
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "將目前設定存為預設組…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "職業選手預設組"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "我的預設組"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "HITS 設定"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "左鍵"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "右鍵"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "雙鍵（L+R）"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "左右鍵設定不同，變更會同時套用到兩者"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "觸發點"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "快速觸發"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "觸覺回饋"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "預設組"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr "左 %d · 右 %d · 中 %d · 後退 %d · 前進 %d · %d 次/秒 · 按住 %d ms"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "在此測試：用任一按鍵點擊"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "無法寫入檔案：%s"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "無法讀取檔案：%s"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "設定檔 %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "循環中至少要保留一個設定檔"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "請先儲存設定檔 %d"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "尚未載入出廠設定檔"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "設定檔 %d 已還原為出廠設定，儲存後才會寫入滑鼠"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "已將設定檔 %d 複製到設定檔 %d，儲存後才會保留"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "匯出設定檔"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "已匯出至 %s"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "匯入設定檔"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "不是有效的設定檔"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "已匯入至設定檔 %d，儲存後才會寫入滑鼠"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "還原為出廠設定"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "匯出…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "匯入…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "複製設定自"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "更多操作"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "已啟用"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "未儲存"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "在循環中"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "編輯"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "啟用"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "內建記憶體模式"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr "主機模式：切換回來之前，滑鼠會忽略已儲存的設定檔"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "無法變更控制模式：%s"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "儲存記憶體備份"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "備份已儲存：%s"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "備份失敗：%s"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "開啟記憶體備份"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr "這會用 %s 的內容覆寫滑鼠中的設定檔。目前的記憶體會先儲存到備份資料夾。"
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "還原記憶體？"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "還原"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "還原失敗：%s"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "記憶體已還原"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr "設定檔儲存在滑鼠內部，不需要此應用程式就能在任何電腦上使用。"
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "控制模式"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "由誰控制滑鼠"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "內建記憶體（建議）"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "主機軟體"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "備份"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "備份整個記憶體…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "所有設定檔、目錄與出廠設定檔，儲存為一個檔案"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "從備份還原…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "將已儲存的磁區寫回滑鼠"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr "每次啟動後第一次儲存之前，應用程式也會自動完整備份至 %s。"
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "關閉"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr "滑鼠目前使用第 %d 檔，儲存（Ctrl+S）後才會套用新的 DPI 數值"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "滑鼠目前使用第 %d 檔"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "至少要啟用一個檔位"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "請改選其他檔位作為預設"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "請先啟用此設定檔（在「設定檔」頁面）"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "已切換到第 %d 檔（儲存後才會使用新數值）"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "已切換到第 %d 檔"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "已設定表面模式"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "開機後使用"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "使用中"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "DPI 檔位"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"點擊檔位即可讓滑鼠立刻切換到該檔。新的 DPI 數值要在「儲存至滑鼠」（Ctrl+S）後"
+"才會生效，因為滑鼠只會從自身記憶體讀取 DPI。★ 代表開機後使用的檔位。"
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "啟用"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "X / Y 分別設定"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "低"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "中"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "高"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "抬起距離"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "開機預設檔位"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "立即使用此檔位"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "回報率"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "無線"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "有線"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr "單位：Hz。回報率越高越流暢，但更耗電。"
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "追蹤"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "角度修正"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "將接近水平與垂直的線條拉直"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "自動"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "開啟"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "關閉"
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "遊戲表面模式"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "立即生效。這是裝置設定，不隨設定檔變動"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "滾輪濾波（ms）"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "連跳滾輪濾波，0 表示關閉"
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "電源"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "進入低功耗前等待（秒）"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "進入睡眠前等待（秒）"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "滑鼠遮罩 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "按鍵 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "媒體 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "功能 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "出廠預設"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "巨集 / 自訂（%s）"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "不是 HITS 代碼"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "不是 HITS 代碼（版本或長度不明）"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "HITS 代碼的數值超出範圍"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "出廠預設"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "極敏觸發"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "快速 FPS"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "均衡"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "深按"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "強烈回饋"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "靜音手感"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "HITS 調校"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "按鍵"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "感測器"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "設定檔"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "裝置"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "設定檔 %d · %s"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "未連線"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "%s · 已啟用"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "%s · 未啟用"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "正在尋找滑鼠…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "已連線 · %d%% · 充電中"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "已連線 · %d%%"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "已連線 · 充電中"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "已連線"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "有 %d 項未儲存的變更"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr "在儲存到滑鼠（Ctrl+S）之前，這只是預覽。"
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "捨棄"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "儲存至滑鼠"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "將變更寫入滑鼠記憶體（Ctrl+S）"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "%s（已啟用）"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "正在編輯的設定檔"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "編輯中"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "有未儲存的變更"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "關閉前要寫入滑鼠嗎？"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr "正在尋找 PRO X3 SUPERSTRIKE，請開啟滑鼠電源或插入接收器"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "重試"

@@ -1,0 +1,1650 @@
+# Thai translations for SUPERSTRIKE package.
+# Copyright (C) 2026 THE SUPERSTRIKE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 19:56+0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: Thai\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "เมาส์: %s"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "โหลดจากเมาส์แล้ว"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "บันทึกโปรไฟล์นี้ก่อน"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "เปิดใช้โปรไฟล์ %d แล้ว"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "กำลังเขียนลงหน่วยความจำของเมาส์…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "บันทึกลงเมาส์แล้ว — ใช้งานได้โดยไม่ต้องมีแอปนี้"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "บันทึกไม่สำเร็จ: %s ข้อมูลสำรอง: %s"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "ไม่มีปุ่มใดคลิกซ้าย"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr "หลังบันทึก จะไม่มีปุ่มใดในโปรไฟล์นี้ส่งการคลิกซ้าย บันทึกต่อหรือไม่"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "บันทึกต่อ"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "หลัก"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "บูตโหลดเดอร์"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "ฮาร์ดแวร์"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "ทัชแพด"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "เซนเซอร์ออปติคอล"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "Softdevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "โมดูลย่อย"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "โมดูล"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "ประเภท %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "กำลังคายประจุ"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "กำลังชาร์จ"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "กำลังชาร์จ (ช้า)"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "เต็ม"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "ชาร์จผิดพลาด"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "สถานะ %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "ไม่ใช่ไฟล์สำรองข้อมูลของ SUPERSTRIKE"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "คลิกซ้าย"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "คลิกขวา"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "คลิกกลาง"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "ย้อนกลับ"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "ไปข้างหน้า"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "ปุ่ม 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "ปุ่ม 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "ปุ่ม 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "DPI ถัดไป"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "DPI ก่อนหน้า"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "วนค่า DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "DPI เริ่มต้น"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "ชิฟต์ DPI (กดค้าง)"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "โปรไฟล์ถัดไป"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "โปรไฟล์ก่อนหน้า"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "วนโปรไฟล์"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "สถานะแบตเตอรี่"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "เลื่อนลง"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "เลื่อนขึ้น"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "เอียงซ้าย"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "เอียงขวา"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "เล่น / หยุดชั่วคราว"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "แทร็กถัดไป"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "แทร็กก่อนหน้า"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "หยุด"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "ปิดเสียง"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "เพิ่มระดับเสียง"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "ลดระดับเสียง"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "เพิ่มความสว่าง"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "ลดความสว่าง"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "เครื่องคิดเลข"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "หน้าแรกเบราว์เซอร์"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "ย้อนกลับในเบราว์เซอร์"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "ไปข้างหน้าในเบราว์เซอร์"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "รีเฟรชเบราว์เซอร์"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "อีเมล"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "ตัวจัดการไฟล์"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "Ctrl ขวา"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "Shift ขวา"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "AltGr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "Super ขวา"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "ปุ่มซ้าย"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "ปุ่มขวา"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "ปุ่มกลาง (คลิกลูกกลิ้ง)"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "ย้อนกลับ (ด้านหลัง)"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "ไปข้างหน้า (ด้านหน้า)"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "สเปซบาร์"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "ลูกศรขวา"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "ลูกศรซ้าย"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "ลูกศรลง"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "ลูกศรขึ้น"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "Menu"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "แป้นตัวเลข 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "แป้นตัวเลข 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "แป้นตัวเลข 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "แป้นตัวเลข 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "แป้นตัวเลข 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "แป้นตัวเลข 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "แป้นตัวเลข 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "แป้นตัวเลข 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "แป้นตัวเลข 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "แป้นตัวเลข 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "Enter แป้นตัวเลข"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "Ctrl อย่างเดียว"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "Shift อย่างเดียว"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "Alt อย่างเดียว"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "คลิกสั้น"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "คลิกยาว"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "คลิกที่ %d (≈%.1f mm)"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "แรพิดทริกเกอร์: คลิกซ้ำเมื่อยกขึ้น %d/5 — ลาก ◀▶"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr "แรพิดทริกเกอร์ปิด: คลิกซ้ำได้เมื่อปล่อยผ่านจุดคลิกเท่านั้น"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "ด้านซ้าย"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "ด้านบน"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "ซ้าย"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "ขวา"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "กลาง"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "ย้อนกลับ"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "ไปหน้า"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "เมาส์"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "คีย์บอร์ด"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "สื่อ"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "ฟังก์ชัน"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "ปิดใช้"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "ค่าเริ่มต้น"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "ใช้การทำงานจากโรงงาน: %s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "บันทึกแล้ว: %s"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "กดปุ่มบนคีย์บอร์ด"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr "กดปุ่ม จะกดร่วมกับ Ctrl, Shift, Alt หรือ Super ก็ได้"
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "หมุนเมาส์"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "ปกติ"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "เลเยอร์ชิฟต์ DPI"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "ใช้ขณะกดปุ่มที่ตั้งเป็นชิฟต์ DPI ค้างไว้"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr "คลิกปุ่มบนเมาส์เพื่อเปลี่ยน ลากไปด้านข้างเพื่อหมุน"
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "ปุ่มเมาส์"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "ปุ่มสื่อ"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "ฟังก์ชัน"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "ปุ่ม"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "บันทึกปุ่ม…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "มาโครหรือข้อมูลกำหนดเอง (คงไว้ตามเดิม)"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "คืนค่าการทำงานจากโรงงาน"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "การทำงาน"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "ปุ่ม"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%d %%"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%d %% · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "สาย USB"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "สล็อตตัวรับสัญญาณ LIGHTSPEED %d"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "%d โปรไฟล์"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "รูปแบบ %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "%d เซกเตอร์ × %d ไบต์"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "ดัชนี %d · v%d · แฟล็ก 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "%d ฟีเจอร์"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "ภาษา"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "ค่าเริ่มต้นของระบบ"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "ชื่อ"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "การเชื่อมต่อ"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "แบตเตอรี่"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "เฟิร์มแวร์"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "หน่วยความจำในตัว"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "สีเมาส์ในภาพ"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "ตารางฟีเจอร์"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "รูปลักษณ์"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "ฟีเจอร์ HID++"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "ปิด"
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "จุดคลิก %s   แรพิดทริกเกอร์ %s   แฮปติก %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr "ใช้พรีเซ็ต “%s” แล้ว กด “บันทึกลงเมาส์” เพื่อเก็บไว้"
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "≈ %.1f mm"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "จาก 5"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "คัดลอกรหัส HITS แล้ว: %s"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "นำเข้ารหัส HITS"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr "วางรหัส HITS จาก G HUB, ผู้เล่นมือโปร หรือเพื่อน"
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "ใช้"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "รหัส HITS ไม่ถูกต้อง"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "รหัส HITS ไม่ถูกต้อง: %s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "รหัส HITS"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "บันทึกพรีเซ็ต HITS"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "ชื่อสำหรับการตั้งค่าปุ่มซ้ายและขวาในตอนนี้"
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "พรีเซ็ตของฉัน"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "บันทึก"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "บันทึกพรีเซ็ต “%s” แล้ว"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "คัดลอกรหัส HITS"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "นำเข้ารหัส HITS…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "รหัส HITS %s"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "ลบพรีเซ็ต"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "รีเซ็ตเป็น 5"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr "ตำแหน่งที่คลิกทำงานระหว่างการกด สั้น = เร็วขึ้น ยาว = คลิกพลาดน้อยลง"
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "แรพิดทริกเกอร์"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "ไวที่สุด"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "น้อยสุด"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr "หลังคลิก เมื่อยกปุ่มขึ้นตามระยะนี้ ปุ่มจะพร้อมคลิกอีกครั้ง การคลิกรัวจึงใช้ระยะกดน้อยลง"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "ปิด"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "แรงที่สุด"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr "ความแรงของสัมผัสการคลิก ระดับสูงใช้แบตเตอรี่มากขึ้น"
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "บันทึกค่าปัจจุบันเป็นพรีเซ็ต…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "พรีเซ็ตมือโปร"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "พรีเซ็ตของคุณ"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "การกำหนดค่า HITS"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "ซ้าย"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "ขวา"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "ทั้งคู่ (L+R)"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "L และ R ต่างกัน — การเปลี่ยนแปลงจะใช้กับทั้งสองข้าง"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "จุดคลิก"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "แรพิด"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "แฮปติก"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "พรีเซ็ต"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr "L %d · R %d · M %d · ย้อน %d · ไปหน้า %d · %d คลิก/วิ · กดค้าง %d ms"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "ทดสอบที่นี่ — คลิกด้วยปุ่มใดก็ได้"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "เขียนไฟล์ไม่ได้: %s"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "อ่านไฟล์ไม่ได้: %s"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "โปรไฟล์ %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "ต้องมีอย่างน้อยหนึ่งโปรไฟล์ในรายการหมุนเวียน"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "บันทึกโปรไฟล์ %d ก่อน"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "ยังไม่ได้โหลดโปรไฟล์จากโรงงาน"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "รีเซ็ตโปรไฟล์ %d เป็นค่าจากโรงงานแล้ว บันทึกเพื่อเขียนลงเมาส์"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "คัดลอกโปรไฟล์ %d ไปยังโปรไฟล์ %d แล้ว บันทึกเพื่อเก็บไว้"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "ส่งออกโปรไฟล์"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "ส่งออกไปที่ %s แล้ว"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "นำเข้าโปรไฟล์"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "ไฟล์โปรไฟล์ไม่ถูกต้อง"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "นำเข้าไปยังโปรไฟล์ %d แล้ว บันทึกเพื่อเขียนลงเมาส์"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "รีเซ็ตเป็นค่าโรงงาน"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "ส่งออก…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "นำเข้า…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "คัดลอกการตั้งค่าจาก"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "เพิ่มเติม"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "ใช้งานอยู่"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "ยังไม่บันทึก"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "อยู่ในรายการหมุนเวียน"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "แก้ไข"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "เปิดใช้"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "โหมดหน่วยความจำในตัว"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr "โหมดโฮสต์: โปรไฟล์ที่บันทึกไว้จะไม่ถูกใช้จนกว่าจะสลับกลับ"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "เปลี่ยนโหมดควบคุมไม่ได้: %s"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "บันทึกข้อมูลสำรองของหน่วยความจำ"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "บันทึกข้อมูลสำรองแล้ว: %s"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "สำรองข้อมูลไม่สำเร็จ: %s"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "เปิดข้อมูลสำรองของหน่วยความจำ"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr ""
+"การทำเช่นนี้จะเขียนทับโปรไฟล์ในเมาส์ด้วยข้อมูลจาก %s "
+"โดยจะบันทึกหน่วยความจำปัจจุบันไว้ในโฟลเดอร์ข้อมูลสำรองก่อน"
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "กู้คืนหน่วยความจำหรือไม่"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "กู้คืน"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "กู้คืนไม่สำเร็จ: %s"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "กู้คืนหน่วยความจำแล้ว"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr "โปรไฟล์อยู่ในตัวเมาส์และใช้งานได้บนคอมพิวเตอร์ทุกเครื่องโดยไม่ต้องใช้แอปนี้"
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "โหมดควบคุม"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "ใครเป็นผู้ควบคุมเมาส์"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "หน่วยความจำในตัว (แนะนำ)"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "ซอฟต์แวร์โฮสต์"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "ข้อมูลสำรอง"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "สำรองหน่วยความจำทั้งหมด…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "โปรไฟล์ทั้งหมด ไดเรกทอรี และโปรไฟล์จากโรงงาน ลงในไฟล์"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "กู้คืนจากข้อมูลสำรอง…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "เขียนเซกเตอร์ที่บันทึกไว้กลับลงเมาส์"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr "แอปยังสร้างข้อมูลสำรองฉบับเต็มโดยอัตโนมัติก่อนการบันทึกครั้งแรกของแต่ละเซสชัน ที่ %s"
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "ปิด"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr "เมาส์ใช้ระดับ %d อยู่ — บันทึก (Ctrl+S) เพื่อสัมผัสค่า DPI ใหม่"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "เมาส์ใช้ระดับ %d อยู่"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "ต้องเปิดไว้อย่างน้อยหนึ่งระดับ"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "ให้เลือกระดับอื่นเป็นค่าเริ่มต้นแทน"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "เปิดใช้โปรไฟล์นี้ก่อน (หน้าโปรไฟล์)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "ระดับ %d ใช้งานอยู่แล้ว (บันทึกเพื่อใช้ค่าใหม่)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "ระดับ %d ใช้งานอยู่แล้ว"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "ตั้งค่าโหมดพื้นผิวแล้ว"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "ใช้หลังเปิดเครื่อง"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "ใช้อยู่"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "ระดับ DPI"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"คลิกระดับเพื่อสลับเมาส์ไปใช้ระดับนั้นทันที ค่า DPI ใหม่จะรู้สึกได้หลัง “บันทึกลงเมาส์” (Ctrl+S) "
+"เพราะเมาส์รับค่า DPI จากหน่วยความจำของตัวเองเท่านั้น ★ = ระดับหลังเปิดเครื่อง"
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "เปิดใช้"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "แยกค่า X / Y"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "ต่ำ"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "กลาง"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "สูง"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "ระยะยกเมาส์"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "ค่าเริ่มต้นหลังเปิดเครื่อง"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "ใช้ระดับนี้ทันที"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "พอลลิงเรต"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "ไร้สาย"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "สาย"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr "Hz ค่าที่สูงขึ้นให้ความลื่นไหลมากขึ้นแต่ใช้แบตเตอรี่มากขึ้น"
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "การติดตาม"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "แองเกิลสแนปปิง"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "ทำให้เส้นที่เกือบแนวนอนและแนวตั้งตรงขึ้น"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "อัตโนมัติ"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "เปิด"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "ปิด"
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "โหมดพื้นผิวสำหรับเล่นเกม"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "มีผลทันที เป็นการตั้งค่าของอุปกรณ์ ไม่ใช่ของแต่ละโปรไฟล์"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "ตัวกรองการเลื่อน (ms)"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "ตัวกรองการเลื่อนสำหรับ Bunny-hop, 0 = ปิด"
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "พลังงาน"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "เข้าโหมดประหยัดพลังงานหลัง (s)"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "เข้าโหมดสลีปหลัง (s)"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "มาสก์เมาส์ 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "ปุ่ม 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "สื่อ 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "ฟังก์ชัน 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "ค่าเริ่มต้นจากโรงงาน"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "มาโคร / กำหนดเอง (%s)"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "ไม่ใช่รหัส HITS"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "ไม่ใช่รหัส HITS (ไม่รู้จักเวอร์ชันหรือความยาว)"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "ค่าในรหัส HITS อยู่นอกช่วง"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "ค่าเริ่มต้นโรงงาน"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "แฮร์ทริกเกอร์"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "FPS ไว"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "สมดุล"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "กดลึก"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "ฟีดแบ็กแรง"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "สัมผัสเงียบ"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "ปรับแต่ง HITS"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "ปุ่ม"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "เซนเซอร์"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "โปรไฟล์"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "อุปกรณ์"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "โปรไฟล์ %d · %s"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "ไม่ได้เชื่อมต่อ"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "%s · ใช้งานอยู่"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "%s · ไม่ได้ใช้งาน"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "กำลังค้นหาเมาส์…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "เชื่อมต่อแล้ว · %d %% · กำลังชาร์จ"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "เชื่อมต่อแล้ว · %d %%"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "เชื่อมต่อแล้ว · กำลังชาร์จ"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "เชื่อมต่อแล้ว"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "%d การเปลี่ยนแปลงที่ยังไม่บันทึก"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr "เป็นเพียงตัวอย่างจนกว่าจะบันทึกลงเมาส์ (Ctrl+S)"
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "ละทิ้ง"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "บันทึกลงเมาส์"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "เขียนการเปลี่ยนแปลงลงหน่วยความจำของเมาส์ (Ctrl+S)"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "%s  (ใช้งานอยู่)"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "โปรไฟล์ที่คุณกำลังแก้ไข"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "กำลังแก้ไข"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "การเปลี่ยนแปลงที่ยังไม่บันทึก"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "เขียนลงเมาส์ก่อนปิดหรือไม่"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr "กำลังค้นหา PRO X3 SUPERSTRIKE — เปิดเมาส์หรือเสียบตัวรับสัญญาณ"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "ลองอีกครั้ง"

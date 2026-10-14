@@ -1,0 +1,1669 @@
+# Urdu translations for SUPERSTRIKE package.
+# Copyright (C) 2026 THE SUPERSTRIKE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the SUPERSTRIKE Studio package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: SUPERSTRIKE Studio\n"
+"Report-Msgid-Bugs-To: none\n"
+"POT-Creation-Date: 2026-10-14 20:25+0300\n"
+"PO-Revision-Date: 2026-10-14 19:56+0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: Urdu\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. TRANSLATORS: %s is a technical error message about the mouse connection
+#: src/app.cpp:74
+#, c-format
+msgid "Mouse: %s"
+msgstr "ماؤس: ⁨%s⁩"
+
+#: src/app.cpp:154
+msgid "Loaded from the mouse"
+msgstr "ماؤس سے لوڈ کیا گیا"
+
+#: src/app.cpp:166
+msgid "Save this profile first"
+msgstr "پہلے اس پروفائل کو محفوظ کریں"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/app.cpp:175
+#, c-format
+msgid "Profile %d is now active"
+msgstr "پروفائل %d اب فعال ہے"
+
+#: src/app.cpp:196
+msgid "Writing to the mouse memory…"
+msgstr "ماؤس کی میموری میں لکھا جا رہا ہے…"
+
+#: src/app.cpp:222
+msgid "Saved in the mouse — it now works without this app"
+msgstr "ماؤس میں محفوظ ہو گیا — اب یہ اس ایپ کے بغیر بھی کام کرتا ہے"
+
+#. TRANSLATORS: first %s is the error message, second %s is a folder path
+#: src/app.cpp:228
+#, c-format
+msgid "Save failed: %s. Backups: %s"
+msgstr "محفوظ نہیں ہو سکا: ⁨%s⁩۔ بیک اپ: ⁨%s⁩"
+
+#: src/app.cpp:236
+msgid "No button does Left click"
+msgstr "کوئی بٹن بایاں کلک نہیں کرتا"
+
+#: src/app.cpp:237
+msgid ""
+"After saving, no button on this profile sends a left click. Save anyway?"
+msgstr ""
+"محفوظ کرنے کے بعد اس پروفائل کا کوئی بھی بٹن بایاں کلک نہیں بھیجے گا۔ پھر "
+"بھی محفوظ کریں؟"
+
+#: src/app.cpp:238 src/page_buttons.cpp:215 src/page_hits.cpp:159
+#: src/page_profiles.cpp:375 src/window.cpp:169
+msgid "Cancel"
+msgstr "منسوخ کریں"
+
+#: src/app.cpp:238
+msgid "Save anyway"
+msgstr "پھر بھی محفوظ کریں"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Main"
+msgstr "مرکزی"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Bootloader"
+msgstr "بوٹ لوڈر"
+
+#: src/device.cpp:144
+msgctxt "firmware part"
+msgid "Hardware"
+msgstr "ہارڈویئر"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Touchpad"
+msgstr "ٹچ پیڈ"
+
+#: src/device.cpp:145
+msgctxt "firmware part"
+msgid "Optical sensor"
+msgstr "آپٹیکل سینسر"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Softdevice"
+msgstr "Softdevice"
+
+#: src/device.cpp:146
+msgctxt "firmware part"
+msgid "Sub-module"
+msgstr "ذیلی ماڈیول"
+
+#: src/device.cpp:147
+msgctxt "firmware part"
+msgid "Module"
+msgstr "ماڈیول"
+
+#. TRANSLATORS: unknown firmware part, %d is its numeric type
+#: src/device.cpp:154
+#, c-format
+msgid "Type %d"
+msgstr "قسم %d"
+
+#: src/device.cpp:170
+msgid "discharging"
+msgstr "ڈسچارج ہو رہی ہے"
+
+#: src/device.cpp:171
+msgid "charging"
+msgstr "چارج ہو رہی ہے"
+
+#: src/device.cpp:172
+msgid "charging (slow)"
+msgstr "چارج ہو رہی ہے (سست)"
+
+#: src/device.cpp:173
+msgid "full"
+msgstr "مکمل چارج"
+
+#: src/device.cpp:174
+msgid "charge error"
+msgstr "چارجنگ میں خرابی"
+
+#. TRANSLATORS: unknown battery state, %s is its numeric code
+#: src/device.cpp:176
+#, c-format
+msgid "state %s"
+msgstr "حالت %s"
+
+#: src/io.cpp:120
+msgid "not a SUPERSTRIKE backup file"
+msgstr "یہ SUPERSTRIKE کی بیک اپ فائل نہیں ہے"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Left click"
+msgstr "بایاں کلک"
+
+#: src/keytables.cpp:9
+msgctxt "mouse button"
+msgid "Right click"
+msgstr "دایاں کلک"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Middle click"
+msgstr "درمیانی کلک"
+
+#: src/keytables.cpp:10
+msgctxt "mouse button"
+msgid "Back"
+msgstr "پیچھے"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Forward"
+msgstr "آگے"
+
+#: src/keytables.cpp:11
+msgctxt "mouse button"
+msgid "Button 6"
+msgstr "بٹن 6"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 7"
+msgstr "بٹن 7"
+
+#: src/keytables.cpp:12
+msgctxt "mouse button"
+msgid "Button 8"
+msgstr "بٹن 8"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Next DPI"
+msgstr "اگلا DPI"
+
+#: src/keytables.cpp:14
+msgctxt "button function"
+msgid "Previous DPI"
+msgstr "پچھلا DPI"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Cycle DPI"
+msgstr "‏DPI چکر"
+
+#: src/keytables.cpp:15
+msgctxt "button function"
+msgid "Default DPI"
+msgstr "ڈیفالٹ DPI"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "DPI shift (hold)"
+msgstr "‏DPI شفٹ (دبائے رکھیں)"
+
+#: src/keytables.cpp:16
+msgctxt "button function"
+msgid "Next profile"
+msgstr "اگلا پروفائل"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Previous profile"
+msgstr "پچھلا پروفائل"
+
+#: src/keytables.cpp:17
+msgctxt "button function"
+msgid "Cycle profile"
+msgstr "پروفائل چکر"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Battery status"
+msgstr "بیٹری کی حالت"
+
+#: src/keytables.cpp:18
+msgctxt "button function"
+msgid "Scroll down"
+msgstr "نیچے اسکرول"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Scroll up"
+msgstr "اوپر اسکرول"
+
+#: src/keytables.cpp:19
+msgctxt "button function"
+msgid "Tilt left"
+msgstr "بائیں جھکاؤ"
+
+#: src/keytables.cpp:20
+msgctxt "button function"
+msgid "Tilt right"
+msgstr "دائیں جھکاؤ"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Play / Pause"
+msgstr "چلائیں / وقفہ"
+
+#: src/keytables.cpp:22
+msgctxt "media key"
+msgid "Next track"
+msgstr "اگلا ٹریک"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Previous track"
+msgstr "پچھلا ٹریک"
+
+#: src/keytables.cpp:23
+msgctxt "media key"
+msgid "Stop"
+msgstr "روکیں"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Mute"
+msgstr "خاموش"
+
+#: src/keytables.cpp:24
+msgctxt "media key"
+msgid "Volume up"
+msgstr "آواز بڑھائیں"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Volume down"
+msgstr "آواز کم کریں"
+
+#: src/keytables.cpp:25
+msgctxt "media key"
+msgid "Brightness up"
+msgstr "روشنی بڑھائیں"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Brightness down"
+msgstr "روشنی کم کریں"
+
+#: src/keytables.cpp:26
+msgctxt "media key"
+msgid "Calculator"
+msgstr "کیلکولیٹر"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser home"
+msgstr "براؤزر ہوم"
+
+#: src/keytables.cpp:27
+msgctxt "media key"
+msgid "Browser back"
+msgstr "براؤزر پیچھے"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser forward"
+msgstr "براؤزر آگے"
+
+#: src/keytables.cpp:28
+msgctxt "media key"
+msgid "Browser refresh"
+msgstr "براؤزر ریفریش"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "Mail"
+msgstr "ای میل"
+
+#: src/keytables.cpp:29
+msgctxt "media key"
+msgid "File manager"
+msgstr "فائل مینیجر"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:16
+msgctxt "modifier key"
+msgid "Shift"
+msgstr "Shift"
+
+#: src/keytables.cpp:31 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Alt"
+msgstr "Alt"
+
+#: src/keytables.cpp:32 src/page_buttons.cpp:17
+msgctxt "modifier key"
+msgid "Super"
+msgstr "Super"
+
+#: src/keytables.cpp:32
+msgctxt "modifier key"
+msgid "Right Ctrl"
+msgstr "دایاں Ctrl"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "Right Shift"
+msgstr "دایاں Shift"
+
+#: src/keytables.cpp:33
+msgctxt "modifier key"
+msgid "AltGr"
+msgstr "AltGr"
+
+#: src/keytables.cpp:34
+msgctxt "modifier key"
+msgid "Right Super"
+msgstr "دایاں Super"
+
+#: src/keytables.cpp:36
+msgid "Left button"
+msgstr "بایاں بٹن"
+
+#: src/keytables.cpp:36
+msgid "Right button"
+msgstr "دایاں بٹن"
+
+#: src/keytables.cpp:36
+msgid "Middle button (wheel click)"
+msgstr "درمیانی بٹن (وہیل کلک)"
+
+#: src/keytables.cpp:37
+msgid "Back (rear side)"
+msgstr "پیچھے (پچھلی طرف)"
+
+#: src/keytables.cpp:37
+msgid "Forward (front side)"
+msgstr "آگے (اگلی طرف)"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Enter"
+msgstr "Enter"
+
+#: src/keytables.cpp:50
+msgctxt "keyboard key"
+msgid "Escape"
+msgstr "Esc"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr "Backspace"
+
+#: src/keytables.cpp:51
+msgctxt "keyboard key"
+msgid "Tab"
+msgstr "Tab"
+
+#: src/keytables.cpp:52
+msgctxt "keyboard key"
+msgid "Space"
+msgstr "اسپیس"
+
+#: src/keytables.cpp:54
+msgctxt "keyboard key"
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Print Screen"
+msgstr "Print Screen"
+
+#: src/keytables.cpp:58
+msgctxt "keyboard key"
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Pause"
+msgstr "Pause"
+
+#: src/keytables.cpp:59
+msgctxt "keyboard key"
+msgid "Insert"
+msgstr "Insert"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Home"
+msgstr "Home"
+
+#: src/keytables.cpp:60
+msgctxt "keyboard key"
+msgid "Page Up"
+msgstr "Page Up"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "Delete"
+msgstr "Delete"
+
+#: src/keytables.cpp:61
+msgctxt "keyboard key"
+msgid "End"
+msgstr "End"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Page Down"
+msgstr "Page Down"
+
+#: src/keytables.cpp:62
+msgctxt "keyboard key"
+msgid "Right arrow"
+msgstr "دایاں تیر"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Left arrow"
+msgstr "بایاں تیر"
+
+#: src/keytables.cpp:63
+msgctxt "keyboard key"
+msgid "Down arrow"
+msgstr "نیچے کا تیر"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Up arrow"
+msgstr "اوپر کا تیر"
+
+#: src/keytables.cpp:64
+msgctxt "keyboard key"
+msgid "Menu"
+msgstr "Menu"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 1"
+msgstr "کی پیڈ 1"
+
+#: src/keytables.cpp:68
+msgctxt "keyboard key"
+msgid "Keypad 2"
+msgstr "کی پیڈ 2"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 3"
+msgstr "کی پیڈ 3"
+
+#: src/keytables.cpp:69
+msgctxt "keyboard key"
+msgid "Keypad 4"
+msgstr "کی پیڈ 4"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 5"
+msgstr "کی پیڈ 5"
+
+#: src/keytables.cpp:70
+msgctxt "keyboard key"
+msgid "Keypad 6"
+msgstr "کی پیڈ 6"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 7"
+msgstr "کی پیڈ 7"
+
+#: src/keytables.cpp:71
+msgctxt "keyboard key"
+msgid "Keypad 8"
+msgstr "کی پیڈ 8"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 9"
+msgstr "کی پیڈ 9"
+
+#: src/keytables.cpp:72
+msgctxt "keyboard key"
+msgid "Keypad 0"
+msgstr "کی پیڈ 0"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Keypad Enter"
+msgstr "کی پیڈ Enter"
+
+#: src/keytables.cpp:73
+msgctxt "keyboard key"
+msgid "Ctrl (alone)"
+msgstr "صرف Ctrl"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Shift (alone)"
+msgstr "صرف Shift"
+
+#: src/keytables.cpp:74
+msgctxt "keyboard key"
+msgid "Alt (alone)"
+msgstr "صرف Alt"
+
+#: src/levelbars.cpp:77
+msgctxt "travel bar"
+msgid "Short click"
+msgstr "مختصر کلک"
+
+#: src/levelbars.cpp:78
+msgctxt "travel bar"
+msgid "Long click"
+msgstr "طویل کلک"
+
+#. TRANSLATORS: label above the handle of the press-travel bar. %d is the click point (1 to 10),
+#. %.1f is the travel in millimetres. Keep it short, it must fit above the bar.
+#: src/levelbars.cpp:103
+#, c-format
+msgid "clicks at %d (≈%.1f mm)"
+msgstr "کلک %d پر ⁦(≈%.1f mm)⁩"
+
+#. TRANSLATORS: caption under the orange reset band. %d is the rapid trigger level (1 to 5). Keep it short.
+#: src/levelbars.cpp:119
+#, c-format
+msgid "rapid trigger: re-clicks after lifting %d/5 — drag ◀▶"
+msgstr "ریپڈ ٹرگر: %d/5 اٹھانے پر دوبارہ کلک — کھینچیں ◀▶"
+
+#. TRANSLATORS: caption under the travel bar when rapid trigger is off. Keep it short.
+#: src/levelbars.cpp:125
+msgid "rapid trigger off: re-clicks only after release past the click point"
+msgstr "ریپڈ ٹرگر بند: کلک نقطۂ کلک سے آگے ریلیز کرنے کے بعد ہی دوبارہ ہوتا ہے"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Left side"
+msgstr "بائیں طرف"
+
+#: src/mouseview.cpp:263 src/page_buttons.cpp:260
+msgctxt "view"
+msgid "Top"
+msgstr "اوپر"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Left"
+msgstr "بایاں"
+
+#: src/page_buttons.cpp:12
+msgctxt "button label"
+msgid "Right"
+msgstr "دایاں"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Middle"
+msgstr "درمیانی"
+
+#: src/page_buttons.cpp:13
+msgctxt "button label"
+msgid "Back"
+msgstr "پیچھے"
+
+#: src/page_buttons.cpp:14
+msgctxt "button label"
+msgid "Forward"
+msgstr "آگے"
+
+#: src/page_buttons.cpp:19
+msgctxt "button action"
+msgid "Mouse"
+msgstr "ماؤس"
+
+#: src/page_buttons.cpp:20
+msgctxt "button action"
+msgid "Keyboard"
+msgstr "کی بورڈ"
+
+#: src/page_buttons.cpp:21
+msgctxt "button action"
+msgid "Media"
+msgstr "میڈیا"
+
+#: src/page_buttons.cpp:22
+msgctxt "button action"
+msgid "Function"
+msgstr "فنکشن"
+
+#: src/page_buttons.cpp:23 src/profile.cpp:73
+msgctxt "button action"
+msgid "Disabled"
+msgstr "غیر فعال"
+
+#: src/page_buttons.cpp:24
+msgctxt "button action"
+msgid "Default"
+msgstr "ڈیفالٹ"
+
+#. TRANSLATORS: %s is the name of the factory action, for example "Left click"
+#: src/page_buttons.cpp:151
+#, c-format
+msgid "Uses the factory action: %s"
+msgstr "فیکٹری ایکشن استعمال ہو رہا ہے: %s"
+
+#. TRANSLATORS: %s is the recorded key, for example "Ctrl+C"
+#: src/page_buttons.cpp:183
+#, c-format
+msgid "Recorded: %s"
+msgstr "ریکارڈ کیا گیا: ⁨%s⁩"
+
+#: src/page_buttons.cpp:213
+msgid "Press a key"
+msgstr "کوئی کلید دبائیں"
+
+#: src/page_buttons.cpp:214
+msgid "Press the key, with Ctrl, Shift, Alt or Super if you want them."
+msgstr "کلید دبائیں، چاہیں تو Ctrl، Shift، Alt یا Super کے ساتھ۔"
+
+#: src/page_buttons.cpp:266
+msgid "Rotate the mouse"
+msgstr "ماؤس گھمائیں"
+
+#: src/page_buttons.cpp:269
+msgctxt "button layer"
+msgid "Normal"
+msgstr "عام"
+
+#: src/page_buttons.cpp:269
+msgid "DPI-shift layer"
+msgstr "‏DPI شفٹ لیئر"
+
+#: src/page_buttons.cpp:271
+msgid "Used while a button set to DPI shift is held"
+msgstr "اس وقت استعمال ہوتی ہے جب DPI شفٹ والا بٹن دبائے رکھا جائے"
+
+#: src/page_buttons.cpp:304
+msgid "Click a button on the mouse to change it. Drag sideways to rotate."
+msgstr ""
+"ماؤس پر کسی بٹن پر کلک کر کے اسے بدلیں۔ گھمانے کے لیے سائیڈ کی طرف کھینچیں۔"
+
+#: src/page_buttons.cpp:354
+msgid "Mouse button"
+msgstr "ماؤس بٹن"
+
+#: src/page_buttons.cpp:356
+msgid "Media key"
+msgstr "میڈیا کلید"
+
+#: src/page_buttons.cpp:358
+msgctxt "combo row title"
+msgid "Function"
+msgstr "فنکشن"
+
+#: src/page_buttons.cpp:360
+msgctxt "combo row title"
+msgid "Key"
+msgstr "کلید"
+
+#: src/page_buttons.cpp:367
+msgid "Record a key…"
+msgstr "کلید ریکارڈ کریں…"
+
+#: src/page_buttons.cpp:382
+msgid "Macro or custom data (kept as is)"
+msgstr "میکرو یا حسبِ ضرورت ڈیٹا (جوں کا توں رہے گا)"
+
+#: src/page_buttons.cpp:394
+msgid "Restore factory action"
+msgstr "فیکٹری ایکشن بحال کریں"
+
+#: src/page_buttons.cpp:400
+msgid "ACTION"
+msgstr "ایکشن"
+
+#: src/page_buttons.cpp:402
+msgid "BUTTONS"
+msgstr "بٹن"
+
+#. TRANSLATORS: battery row. %d is the charge in percent
+#: src/page_device.cpp:59
+#, c-format
+msgid "%d %%"
+msgstr "%d %%"
+
+#. TRANSLATORS: battery row. %d is the charge in percent, %s is the state, for example "charging"
+#: src/page_device.cpp:61
+#, c-format
+msgid "%d %% · %s"
+msgstr "%d %% · %s"
+
+#: src/page_device.cpp:69
+msgid "USB cable"
+msgstr "‏USB کیبل"
+
+#. TRANSLATORS: %d is the receiver slot number (1 to 6)
+#: src/page_device.cpp:71
+#, c-format
+msgid "LIGHTSPEED receiver slot %d"
+msgstr "‏LIGHTSPEED ریسیور سلاٹ %d"
+
+#. TRANSLATORS: %d is the number of profile slots in the mouse
+#: src/page_device.cpp:77
+#, c-format
+msgid "%d profile"
+msgid_plural "%d profiles"
+msgstr[0] "‏%d پروفائل"
+msgstr[1] "‏%d پروفائلز"
+
+#. TRANSLATORS: %d is the version number of the memory layout
+#: src/page_device.cpp:79
+#, c-format
+msgid "format %d"
+msgstr "فارمیٹ %d"
+
+#. TRANSLATORS: first %d is the number of memory sectors, second %d is the size of one sector
+#: src/page_device.cpp:81
+#, c-format
+msgid "%d sector × %d bytes"
+msgid_plural "%d sectors × %d bytes"
+msgstr[0] "‏%d سیکٹر × %d بائٹ"
+msgstr[1] "‏%d سیکٹرز × %d بائٹ"
+
+#. TRANSLATORS: HID++ feature details. %d: table index, %d: feature version, %s: flags as hex digits
+#: src/page_device.cpp:103
+#, c-format
+msgid "index %d · v%d · flags 0x%s"
+msgstr "انڈیکس %d · v%d · فلیگز 0x%s"
+
+#. TRANSLATORS: %d is the number of HID++ features the mouse reports
+#: src/page_device.cpp:111
+#, c-format
+msgid "%d feature"
+msgid_plural "%d features"
+msgstr[0] "‏%d فیچر"
+msgstr[1] "‏%d فیچرز"
+
+#: src/page_device.cpp:118
+msgid "Language"
+msgstr "زبان"
+
+#: src/page_device.cpp:120
+msgid "System default"
+msgstr "سسٹم ڈیفالٹ"
+
+#: src/page_device.cpp:154
+msgctxt "device info"
+msgid "Name"
+msgstr "نام"
+
+#: src/page_device.cpp:155
+msgid "Connection"
+msgstr "کنکشن"
+
+#: src/page_device.cpp:156
+msgid "Battery"
+msgstr "بیٹری"
+
+#: src/page_device.cpp:157
+msgid "Firmware"
+msgstr "فرم ویئر"
+
+#: src/page_device.cpp:158
+msgid "Onboard memory"
+msgstr "آن بورڈ میموری"
+
+#: src/page_device.cpp:164
+msgid "Mouse colour in the pictures"
+msgstr "تصاویر میں ماؤس کا رنگ"
+
+#: src/page_device.cpp:174
+msgid "Feature table"
+msgstr "فیچر ٹیبل"
+
+#: src/page_device.cpp:179
+msgid "LOOK"
+msgstr "ظاہری شکل"
+
+#: src/page_device.cpp:179
+msgid "HID++ FEATURES"
+msgstr "‏HID++ فیچرز"
+
+#: src/page_hits.cpp:47 src/page_hits.cpp:116
+msgctxt "level value"
+msgid "off"
+msgstr "بند"
+
+#. TRANSLATORS: subtitle of a preset. Each %s is a level (1 to 10, 1 to 5 or 0 to 5), or "L / R" when the two buttons differ
+#: src/page_hits.cpp:55
+#, c-format
+msgid "Actuation %s   Rapid trigger %s   Haptics %s"
+msgstr "کلک پوائنٹ %s   ریپڈ ٹرگر %s   ہیپٹکس %s"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:92
+#, c-format
+msgid "Preset \"%s\" applied. Press Save to mouse to keep it."
+msgstr ""
+"پری سیٹ “⁨%s⁩” لاگو ہو گیا۔ اسے رکھنے کے لیے “ماؤس میں محفوظ کریں” دبائیں۔"
+
+#. TRANSLATORS: %.1f is the travel in millimetres
+#: src/page_hits.cpp:113
+#, c-format
+msgid "≈ %.1f mm"
+msgstr "⁦≈ %.1f mm⁩"
+
+#: src/page_hits.cpp:115 src/page_hits.cpp:117
+msgid "of 5"
+msgstr "5 میں سے"
+
+#. TRANSLATORS: %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:177
+#, c-format
+msgid "HITS code copied: %s"
+msgstr "‏HITS کوڈ کاپی ہو گیا: ⁨%s⁩"
+
+#: src/page_hits.cpp:182
+msgid "Import HITS code"
+msgstr "‏HITS کوڈ امپورٹ کریں"
+
+#: src/page_hits.cpp:182
+msgid "Paste a HITS code from G HUB, a pro player or a friend."
+msgstr "‏G HUB، کسی پرو پلیئر یا دوست کا HITS کوڈ پیسٹ کریں۔"
+
+#: src/page_hits.cpp:183
+msgid "Apply"
+msgstr "لاگو کریں"
+
+#: src/page_hits.cpp:188
+msgid "Not a valid HITS code"
+msgstr "یہ درست HITS کوڈ نہیں ہے"
+
+#. TRANSLATORS: %s is the reason, for example "not a HITS code"
+#: src/page_hits.cpp:190
+#, c-format
+msgid "Not a valid HITS code: %s"
+msgstr "یہ درست HITS کوڈ نہیں ہے: %s"
+
+#: src/page_hits.cpp:193 src/page_hits.cpp:219
+msgid "HITS code"
+msgstr "‏HITS کوڈ"
+
+#: src/page_hits.cpp:199
+msgid "Save HITS preset"
+msgstr "‏HITS پری سیٹ محفوظ کریں"
+
+#: src/page_hits.cpp:199
+msgid "Name for the current left and right button settings."
+msgstr "موجودہ بائیں اور دائیں بٹن کی سیٹنگز کا نام۔"
+
+#: src/page_hits.cpp:199
+msgid "My preset"
+msgstr "میرا پری سیٹ"
+
+#: src/page_hits.cpp:199 src/window.cpp:169
+msgid "Save"
+msgstr "محفوظ کریں"
+
+#. TRANSLATORS: %s is the name of a HITS preset
+#: src/page_hits.cpp:212
+#, c-format
+msgid "Preset \"%s\" saved"
+msgstr "پری سیٹ “⁨%s⁩” محفوظ ہو گیا"
+
+#: src/page_hits.cpp:223
+msgid "Copy HITS code"
+msgstr "‏HITS کوڈ کاپی کریں"
+
+#: src/page_hits.cpp:224
+msgid "Import HITS code…"
+msgstr "‏HITS کوڈ امپورٹ کریں…"
+
+#. TRANSLATORS: tooltip of a preset, %s is the HITS code (letters and digits)
+#: src/page_hits.cpp:253
+#, c-format
+msgid "HITS code %s"
+msgstr "‏HITS کوڈ ⁨%s⁩"
+
+#: src/page_hits.cpp:256
+msgid "Delete preset"
+msgstr "پری سیٹ حذف کریں"
+
+#: src/page_hits.cpp:283
+msgid "Reset to 5"
+msgstr "5 پر ری سیٹ کریں"
+
+#: src/page_hits.cpp:288
+msgid ""
+"Where along the press the click fires. Short = faster, long = fewer "
+"misclicks."
+msgstr ""
+"دبانے کے دوران کلک کس مقام پر ہوتا ہے۔ چھوٹا = تیز تر، لمبا = غلط کلک کم۔"
+
+#: src/page_hits.cpp:299
+msgid "Rapid trigger"
+msgstr "ریپڈ ٹرگر"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Most sensitive"
+msgstr "سب سے حساس"
+
+#: src/page_hits.cpp:305
+msgctxt "rapid trigger level"
+msgid "Least"
+msgstr "کم سے کم"
+
+#: src/page_hits.cpp:313
+msgid ""
+"After a click, lifting the button by this much re-arms it, so fast repeated "
+"clicks need less travel."
+msgstr ""
+"کلک کے بعد بٹن کو اتنا اٹھانے سے وہ دوبارہ تیار ہو جاتا ہے، اس لیے بار بار "
+"تیز کلک کے لیے کم حرکت درکار ہوتی ہے۔"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Off"
+msgstr "بند"
+
+#: src/page_hits.cpp:320
+msgctxt "haptics level"
+msgid "Strongest"
+msgstr "سب سے مضبوط"
+
+#: src/page_hits.cpp:323
+msgid "Click feel strength. Higher levels use more battery."
+msgstr "کلک کے احساس کی شدت۔ اونچی سطحیں زیادہ بیٹری استعمال کرتی ہیں۔"
+
+#: src/page_hits.cpp:331
+msgid "Save current as preset…"
+msgstr "موجودہ کو پری سیٹ کے طور پر محفوظ کریں…"
+
+#: src/page_hits.cpp:333
+msgid "PRO PRESETS"
+msgstr "پرو پری سیٹس"
+
+#: src/page_hits.cpp:335
+msgid "YOUR PRESETS"
+msgstr "آپ کے پری سیٹس"
+
+#: src/page_hits.cpp:350
+msgid "HITS CONFIGURATION"
+msgstr "‏HITS کنفیگریشن"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Left"
+msgstr "بایاں"
+
+#: src/page_hits.cpp:352
+msgctxt "HITS target"
+msgid "Right"
+msgstr "دایاں"
+
+#: src/page_hits.cpp:352
+msgid "Both (L+R)"
+msgstr "دونوں (L+R)"
+
+#: src/page_hits.cpp:363
+msgid "L and R differ — changes apply to both"
+msgstr "‏L اور R مختلف ہیں — تبدیلیاں دونوں پر لاگو ہوں گی"
+
+#: src/page_hits.cpp:371
+msgctxt "HITS tab"
+msgid "Actuation"
+msgstr "کلک پوائنٹ"
+
+#: src/page_hits.cpp:372
+msgctxt "HITS tab"
+msgid "Rapid"
+msgstr "ریپڈ"
+
+#: src/page_hits.cpp:373
+msgctxt "HITS tab"
+msgid "Haptics"
+msgstr "ہیپٹکس"
+
+#: src/page_hits.cpp:374
+msgctxt "HITS tab"
+msgid "Presets"
+msgstr "پری سیٹس"
+
+#. TRANSLATORS: live counters under the test pad. Counts of the left, right, middle, back and forward button
+#. (L, R, M, Back, Fwd), then clicks per second and how long the last button was held in milliseconds. Keep it short.
+#: src/page_hits.cpp:391
+#, c-format
+msgid "L %d · R %d · M %d · Back %d · Fwd %d · %d clicks/s · held %d ms"
+msgstr "‏⁦L %d⁩ · ⁦R %d⁩ · ⁦M %d⁩ · پیچھے %d · آگے %d · %d کلک/سیکنڈ · ہولڈ ⁦%d ms⁩"
+
+#: src/page_hits.cpp:400
+msgid "Test here — click with any button"
+msgstr "یہاں آزمائیں — کسی بھی بٹن سے کلک کریں"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:63
+#, c-format
+msgid "Could not write file: %s"
+msgstr "فائل نہیں لکھی جا سکی: ⁨%s⁩"
+
+#. TRANSLATORS: %s is the system error message
+#: src/page_profiles.cpp:74
+#, c-format
+msgid "Could not read file: %s"
+msgstr "فائل نہیں پڑھی جا سکی: ⁨%s⁩"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:91 src/window.cpp:25
+#, c-format
+msgid "Profile %d"
+msgstr "پروفائل %d"
+
+#: src/page_profiles.cpp:160
+msgid "At least one profile must stay in the cycle"
+msgstr "چکر میں کم از کم ایک پروفائل رہنا ضروری ہے"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:171
+#, c-format
+msgid "Save Profile %d first"
+msgstr "پہلے پروفائل %d کو محفوظ کریں"
+
+#: src/page_profiles.cpp:180
+msgid "Factory profile not loaded"
+msgstr "فیکٹری پروفائل لوڈ نہیں ہوا"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:187
+#, c-format
+msgid "Profile %d reset to factory. Save to write it"
+msgstr "پروفائل %d فیکٹری پر ری سیٹ ہو گیا۔ لکھنے کے لیے محفوظ کریں"
+
+#. TRANSLATORS: first %d is the profile copied from, second %d the profile copied into (1 to 5)
+#: src/page_profiles.cpp:201
+#, c-format
+msgid "Copied Profile %d into Profile %d. Save to keep it"
+msgstr "پروفائل %d پروفائل %d میں کاپی ہو گیا۔ رکھنے کے لیے محفوظ کریں"
+
+#: src/page_profiles.cpp:209
+msgid "Export profile"
+msgstr "پروفائل ایکسپورٹ کریں"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:212
+#, c-format
+msgid "Exported to %s"
+msgstr "‏⁨%s⁩ میں ایکسپورٹ ہو گیا"
+
+#: src/page_profiles.cpp:217
+msgid "Import profile"
+msgstr "پروفائل امپورٹ کریں"
+
+#: src/page_profiles.cpp:223
+msgid "Not a valid profile file"
+msgstr "یہ درست پروفائل فائل نہیں ہے"
+
+#. TRANSLATORS: %d is the profile number (1 to 5)
+#: src/page_profiles.cpp:230
+#, c-format
+msgid "Imported into Profile %d. Save to write it"
+msgstr "پروفائل %d میں امپورٹ ہو گیا۔ لکھنے کے لیے محفوظ کریں"
+
+#: src/page_profiles.cpp:249
+msgid "Reset to factory"
+msgstr "فیکٹری پر ری سیٹ کریں"
+
+#: src/page_profiles.cpp:250
+msgid "Export…"
+msgstr "ایکسپورٹ…"
+
+#: src/page_profiles.cpp:251
+msgid "Import…"
+msgstr "امپورٹ…"
+
+#: src/page_profiles.cpp:253
+msgid "Copy settings from"
+msgstr "سیٹنگز یہاں سے کاپی کریں"
+
+#: src/page_profiles.cpp:260
+msgid "More actions"
+msgstr "مزید کارروائیاں"
+
+#: src/page_profiles.cpp:279
+msgctxt "profile badge"
+msgid "Active"
+msgstr "فعال"
+
+#: src/page_profiles.cpp:280
+msgid "Unsaved"
+msgstr "غیر محفوظ"
+
+#: src/page_profiles.cpp:295
+msgid "In profile cycle"
+msgstr "پروفائل چکر میں"
+
+#: src/page_profiles.cpp:299
+msgctxt "profile card"
+msgid "Edit"
+msgstr "ایڈٹ"
+
+#: src/page_profiles.cpp:300
+msgctxt "profile card"
+msgid "Activate"
+msgstr "فعال کریں"
+
+#: src/page_profiles.cpp:340
+msgid "Onboard memory mode"
+msgstr "آن بورڈ میموری موڈ"
+
+#: src/page_profiles.cpp:341
+msgid "Host mode: saved profiles are ignored until you switch back"
+msgstr "ہوسٹ موڈ: واپس جانے تک محفوظ پروفائلز نظر انداز رہیں گے"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:346
+#, c-format
+msgid "Could not change the control mode: %s"
+msgstr "کنٹرول موڈ نہیں بدلا جا سکا: ⁨%s⁩"
+
+#: src/page_profiles.cpp:352
+msgid "Save memory backup"
+msgstr "میموری بیک اپ محفوظ کریں"
+
+#. TRANSLATORS: %s is a file path
+#: src/page_profiles.cpp:358
+#, c-format
+msgid "Backup saved: %s"
+msgstr "بیک اپ محفوظ ہو گیا: ⁨%s⁩"
+
+#. TRANSLATORS: %s is a technical error message
+#: src/page_profiles.cpp:361
+#, c-format
+msgid "Backup failed: %s"
+msgstr "بیک اپ ناکام: ⁨%s⁩"
+
+#: src/page_profiles.cpp:366
+msgid "Open memory backup"
+msgstr "میموری بیک اپ کھولیں"
+
+#. TRANSLATORS: %s is the file name of the backup
+#: src/page_profiles.cpp:371
+#, c-format
+msgid ""
+"This overwrites the profiles in the mouse with the contents of %s. The "
+"current memory is saved to the backup folder first."
+msgstr ""
+"اس سے ماؤس کے پروفائلز ⁨%s⁩ کے مواد سے بدل جائیں گے۔ پہلے موجودہ میموری بیک اپ "
+"فولڈر میں محفوظ کی جائے گی۔"
+
+#: src/page_profiles.cpp:374
+msgid "Restore memory?"
+msgstr "میموری بحال کریں؟"
+
+#: src/page_profiles.cpp:376
+msgid "Restore"
+msgstr "بحال کریں"
+
+#. TRANSLATORS: %s is the reason
+#: src/page_profiles.cpp:403 src/page_profiles.cpp:410
+#, c-format
+msgid "Restore failed: %s"
+msgstr "بحالی ناکام: ⁨%s⁩"
+
+#: src/page_profiles.cpp:406
+msgid "Memory restored"
+msgstr "میموری بحال ہو گئی"
+
+#: src/page_profiles.cpp:428
+msgid ""
+"Profiles live inside the mouse and work on any computer without this app."
+msgstr ""
+"پروفائلز ماؤس کے اندر محفوظ رہتے ہیں اور اس ایپ کے بغیر کسی بھی کمپیوٹر پر "
+"کام کرتے ہیں۔"
+
+#: src/page_profiles.cpp:431
+msgid "CONTROL MODE"
+msgstr "کنٹرول موڈ"
+
+#: src/page_profiles.cpp:433
+msgid "Who controls the mouse"
+msgstr "ماؤس کو کون کنٹرول کرے"
+
+#: src/page_profiles.cpp:434
+msgid "Onboard memory (recommended)"
+msgstr "آن بورڈ میموری (تجویز کردہ)"
+
+#: src/page_profiles.cpp:434
+msgid "Host software"
+msgstr "ہوسٹ سافٹ ویئر"
+
+#: src/page_profiles.cpp:442
+msgid "BACKUP"
+msgstr "بیک اپ"
+
+#: src/page_profiles.cpp:443
+msgid "Back up whole memory…"
+msgstr "پوری میموری کا بیک اپ…"
+
+#: src/page_profiles.cpp:443
+msgid "All profiles, the directory and the factory profile, to a file"
+msgstr "تمام پروفائلز، ڈائریکٹری اور فیکٹری پروفائل، ایک فائل میں"
+
+#: src/page_profiles.cpp:444
+msgid "Restore from backup…"
+msgstr "بیک اپ سے بحال کریں…"
+
+#: src/page_profiles.cpp:444
+msgid "Writes the saved sectors back into the mouse"
+msgstr "محفوظ شدہ سیکٹرز واپس ماؤس میں لکھتا ہے"
+
+#. TRANSLATORS: %s is a folder path
+#: src/page_profiles.cpp:451
+#, c-format
+msgid ""
+"The app also makes a full backup automatically before the first save of each "
+"session, in %s."
+msgstr ""
+"ایپ ہر سیشن میں پہلی بار محفوظ کرنے سے پہلے خود بخود مکمل بیک اپ بھی بناتی "
+"ہے، ⁨%s⁩ میں۔"
+
+#: src/page_sensor.cpp:98
+msgctxt "DPI stage"
+msgid "off"
+msgstr "بند"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:116
+#, c-format
+msgid "Mouse now uses stage %d — save (Ctrl+S) to feel your new DPI values"
+msgstr ""
+"ماؤس اب اسٹیج %d استعمال کر رہا ہے — نئی DPI قدریں محسوس کرنے کے لیے محفوظ "
+"کریں (Ctrl+S)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:118
+#, c-format
+msgid "Mouse now uses stage %d"
+msgstr "ماؤس اب اسٹیج %d استعمال کر رہا ہے"
+
+#: src/page_sensor.cpp:197
+msgid "At least one stage must stay enabled"
+msgstr "کم از کم ایک اسٹیج فعال رہنا ضروری ہے"
+
+#: src/page_sensor.cpp:245
+msgid "Pick another stage as the default instead"
+msgstr "اس کی جگہ کوئی دوسرا اسٹیج ڈیفالٹ بنائیں"
+
+#: src/page_sensor.cpp:254
+msgid "Activate this profile first (Profiles page)"
+msgstr "پہلے اس پروفائل کو فعال کریں (پروفائلز صفحہ)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:263
+#, c-format
+msgid "Stage %d is now active (save to use the new values)"
+msgstr "اسٹیج %d اب فعال ہے (نئی قدریں استعمال کرنے کے لیے محفوظ کریں)"
+
+#. TRANSLATORS: %d is the DPI stage number (1 to 5)
+#: src/page_sensor.cpp:265
+#, c-format
+msgid "Stage %d is now active"
+msgstr "اسٹیج %d اب فعال ہے"
+
+#: src/page_sensor.cpp:283
+msgid "Surface mode set"
+msgstr "سطح موڈ سیٹ ہو گیا"
+
+#: src/page_sensor.cpp:325
+msgid "Used after power-on"
+msgstr "پاور آن کے بعد استعمال ہوتا ہے"
+
+#: src/page_sensor.cpp:326
+msgctxt "DPI stage"
+msgid "IN USE"
+msgstr "فعال"
+
+#: src/page_sensor.cpp:347
+msgid "DPI STAGES"
+msgstr "‏DPI اسٹیجز"
+
+#: src/page_sensor.cpp:349
+msgid ""
+"Click a stage to switch the mouse to it now. New DPI values are felt after "
+"Save to mouse (Ctrl+S) — the mouse takes DPI only from its memory. ★ = stage "
+"after power-on."
+msgstr ""
+"ماؤس کو ابھی کسی اسٹیج پر لانے کے لیے اس پر کلک کریں۔ نئی DPI قدریں “ماؤس "
+"میں محفوظ کریں” (Ctrl+S) کے بعد محسوس ہوں گی — ماؤس DPI صرف اپنی میموری سے "
+"لیتا ہے۔ ★ = پاور آن کے بعد کا اسٹیج۔"
+
+#: src/page_sensor.cpp:355
+msgctxt "DPI stage"
+msgid "Enabled"
+msgstr "فعال"
+
+#: src/page_sensor.cpp:357
+msgid "Separate X / Y"
+msgstr "X اور Y الگ الگ"
+
+#: src/page_sensor.cpp:358
+msgid "DPI Y"
+msgstr "DPI Y"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Low"
+msgstr "کم"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "Medium"
+msgstr "درمیانہ"
+
+#: src/page_sensor.cpp:359
+msgctxt "lift-off distance"
+msgid "High"
+msgstr "زیادہ"
+
+#: src/page_sensor.cpp:360
+msgid "Lift-off distance"
+msgstr "لفٹ آف فاصلہ"
+
+#: src/page_sensor.cpp:361
+msgid "Default after power-on"
+msgstr "پاور آن کے بعد ڈیفالٹ"
+
+#: src/page_sensor.cpp:363
+msgid "Use this stage now"
+msgstr "یہ اسٹیج ابھی استعمال کریں"
+
+#: src/page_sensor.cpp:387
+msgid "POLLING RATE"
+msgstr "پولنگ ریٹ"
+
+#: src/page_sensor.cpp:391
+msgctxt "polling rate"
+msgid "Wireless"
+msgstr "وائرلیس"
+
+#: src/page_sensor.cpp:392
+msgctxt "polling rate"
+msgid "Cable"
+msgstr "کیبل"
+
+#: src/page_sensor.cpp:394
+msgid "Hz. Higher rates feel smoother and use more battery."
+msgstr ""
+"‏Hz۔ زیادہ ریٹ زیادہ ہموار محسوس ہوتے ہیں اور بیٹری زیادہ استعمال کرتے ہیں۔"
+
+#: src/page_sensor.cpp:402
+msgid "TRACKING"
+msgstr "ٹریکنگ"
+
+#: src/page_sensor.cpp:403
+msgid "Angle snapping"
+msgstr "اینگل اسنیپنگ"
+
+#: src/page_sensor.cpp:403
+msgid "Straightens near-horizontal and vertical lines"
+msgstr "تقریباً افقی اور عمودی لکیروں کو سیدھا کرتا ہے"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Auto"
+msgstr "خودکار"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "On"
+msgstr "آن"
+
+#: src/page_sensor.cpp:404
+msgctxt "surface mode"
+msgid "Off"
+msgstr "آف"
+
+#: src/page_sensor.cpp:405
+msgid "Gaming surface mode"
+msgstr "گیمنگ سرفیس موڈ"
+
+#: src/page_sensor.cpp:405
+msgid "Applies at once. Device setting, not per profile"
+msgstr "فوراً لاگو ہوتی ہے۔ ڈیوائس کی سیٹنگ، ہر پروفائل کی نہیں"
+
+#: src/page_sensor.cpp:406
+msgid "Scroll filter (ms)"
+msgstr "اسکرول فلٹر (ms)"
+
+#: src/page_sensor.cpp:406
+msgid "Bunny-hop scroll filter, 0 = off"
+msgstr "بنی ہاپ اسکرول فلٹر، 0 = بند"
+
+#: src/page_sensor.cpp:423
+msgid "POWER"
+msgstr "پاور"
+
+#: src/page_sensor.cpp:424
+msgid "Low power after (s)"
+msgstr "کم پاور کے بعد (s)"
+
+#: src/page_sensor.cpp:425
+msgid "Sleep after (s)"
+msgstr "سلیپ کے بعد (s)"
+
+#. TRANSLATORS: a mouse button the app does not know; %04x is its hex bit mask
+#: src/profile.cpp:61
+#, c-format
+msgid "Mouse mask 0x%04x"
+msgstr "ماؤس ماسک 0x%04x"
+
+#. TRANSLATORS: a keyboard key the app does not know; %02x is its hex HID usage code
+#: src/profile.cpp:67
+#, c-format
+msgid "key 0x%02x"
+msgstr "کلید 0x%02x"
+
+#. TRANSLATORS: a media key the app does not know; %04x is its hex usage code
+#: src/profile.cpp:70
+#, c-format
+msgid "Consumer 0x%04x"
+msgstr "میڈیا 0x%04x"
+
+#. TRANSLATORS: a mouse function the app does not know; %02x is its hex code
+#: src/profile.cpp:72
+#, c-format
+msgid "Function 0x%02x"
+msgstr "فنکشن 0x%02x"
+
+#: src/profile.cpp:74
+msgid "Factory default"
+msgstr "فیکٹری ڈیفالٹ"
+
+#. TRANSLATORS: %s is the raw data as hex bytes
+#: src/profile.cpp:80
+#, c-format
+msgid "Macro / custom (%s)"
+msgstr "میکرو / حسبِ ضرورت (⁨%s⁩)"
+
+#: src/profile.cpp:377
+msgid "not a HITS code"
+msgstr "‏HITS کوڈ نہیں ہے"
+
+#: src/profile.cpp:382
+msgid "not a HITS code (unknown version or length)"
+msgstr "‏HITS کوڈ نہیں ہے (نامعلوم ورژن یا لمبائی)"
+
+#: src/profile.cpp:388
+msgid "HITS code value out of range"
+msgstr "‏HITS کوڈ کی قدر حد سے باہر ہے"
+
+#: src/profile.cpp:414
+msgctxt "HITS preset"
+msgid "Factory default"
+msgstr "فیکٹری ڈیفالٹ"
+
+#: src/profile.cpp:415
+msgctxt "HITS preset"
+msgid "Hair trigger"
+msgstr "ہیئر ٹرگر"
+
+#: src/profile.cpp:416
+msgctxt "HITS preset"
+msgid "Fast FPS"
+msgstr "تیز FPS"
+
+#: src/profile.cpp:417
+msgctxt "HITS preset"
+msgid "Balanced"
+msgstr "متوازن"
+
+#: src/profile.cpp:418
+msgctxt "HITS preset"
+msgid "Deep press"
+msgstr "گہرا دباؤ"
+
+#: src/profile.cpp:419
+msgctxt "HITS preset"
+msgid "Strong feedback"
+msgstr "مضبوط فیڈ بیک"
+
+#: src/profile.cpp:420
+msgctxt "HITS preset"
+msgid "Silent feel"
+msgstr "خاموش احساس"
+
+#: src/window.cpp:8
+msgctxt "page"
+msgid "HITS tuning"
+msgstr "‏HITS ٹیوننگ"
+
+#: src/window.cpp:9
+msgctxt "page"
+msgid "Buttons"
+msgstr "بٹن"
+
+#: src/window.cpp:10
+msgctxt "page"
+msgid "Sensor"
+msgstr "سینسر"
+
+#: src/window.cpp:11
+msgctxt "page"
+msgid "Profiles"
+msgstr "پروفائلز"
+
+#: src/window.cpp:12
+msgctxt "page"
+msgid "Device"
+msgstr "ڈیوائس"
+
+#. TRANSLATORS: %d is the profile number (1 to 5), %s is the name the user gave the profile
+#: src/window.cpp:27
+#, c-format
+msgid "Profile %d · %s"
+msgstr "پروفائل %d · ⁨%s⁩"
+
+#: src/window.cpp:35
+msgid "Not connected"
+msgstr "منسلک نہیں"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2" or "Profile 2 · Fast"
+#: src/window.cpp:38
+#, c-format
+msgid "%s · Active"
+msgstr "‏%s · فعال"
+
+#. TRANSLATORS: window subtitle. %s is the profile, for example "Profile 2"
+#: src/window.cpp:40
+#, c-format
+msgid "%s · not active"
+msgstr "‏%s · غیر فعال"
+
+#: src/window.cpp:50 src/window.cpp:130
+msgid "Searching for the mouse…"
+msgstr "ماؤس تلاش کیا جا رہا ہے…"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:53
+#, c-format
+msgid "Connected · %d %% · charging"
+msgstr "منسلک · %d %% · چارج ہو رہی ہے"
+
+#. TRANSLATORS: status line, %d is the battery level in percent
+#: src/window.cpp:55
+#, c-format
+msgid "Connected · %d %%"
+msgstr "منسلک · %d %%"
+
+#: src/window.cpp:56
+msgid "Connected · charging"
+msgstr "منسلک · چارج ہو رہی ہے"
+
+#: src/window.cpp:56
+msgid "Connected"
+msgstr "منسلک"
+
+#. TRANSLATORS: %d is the number of edits that are not yet written to the mouse
+#: src/window.cpp:72
+#, c-format
+msgid "%d unsaved change"
+msgid_plural "%d unsaved changes"
+msgstr[0] "‏%d غیر محفوظ تبدیلی"
+msgstr[1] "‏%d غیر محفوظ تبدیلیاں"
+
+#: src/window.cpp:81
+msgid "Only a preview until you save it into the mouse (Ctrl+S)."
+msgstr "جب تک آپ اسے ماؤس میں محفوظ نہ کریں (Ctrl+S) یہ صرف پیش منظر ہے۔"
+
+#: src/window.cpp:83 src/window.cpp:169
+msgid "Discard"
+msgstr "رد کریں"
+
+#: src/window.cpp:84
+msgid "Save to mouse"
+msgstr "ماؤس میں محفوظ کریں"
+
+#: src/window.cpp:85
+msgid "Write the changes into the mouse memory (Ctrl+S)"
+msgstr "تبدیلیاں ماؤس کی میموری میں لکھیں (Ctrl+S)"
+
+#. TRANSLATORS: entry in the profile list, %s is the profile, for example "Profile 2"
+#: src/window.cpp:105
+#, c-format
+msgid "%s  (active)"
+msgstr "‏%s  (فعال)"
+
+#: src/window.cpp:155
+msgid "The profile you are editing"
+msgstr "وہ پروفائل جسے آپ ایڈٹ کر رہے ہیں"
+
+#: src/window.cpp:156
+msgid "EDITING"
+msgstr "ایڈیٹنگ"
+
+#: src/window.cpp:168
+msgid "Unsaved changes"
+msgstr "غیر محفوظ شدہ تبدیلیاں"
+
+#: src/window.cpp:168
+msgid "Write them into the mouse before closing?"
+msgstr "بند کرنے سے پہلے انہیں ماؤس میں لکھ دیں؟"
+
+#: src/window.cpp:203
+msgid ""
+"Searching for the PRO X3 SUPERSTRIKE — switch the mouse on or plug in the "
+"receiver"
+msgstr "‏PRO X3 SUPERSTRIKE تلاش کیا جا رہا ہے — ماؤس آن کریں یا ریسیور لگائیں"
+
+#: src/window.cpp:204
+msgid "Retry"
+msgstr "دوبارہ کوشش کریں"
