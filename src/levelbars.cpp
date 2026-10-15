@@ -33,6 +33,9 @@ std::string asset_path(const std::string& name) {
         dirs.push_back(exe + "/../share/superstrike-studio/assets");
     }
 #else
+    // AppImage (tools/linux/build-appimage.sh): the runtime sets APPDIR, sharun SHARUN_DIR
+    for (const char* var : {"APPDIR", "SHARUN_DIR"})
+        if (const char* e = g_getenv(var)) dirs.push_back(std::string(e) + "/share/superstrike-studio/assets");
     if (gchar* exe = g_file_read_link("/proc/self/exe", nullptr)) {
         gchar* d = g_path_get_dirname(exe);
         dirs.push_back(std::string(d) + "/assets");

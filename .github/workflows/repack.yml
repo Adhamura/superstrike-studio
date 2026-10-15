@@ -1,0 +1,136 @@
+name: Repack an old release
+
+# Gives a release made before 1.1.1 (when releases had a Windows zip) the one-file downloads:
+#   SuperStrike-Studio-<version>-windows-x64.exe   the release's own Windows files, unchanged,
+#                                                  packed with today's launcher (tools/windows/onefile.c)
+#   SuperStrike-Studio-<version>-x86_64.AppImage   built from the tag's sources with today's
+#                                                  tools/linux/build-appimage.sh
+#   SHA256SUMS
+# then removes the zip and replaces the Install part of the notes (tools/release-install.md).
+# Run it from Actions → "Repack an old release" → Run workflow, with the tag (v1.1.0).
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to repack (for example v1.1.0)
+        required: true
+
+permissions:
+  contents: write
+
+env:
+  TAG: ${{ inputs.tag }}
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  windows:
+    name: Windows one-file exe
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the release's Windows zip
+        shell: pwsh
+        run: |
+          gh release download $env:TAG --repo $env:GITHUB_REPOSITORY --pattern '*-windows-x64.zip' --dir old
+          Expand-Archive -Path (Get-ChildItem old/*.zip).FullName -DestinationPath old
+          Get-ChildItem old/SuperStrike-Studio | Select-Object -First 5
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          install: mingw-w64-ucrt-x86_64-gcc
+      - name: Build the launcher and pack the folder
+        shell: msys2 {0}
+        run: |
+          set -euo pipefail
+          V="${TAG#v}"
+          IFS=. read -r MAJ MIN PAT <<< "$V"
+          mkdir -p build dist
+          sed -e "s/@PROJECT_VERSION@/$V/g" -e "s/@PROJECT_VERSION_MAJOR@/$MAJ/g" \
+              -e "s/@PROJECT_VERSION_MINOR@/$MIN/g" -e "s/@PROJECT_VERSION_PATCH@/$PAT/g" \
+              assets/windows/app.rc.in > build/app.rc
+          windres -I assets/windows build/app.rc -O coff -o build/app.res
+          g++ -x c++ -Os -municode -mwindows -DSS_VERSION="\"$V\"" tools/windows/onefile.c -x none build/app.res \
+              -static -s -lcabinet -o build/ss-onefile.exe
+          g++ -x c++ -Os -municode -DONEFILE_PACKER tools/windows/onefile.c -x none -static -s -lcabinet -o build/ss-pack.exe
+          build/ss-pack.exe "$(cygpath -w build/ss-onefile.exe)" "$(cygpath -w old/SuperStrike-Studio)" \
+              "$(cygpath -w dist/SuperStrike-Studio-windows-x64.exe)"
+      - name: Smoke test with the demo mouse
+        shell: msys2 {0}
+        run: |
+          mkdir -p shots
+          out="$(cygpath -w "$PWD/shots/windows-hits.png")"
+          SS_SHOT_CLEAN=1 GSK_RENDERER=cairo timeout 90 dist/SuperStrike-Studio-windows-x64.exe --demo --shot "hits:$out" || true
+          test -s shots/windows-hits.png || { echo "::error::no screenshot from the one-file exe"; exit 1; }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: dist/SuperStrike-Studio-windows-x64.exe
+
+  linux:
+    name: Linux AppImage
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install packages
+        run: |
+          pacman -Syu --noconfirm --needed base-devel cmake gettext gtk4 libadwaita librsvg json-glib \
+            xorg-server-xvfb xorg-xauth git glib-networking ca-certificates patchelf binutils wget
+      - uses: actions/checkout@v4
+        with:
+          path: main
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+          path: src
+      - name: Build the AppImage from the tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          # the AppImage asset lookup (src/levelbars.cpp since 1.1.1)
+          if ! grep -q SHARUN_DIR src/src/levelbars.cpp; then
+            sed -i '0,/^#else$/s//#else\n    for (const char* var : {"APPDIR", "SHARUN_DIR"})\n        if (const char* e = g_getenv(var)) dirs.push_back(std::string(e) + "\/share\/superstrike-studio\/assets");/' \
+              src/src/levelbars.cpp
+          fi
+          grep -n -A3 '^#else' src/src/levelbars.cpp | head -5
+          mkdir -p src/tools/linux
+          cp main/tools/linux/build-appimage.sh src/tools/linux/
+          src/tools/linux/build-appimage.sh
+      - name: Smoke test the AppImage
+        shell: bash
+        env:
+          APPIMAGE_EXTRACT_AND_RUN: 1
+        run: |
+          mkdir -p shots
+          SS_SHOT_CLEAN=1 GSK_RENDERER=cairo timeout 60 xvfb-run -a -s "-screen 0 1600x1000x24" \
+            src/dist/SuperStrike-Studio-x86_64.AppImage --demo --shot "hits:$PWD/shots/appimage-hits.png"
+          test -s shots/appimage-hits.png || { echo "::error::the AppImage made no screenshot"; exit 1; }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux
+          path: src/dist/SuperStrike-Studio-x86_64.AppImage
+
+  publish:
+    name: Replace the release files
+    needs: [windows, linux]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Upload the one-file downloads, remove the zip, update the notes
+        shell: bash
+        run: |
+          set -euo pipefail
+          V="${TAG#v}"; R=(--repo "$GITHUB_REPOSITORY")
+          mkdir -p dist
+          mv artifacts/windows/SuperStrike-Studio-windows-x64.exe "dist/SuperStrike-Studio-$V-windows-x64.exe"
+          mv artifacts/linux/SuperStrike-Studio-x86_64.AppImage "dist/SuperStrike-Studio-$V-x86_64.AppImage"
+          (cd dist && sha256sum SuperStrike-Studio-* > SHA256SUMS && cat SHA256SUMS)
+          gh release upload "$TAG" "${R[@]}" --clobber dist/*
+          gh release view "$TAG" "${R[@]}" --json assets -q '.assets[].name' | grep '\.zip$' |
+            while IFS= read -r a; do gh release delete-asset "$TAG" "$a" "${R[@]}" -y; done
+          gh release view "$TAG" "${R[@]}" --json body -q .body | awk '/^### Install/ { exit } { print }' > notes.md
+          sed "s/@VERSION@/$V/g" tools/release-install.md >> notes.md
+          gh release edit "$TAG" "${R[@]}" --notes-file notes.md
+          gh release view "$TAG" "${R[@]}" --json assets -q '.assets[].name'

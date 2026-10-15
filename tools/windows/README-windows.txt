@@ -1,14 +1,28 @@
 SuperStrike Studio on Windows 10 / 11 (64 bit)
 ==============================================
 
-Most people do not need to build anything: download the ready zip
-(SuperStrike-Studio-<version>-windows-x64.zip) from
+Most people do not need to build anything: download the ready exe
+(SuperStrike-Studio-<version>-windows-x64.exe) from
 https://github.com/Adhamura/SuperStrike-Studio/releases/latest
-unzip it and run superstrike-studio.exe.
+and run it. One file, nothing to unzip.
 
+
+Quick build: build-windows.bat
+------------------------------
+Double-click build-windows.bat in the project folder. It installs MSYS2 with
+winget if it is missing (into C:\msys64; set MSYS2_ROOT for another folder),
+installs the build packages, builds, and ends with:
+
+  dist\SuperStrike-Studio-windows-x64.exe       the program, one file
+
+The first run downloads some hundred MB and takes a few minutes.
+
+
+Step by step (the same, by hand)
+--------------------------------
 The steps below build the same thing yourself. You build the program once on
-your PC. After that you get a portable folder and a zip file. You can copy
-them to any Windows PC. No installer is needed.
+your PC. After that you get one exe and a portable folder. You can copy them
+to any Windows PC. No installer is needed.
 
 
 1. Install MSYS2
@@ -56,8 +70,8 @@ Check that you are in the right place. This command must list CMakeLists.txt:
 The first build takes a few minutes. The script prints each step. When it
 ends it shows the result:
 
-  dist/SuperStrike-Studio/superstrike-studio.exe       the program
-  dist/SuperStrike-Studio-windows-x64.zip              the same folder, zipped
+  dist/SuperStrike-Studio-windows-x64.exe              the program, one file
+  dist/SuperStrike-Studio/superstrike-studio.exe       the same, as a folder
 
 You can run the script again at any time. It rebuilds the dist folder.
 
@@ -69,10 +83,10 @@ Then run (in the shell):
 
   dist/SuperStrike-Studio/superstrike-studio.exe
 
-Or open the folder dist\SuperStrike-Studio in Windows Explorer and
-double-click superstrike-studio.exe. You can move or copy the whole folder
-(keep all files together) or unzip the zip on another PC. That PC needs no
-MSYS2.
+Or double-click dist\SuperStrike-Studio-windows-x64.exe in Windows Explorer.
+Copy that one file to any other PC; it needs no MSYS2. (The first start
+unpacks it once to %LOCALAPPDATA%\SuperStrike-Studio.) The folder
+dist\SuperStrike-Studio works too, if you keep all its files together.
 
 
 Notes
