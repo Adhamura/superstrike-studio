@@ -297,6 +297,7 @@ version (`superstrike-studio --version`), the mouse firmware (Device page) and y
 - **1.0**: ✅ HITS (actuation, rapid trigger, haptics), buttons, DPI, polling, five onboard
   profiles with backup and restore, demo mode, 21 languages, Linux and Windows.
 - **1.1**: ✅ update check from GitHub releases.
+- **1.1.1**: ✅ one-file downloads: a Windows exe and a Linux AppImage (no zip), `build-windows.bat`.
 - **Ideas, not scheduled**: AUR package and Flatpak; Windows installer; more Logitech mice with HITS.
 
 Missing something? [Open an issue](https://github.com/Adhamura/SuperStrike-Studio/issues/new/choose).
@@ -328,6 +329,8 @@ The version is in `CMakeLists.txt` (`project(superstrike_studio VERSION x.y.z)`)
 **Releases are automatic.** Raise the version, add a `## <version>` section to `CHANGELOG.md`,
 and merge to `main`. GitHub Actions builds and tests on Linux and Windows, then publishes the
 release `v<version>` with the Windows exe, the Linux AppImage, `SHA256SUMS` and the changelog section as notes.
+Releases from before 1.1.1 got the same one-file downloads afterwards with the **Repack an old
+release** workflow (`.github/workflows/repack.yml`).
 </details>
 
 ## Credits
