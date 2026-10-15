@@ -34,4 +34,6 @@ report, without details).
 
 Release files are built by GitHub Actions from the tagged commit and listed with their SHA-256 in
 `SHA256SUMS`. Check them with `sha256sum -c SHA256SUMS --ignore-missing`. The Windows exe is not
-signed with a paid code-signing certificate, so SmartScreen may warn about it.
+signed with a paid code-signing certificate, so SmartScreen may warn about it. On its first start
+it unpacks the app (the same files as `build-windows.bat` makes) into
+`%LOCALAPPDATA%\SuperStrike-Studio\app` and runs it from there; older unpacked versions are removed.

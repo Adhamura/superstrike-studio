@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 # The one place for the version: shown in the app (About), the Windows exe and the release.
-project(superstrike_studio VERSION 1.1.0 LANGUAGES CXX)
+project(superstrike_studio VERSION 1.1.1 LANGUAGES CXX)
 if(WIN32)
   enable_language(RC)
 endif()
@@ -81,6 +81,23 @@ elseif(PO_FILES)
   endforeach()
   add_custom_target(translations ALL DEPENDS ${MO_FILES})
   add_dependencies(superstrike-studio translations)
+endif()
+
+if(WIN32)
+  # One-file release exe (tools/windows/onefile.c): ss-pack appends the portable folder to the
+  # ss-onefile launcher. tools/windows/build-windows.sh runs it.
+  set(ONEFILE ${CMAKE_SOURCE_DIR}/tools/windows/onefile.c)
+  set_source_files_properties(${ONEFILE} PROPERTIES LANGUAGE CXX)  # no C compiler needed
+  add_executable(ss-onefile ${ONEFILE} ${CMAKE_BINARY_DIR}/app.rc)
+  target_include_directories(ss-onefile PRIVATE ${CMAKE_SOURCE_DIR}/assets/windows)
+  target_compile_definitions(ss-onefile PRIVATE $<$<COMPILE_LANGUAGE:CXX>:SS_VERSION="${PROJECT_VERSION}">)
+  set_target_properties(ss-onefile PROPERTIES WIN32_EXECUTABLE ON)
+  target_link_options(ss-onefile PRIVATE -municode -static -s)
+  target_link_libraries(ss-onefile PRIVATE cabinet)
+  add_executable(ss-pack ${ONEFILE})
+  target_compile_definitions(ss-pack PRIVATE ONEFILE_PACKER)
+  target_link_options(ss-pack PRIVATE -municode -static -s)
+  target_link_libraries(ss-pack PRIVATE cabinet)
 endif()
 
 # read-only device check (no writes): build/sscheck

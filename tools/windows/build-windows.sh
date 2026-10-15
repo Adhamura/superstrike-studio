@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# Build SuperStrike Studio on Windows and make a portable folder + zip.
-# Usage (inside the "MSYS2 UCRT64" shell):  tools/windows/build-windows.sh
-# Result: dist/SuperStrike-Studio/superstrike-studio.exe and dist/SuperStrike-Studio-windows-x64.zip
+# Build SuperStrike Studio on Windows: one exe that runs anywhere, plus the same files as a folder.
+# Usage: build-windows.bat (double-click; installs what is missing), or in the "MSYS2 UCRT64" shell:
+#   tools/windows/build-windows.sh
+# Result: dist/SuperStrike-Studio-windows-x64.exe (the one file to share; tools/windows/onefile.c)
+#         dist/SuperStrike-Studio/superstrike-studio.exe (the unpacked folder)
 # Safe to run again: the build folder is reused, the dist folder is rebuilt from scratch.
 set -euo pipefail
 
@@ -21,7 +23,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PREFIX="$MSYSTEM_PREFIX"   # /ucrt64
 BUILD="$ROOT/build/windows"
 OUT="$ROOT/dist/SuperStrike-Studio"
-ZIP="$ROOT/dist/SuperStrike-Studio-windows-x64.zip"
+ONE="$ROOT/dist/SuperStrike-Studio-windows-x64.exe"
 
 step "Configure (Ninja, MinSizeRel) in $BUILD"
 cmake -S "$ROOT" -B "$BUILD" -G Ninja -DCMAKE_BUILD_TYPE=MinSizeRel
@@ -30,7 +32,7 @@ step "Build (also compiles the translations)"
 cmake --build "$BUILD"
 
 step "Create $OUT"
-rm -rf "$OUT" "$ZIP"
+rm -rf "$OUT" "$ONE"
 mkdir -p "$OUT"
 cp "$BUILD/superstrike-studio.exe" "$BUILD/sscheck.exe" "$OUT/"
 echo "copied superstrike-studio.exe and sscheck.exe (read-only device check, run it from a shell)"
@@ -82,11 +84,10 @@ echo "DLLs copied: $(ls "$OUT"/*.dll | wc -l)"
 missing="$(ntldd -R "$OUT/superstrike-studio.exe" | grep -i 'not found' || true)"
 if [ -n "$missing" ]; then echo "WARNING: DLLs not found:"; echo "$missing"; fi
 
-step "Create $ZIP"
-mkdir -p "$ROOT/dist"
-(cd "$ROOT/dist" && cmake -E tar cf "$ZIP" --format=zip SuperStrike-Studio)
+step "Create $ONE (launcher + packed folder)"
+"$BUILD/ss-pack.exe" "$(cygpath -w "$BUILD/ss-onefile.exe")" "$(cygpath -w "$OUT")" "$(cygpath -w "$ONE")"
 
 step "Done"
 echo "folder: $OUT ($(du -sh "$OUT" | cut -f1))"
-echo "zip:    $ZIP ($(du -h "$ZIP" | cut -f1))"
-echo "run:    $OUT/superstrike-studio.exe"
+echo "exe:    $ONE ($(du -h "$ONE" | cut -f1))"
+echo "run:    $ONE   (or $OUT/superstrike-studio.exe)"

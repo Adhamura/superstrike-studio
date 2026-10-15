@@ -1,9 +1,9 @@
 name: Release
 
 # Publishes the GitHub Release v<version> automatically:
-#   SuperStrike-Studio-<version>-windows-x64.zip   portable Windows build (no installer)
+#   SuperStrike-Studio-<version>-windows-x64.exe   Windows, one file (no installer, no zip)
+#   SuperStrike-Studio-<version>-x86_64.AppImage   Linux, one file (any x86_64 distro)
 #   SHA256SUMS
-# Linux users build from source with ./install.sh (see the README).
 # Every push to main whose version (project(... VERSION x.y.z) in CMakeLists.txt) has no tag yet
 # is tested, built and published (it creates the tag). To release: raise the version, add a
 # "## <version>" section to CHANGELOG.md, merge. Pushing a tag v<version> or "Run workflow" also work.
@@ -78,18 +78,22 @@ jobs:
 
           ### Install
 
-          **Windows 10 / 11 (64-bit):** download **SuperStrike-Studio-$VERSION-windows-x64.zip**, unzip it
-          anywhere and run \`superstrike-studio.exe\`. No installer, no service, no account. Close Logitech
-          G HUB first (also in the tray). SmartScreen may say "Windows protected your PC" because the exe is
-          not signed with a paid certificate: click **More info → Run anyway**.
+          **Windows 10 / 11 (64-bit):** download **SuperStrike-Studio-$VERSION-windows-x64.exe** and run
+          it. One file: no installer, no zip, no service, no account (the first start unpacks it to
+          \`%LOCALAPPDATA%\\SuperStrike-Studio\` and takes a few seconds). Close Logitech G HUB first (also
+          in the tray). SmartScreen may say "Windows protected your PC" because the exe is not signed
+          with a paid certificate: click **More info → Run anyway**.
 
-          **Linux:** build from source (one command, about a minute):
+          **Linux (x86_64):** download **SuperStrike-Studio-$VERSION-x86_64.AppImage**, then
           \`\`\`bash
-          git clone https://github.com/Adhamura/SuperStrike-Studio && cd SuperStrike-Studio
-          ./install.sh               # app menu entry + desktop launcher
-          sudo ./install.sh --udev   # once, if the app says it has no permission for /dev/hidraw*
+          chmod +x SuperStrike-Studio-$VERSION-x86_64.AppImage && ./SuperStrike-Studio-$VERSION-x86_64.AppImage
           \`\`\`
-          Needs GTK 4, libadwaita 1.7+, librsvg, json-glib, glib-networking, cmake, gettext and a C++20 compiler.
+          Everything it needs is inside (GTK 4, libadwaita). If it says it has no permission for
+          /dev/hidraw*, add this udev rule once:
+          \`\`\`bash
+          echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/70-superstrike.rules
+          sudo udevadm control --reload-rules && sudo udevadm trigger --subsystem-match=hidraw
+          \`\`\`
 
           **No mouse yet?** Start it with \`--demo\` to try every page with a simulated PRO X3 SUPERSTRIKE.
 
@@ -100,15 +104,21 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: SuperStrike-Studio-windows-x64
-          path: SuperStrike-Studio
+          path: artifacts
+      - uses: actions/download-artifact@v4
+        with:
+          name: SuperStrike-Studio-linux-x86_64
+          path: artifacts
 
-      - name: Pack the files
+      - name: Name the files
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p dist
-          zip -qr9 "dist/SuperStrike-Studio-$VERSION-windows-x64.zip" SuperStrike-Studio
-          (cd dist && sha256sum "SuperStrike-Studio-$VERSION-windows-x64.zip" > SHA256SUMS)
+          mv artifacts/SuperStrike-Studio-windows-x64.exe "dist/SuperStrike-Studio-$VERSION-windows-x64.exe"
+          mv artifacts/SuperStrike-Studio-x86_64.AppImage "dist/SuperStrike-Studio-$VERSION-x86_64.AppImage"
+          chmod +x "dist/SuperStrike-Studio-$VERSION-x86_64.AppImage"
+          (cd dist && sha256sum SuperStrike-Studio-* > SHA256SUMS)
           ls -la dist
 
       - name: Publish the release
@@ -119,5 +129,6 @@ jobs:
           name: SuperStrike Studio ${{ needs.check.outputs.version }}
           body_path: ${{ runner.temp }}/notes.md
           files: |
-            dist/SuperStrike-Studio-${{ needs.check.outputs.version }}-windows-x64.zip
+            dist/SuperStrike-Studio-${{ needs.check.outputs.version }}-windows-x64.exe
+            dist/SuperStrike-Studio-${{ needs.check.outputs.version }}-x86_64.AppImage
             dist/SHA256SUMS

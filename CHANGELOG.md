@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.1
+
+- **One file per system in the releases, no more archives.** Windows gets
+  `SuperStrike-Studio-<version>-windows-x64.exe` (just run it, no zip to unpack) and Linux gets
+  `SuperStrike-Studio-<version>-x86_64.AppImage` (GTK 4 and libadwaita inside, runs on any x86_64
+  distro). The Windows exe unpacks itself once to `%LOCALAPPDATA%\SuperStrike-Studio` on the
+  first start and reuses it afterwards.
+- **`build-windows.bat`**: double-click it to build on Windows. It installs MSYS2 (with winget) and
+  the build packages when they are missing, then makes the same one-file exe.
+- CI builds and starts both one-file releases with the demo mouse.
+
 ## 1.1.0
 
 - **Check for updates from GitHub.** When the app starts it asks GitHub for the latest release, at

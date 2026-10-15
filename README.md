@@ -18,7 +18,7 @@ with this app closed and no Logitech software installed. A small native app for 
 ![Languages](https://img.shields.io/badge/languages-21-8a63d2)
 
 [**Download for Windows**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest) ·
-[Install on Linux](#linux) · [Screenshots](#screenshots) · [Why](#why-superstrike-studio) ·
+[**Download for Linux (AppImage)**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest) · [Screenshots](#screenshots) · [Why](#why-superstrike-studio) ·
 [Performance](#light-on-your-pc) · [Updates](#updates) · [FAQ](#faq)
 
 <img src="docs/promo/superstrike-studio.gif" width="860" alt="SuperStrike Studio: HITS tuning with rapid trigger and haptics, the live test pad, Save to mouse, button remapping, DPI stages and onboard profiles">
@@ -140,17 +140,37 @@ Corrections are welcome in an issue.</sub>
 
 ### Windows
 
-1. Download **SuperStrike-Studio-&lt;version&gt;-windows-x64.zip** from
+1. Download **SuperStrike-Studio-&lt;version&gt;-windows-x64.exe** from
    [**Releases**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest).
-2. Unzip it anywhere (keep the folder together) and run **`superstrike-studio.exe`**.
+2. Run it. That is all: one file, nothing to unzip.
 3. **Close Logitech G HUB** first (also in the tray, near the clock): it can keep the receiver busy.
 
-No installer, no admin rights. SmartScreen may say "Windows protected your PC" because the exe is
+No installer, no admin rights. The first start unpacks the app once to
+`%LOCALAPPDATA%\SuperStrike-Studio` (a few seconds); later starts are instant. SmartScreen may say "Windows protected your PC" because the exe is
 not signed with a paid certificate: click **More info → Run anyway**. Check the download with
 `sha256sum -c SHA256SUMS --ignore-missing`. Settings live in `%LOCALAPPDATA%\superstrike`.
-To build it yourself: [`tools/windows/README-windows.txt`](tools/windows/README-windows.txt).
+To build it yourself, double-click **`build-windows.bat`** (it installs MSYS2 and the build
+packages when they are missing) or see [`tools/windows/README-windows.txt`](tools/windows/README-windows.txt).
 
 ### Linux
+
+Download **SuperStrike-Studio-&lt;version&gt;-x86_64.AppImage** from
+[**Releases**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest) and run it:
+
+```bash
+chmod +x SuperStrike-Studio-*-x86_64.AppImage && ./SuperStrike-Studio-*-x86_64.AppImage
+```
+
+One file with GTK 4 and libadwaita inside: it runs on any x86_64 distro. If the app says it has no
+permission for `/dev/hidraw*`, add the udev rule once (`sudo ./install.sh --udev` from the sources
+does the same):
+
+```bash
+echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/70-superstrike.rules
+sudo udevadm control --reload-rules && sudo udevadm trigger --subsystem-match=hidraw
+```
+
+#### Build from source
 
 Needs GTK 4, **libadwaita 1.7+**, librsvg, json-glib, CMake, gettext and a C++20 compiler
 (glib-networking for the update check; most desktops have it):
@@ -182,7 +202,7 @@ stay in memory and nothing is sent to a real mouse.
 
 SuperStrike Studio checks GitHub for a new release when it starts, **at most once a day**. When
 there is one, it shows the version and its release notes and offers **Open download page** (the
-GitHub release with the Windows zip; on Linux, `git pull && ./install.sh`), **Later** or **Skip
+GitHub release with the Windows exe and the Linux AppImage; from source, `git pull && ./install.sh`), **Later** or **Skip
 this version**. **Device → Check for updates** checks right away; **Check for updates
 automatically** turns the daily check off.
 
@@ -231,7 +251,8 @@ Before the first save of a session the whole memory is backed up to a JSON file.
 | `assets/` | mouse drawings, icons, logo, stylesheet |
 | `po/` | translations (`po/update-pot.sh` refreshes the template) |
 | `tools/sscheck.cpp` | read-only device check |
-| `tools/windows/` | Windows build (MSYS2 UCRT64): portable folder and zip |
+| `build-windows.bat`, `tools/windows/` | Windows build (MSYS2 UCRT64): portable folder and one-file exe |
+| `tools/linux/` | Linux AppImage |
 | `tools/screenshots/`, `tools/promo/` | README screenshots and the promo video, made with the demo mouse |
 | `DESIGN.md` | UI design spec |
 </details>
@@ -306,7 +327,7 @@ The version is in `CMakeLists.txt` (`project(superstrike_studio VERSION x.y.z)`)
 
 **Releases are automatic.** Raise the version, add a `## <version>` section to `CHANGELOG.md`,
 and merge to `main`. GitHub Actions builds and tests on Linux and Windows, then publishes the
-release `v<version>` with the Windows zip, `SHA256SUMS` and the changelog section as notes.
+release `v<version>` with the Windows exe, the Linux AppImage, `SHA256SUMS` and the changelog section as notes.
 </details>
 
 ## Credits
