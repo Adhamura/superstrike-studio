@@ -90,6 +90,7 @@ L="$R/lib/gdk-pixbuf-2.0/2.10.0"
 mkdir -p "$L/loaders"
 cp "$BREW"/lib/gdk-pixbuf-2.0/2.10.0/loaders/*.so "$L/loaders/"
 chmod u+w "$L"/loaders/*.so
+for so in "$L"/loaders/*.so; do install_name_tool -id "@rpath/${so##*/}" "$so" 2>/dev/null; done  # own name
 SRC_LOADERS="$BREW/lib/gdk-pixbuf-2.0/2.10.0/loaders"
 gdk-pixbuf-query-loaders "$SRC_LOADERS"/*.so | sed "s#\"$SRC_LOADERS#\"@LOADERS@#" > "$L/loaders.cache.in"
 grep -c '^"@LOADERS@' "$L/loaders.cache.in" | xargs echo "loaders in the cache:"
