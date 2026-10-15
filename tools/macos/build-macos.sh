@@ -90,13 +90,14 @@ L="$R/lib/gdk-pixbuf-2.0/2.10.0"
 mkdir -p "$L/loaders"
 cp "$BREW"/lib/gdk-pixbuf-2.0/2.10.0/loaders/*.so "$L/loaders/"
 chmod u+w "$L"/loaders/*.so
+SRC_LOADERS="$BREW/lib/gdk-pixbuf-2.0/2.10.0/loaders"
+gdk-pixbuf-query-loaders "$SRC_LOADERS"/*.so | sed "s#\"$SRC_LOADERS#\"@LOADERS@#" > "$L/loaders.cache.in"
+grep -c '^"@LOADERS@' "$L/loaders.cache.in" | xargs echo "loaders in the cache:"
 
 step "Bundle the libraries (dylibbundler)"
 args=(-od -b -cd -d "$C/Frameworks" -p "@executable_path/../Frameworks/" -x "$C/MacOS/superstrike-studio")
 for so in "$L"/loaders/*.so; do args+=(-x "$so"); done
 dylibbundler "${args[@]}" -s "$BREW/lib" >/dev/null
-gdk-pixbuf-query-loaders "$L"/loaders/*.so | sed "s#\"$L/loaders#\"@LOADERS@#" > "$L/loaders.cache.in"
-grep -c '^"@LOADERS@' "$L/loaders.cache.in" | xargs echo "loaders in the cache:"
 
 step "Check: nothing may point into Homebrew any more"
 bad=0
