@@ -131,6 +131,7 @@ jobs:
           gh release view "$TAG" "${R[@]}" --json assets -q '.assets[].name' | grep '\.zip$' |
             while IFS= read -r a; do gh release delete-asset "$TAG" "$a" "${R[@]}" -y; done
           gh release view "$TAG" "${R[@]}" --json body -q .body | awk '/^### Install/ { exit } { print }' > notes.md
-          sed "s/@VERSION@/$V/g" tools/release-install.md >> notes.md
+          # releases before 1.2.0 have no macOS app: leave its paragraph out
+          sed "s/@VERSION@/$V/g" tools/release-install.md | awk '/^\*\*macOS/ { skip = 1 } /^\*\*No mouse/ { skip = 0 } !skip' >> notes.md
           gh release edit "$TAG" "${R[@]}" --notes-file notes.md
           gh release view "$TAG" "${R[@]}" --json assets -q '.assets[].name'

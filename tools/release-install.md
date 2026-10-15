@@ -17,6 +17,14 @@ echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", TAG+="uac
 sudo udevadm control --reload-rules && sudo udevadm trigger --subsystem-match=hidraw
 ```
 
+**macOS (Apple silicon or Intel):** download **SuperStrike-Studio-@VERSION@-macos-arm64.dmg**
+(Apple silicon: M1 and later) or **SuperStrike-Studio-@VERSION@-macos-x86_64.dmg** (Intel), open it and
+drag **SuperStrike Studio** to **Applications**. The app is not notarized by Apple (that needs a paid
+developer account), so the first start is blocked: open **System Settings → Privacy & Security**
+and click **Open Anyway** (or run
+`xattr -dr com.apple.quarantine "/Applications/SuperStrike Studio.app"` once). Close Logitech
+G HUB first.
+
 **No mouse yet?** Start it with `--demo` to try every page with a simulated PRO X3 SUPERSTRIKE.
 
 Check downloads with `sha256sum -c SHA256SUMS --ignore-missing`.

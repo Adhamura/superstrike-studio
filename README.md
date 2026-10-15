@@ -6,20 +6,20 @@
 
 Actuation point, rapid trigger and **click haptics**, button actions, DPI and polling rate are
 written straight into the mouse's **onboard memory**. They keep working on any PC, in any game,
-with this app closed and no Logitech software installed. A small native app for **Linux** and
-**Windows**: no background service, no account, no telemetry.
+with this app closed and no Logitech software installed. A small native app for **Linux**,
+**Windows** and **macOS**: no background service, no account, no telemetry.
 
 [![CI](https://github.com/Adhamura/SuperStrike-Studio/actions/workflows/ci.yml/badge.svg)](https://github.com/Adhamura/SuperStrike-Studio/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/Adhamura/SuperStrike-Studio?include_prereleases&sort=semver)](https://github.com/Adhamura/SuperStrike-Studio/releases)
 [![Downloads](https://img.shields.io/github/downloads/Adhamura/SuperStrike-Studio/total)](https://github.com/Adhamura/SuperStrike-Studio/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-informational)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-informational)
 ![Mouse](https://img.shields.io/badge/mouse-PRO%20X3%20%7C%20PRO%20X2%20SUPERSTRIKE-3b9cff)
 ![Languages](https://img.shields.io/badge/languages-21-8a63d2)
 
-[**Download for Windows**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest) ·
-[**Download for Linux (AppImage)**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest) · [Screenshots](#screenshots) · [Why](#why-superstrike-studio) ·
-[Performance](#light-on-your-pc) · [Updates](#updates) · [FAQ](#faq)
+**[Download](#install)** for [Windows](#windows) · [Linux](#linux) · [macOS](#macos) ·
+[Screenshots](#screenshots) · [Why](#why-superstrike-studio) · [Performance](#light-on-your-pc) ·
+[Updates](#updates) · [FAQ](#faq)
 
 <img src="docs/promo/superstrike-studio.gif" width="860" alt="SuperStrike Studio: HITS tuning with rapid trigger and haptics, the live test pad, Save to mouse, button remapping, DPI stages and onboard profiles">
 
@@ -94,6 +94,10 @@ it, and puts the result where it belongs: in the mouse.
     <td><img src="docs/screenshots/device.png" alt="Device"><br><b>Device</b>: connection, battery, firmware, onboard memory, HID++ features, language</td>
     <td><img src="docs/screenshots/lang-ja.png" alt="Japanese"><br><b>21 languages</b>: here Japanese, switched while the app runs</td>
   </tr>
+  <tr>
+    <td><img src="docs/screenshots/macos.png" alt="SuperStrike Studio on macOS"><br><b>macOS</b>: the same app on a Mac (CI, Intel runner, demo mouse)</td>
+    <td><img src="docs/screenshots/lang-ar.png" alt="Arabic"><br><b>Right to left</b>: Arabic and Urdu mirror the whole window</td>
+  </tr>
 </table>
 
 <sub>Screenshots and the video show the real app running with the demo mouse (<code>--demo</code>). They are
@@ -122,7 +126,7 @@ the GPU driver and the desktop. On Windows the app ships the GTK libraries in it
 |---|:--|:--|
 | Linux | ✅ | ❌ |
 | Windows | ✅ | ✅ |
-| macOS | ❌ | ✅ |
+| macOS | ✅ | ✅ |
 | HITS actuation, rapid trigger, haptics | ✅ | ✅ |
 | Haptics kept in the onboard profiles | ✅ | ❌ ¹ |
 | Works with the app closed, no background service | ✅ | ➖ onboard mode only |
@@ -137,6 +141,19 @@ product for the whole Logitech line-up; SuperStrike Studio does one mouse, and k
 Corrections are welcome in an issue.</sub>
 
 ## Install
+
+Every release on [**Releases**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest)
+has one file per system: no installer, no archive to unpack.
+
+| System | File | Then |
+|---|---|---|
+| Windows 10 / 11 (64-bit) | `SuperStrike-Studio-<version>-windows-x64.exe` | run it |
+| Linux (x86_64, any distro) | `SuperStrike-Studio-<version>-x86_64.AppImage` | `chmod +x`, run it |
+| macOS, Apple silicon (M1 and later) | `SuperStrike-Studio-<version>-macos-arm64.dmg` | drag the app to Applications |
+| macOS, Intel | `SuperStrike-Studio-<version>-macos-x86_64.dmg` | drag the app to Applications |
+
+`SHA256SUMS` lists the checksums. macOS builds start with 1.2.0. Older releases (1.0.0 – 1.1.1)
+have the Windows exe and the Linux AppImage.
 
 ### Windows
 
@@ -189,10 +206,31 @@ sudo ./install.sh --udev   # once, if the app says it has no permission for /dev
 
 `install.sh` also builds `sscheck`, a read-only device check (it never writes to the mouse).
 
+### macOS
+
+1. Download **SuperStrike-Studio-&lt;version&gt;-macos-arm64.dmg** (Apple silicon: M1 and later) or
+   **…-macos-x86_64.dmg** (Intel) from
+   [**Releases**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest).
+2. Open it and drag **SuperStrike Studio** to **Applications**. GTK 4 and libadwaita are inside the app.
+3. **First start:** the app is not notarized by Apple (that needs a paid developer account), so
+   macOS blocks it once. Open **System Settings → Privacy & Security** and click **Open Anyway**,
+   or run this once in Terminal:
+   ```bash
+   xattr -dr com.apple.quarantine "/Applications/SuperStrike Studio.app"
+   ```
+4. **Close Logitech G HUB** first, as on Windows. If macOS asks for **Input Monitoring**, allow
+   SuperStrike Studio (System Settings → Privacy & Security → Input Monitoring).
+
+**Cmd+S** saves to the mouse, like Ctrl+S. Settings live in `~/.config/superstrike`, backups
+in `~/.local/share/superstrike/backups`, as on Linux. To build it yourself (Homebrew):
+`brew install cmake pkgconf gettext gtk4 libadwaita librsvg json-glib adwaita-icon-theme dylibbundler`,
+then `tools/macos/build-macos.sh` (makes the app and the disk image in `dist/`).
+
 ### Try it without the mouse
 
 ```bash
 superstrike-studio --demo      # Windows: superstrike-studio.exe --demo
+"/Applications/SuperStrike Studio.app/Contents/MacOS/superstrike-studio" --demo   # macOS
 ```
 
 Every page works with a simulated PRO X3 SUPERSTRIKE (five profiles, HITS, DPI, battery). Changes
@@ -202,7 +240,7 @@ stay in memory and nothing is sent to a real mouse.
 
 SuperStrike Studio checks GitHub for a new release when it starts, **at most once a day**. When
 there is one, it shows the version and its release notes and offers **Open download page** (the
-GitHub release with the Windows exe and the Linux AppImage; from source, `git pull && ./install.sh`), **Later** or **Skip
+GitHub release with the Windows exe, the Linux AppImage and the macOS app; from source, `git pull && ./install.sh`), **Later** or **Skip
 this version**. **Device → Check for updates** checks right away; **Check for updates
 automatically** turns the daily check off.
 
@@ -217,7 +255,7 @@ from a terminal.
 
 ```mermaid
 flowchart LR
-    subgraph pc ["PC (Linux or Windows)"]
+    subgraph pc ["PC (Linux, Windows or macOS)"]
         ui["SuperStrike Studio<br/>GTK 4 / libadwaita"]
         worker["worker thread<br/>HID++ 2.0"]
         ui --> worker
@@ -226,7 +264,7 @@ flowchart LR
         hits["HITS 0x1B0C<br/>live preview"]
         mem[("onboard memory 0x8100<br/>5 profiles: HITS, haptics,<br/>buttons, DPI, polling")]
     end
-    worker -->|"hidraw / Win32 HID<br/>receiver or cable"| hits
+    worker -->|"hidraw / Win32 HID / IOKit HID<br/>receiver or cable"| hits
     worker -->|"Save to mouse:<br/>backup, write, read back"| mem
 ```
 
@@ -241,7 +279,7 @@ Before the first save of a session the whole memory is backed up to a JSON file.
 
 | Path | What |
 |---|---|
-| `src/hidpp*.cpp` | HID++ 2.0 transport (Linux hidraw, Windows HID API) |
+| `src/hidpp*.cpp` | HID++ 2.0 transport (Linux hidraw, Windows HID API, macOS IOKit HID) |
 | `src/hid_sim.cpp` | the demo mouse (`--demo`): answers HID++ like a PRO X3 SUPERSTRIKE |
 | `src/device.cpp` | SUPERSTRIKE features: HITS `0x1B0C`, report rate `0x8061`, DPI `0x2202`, onboard profiles `0x8100`, … |
 | `src/profile.cpp` | onboard profile sector format, button actions, HITS codes |
@@ -253,6 +291,7 @@ Before the first save of a session the whole memory is backed up to a JSON file.
 | `tools/sscheck.cpp` | read-only device check |
 | `build-windows.bat`, `tools/windows/` | Windows build (MSYS2 UCRT64): portable folder and one-file exe |
 | `tools/linux/` | Linux AppImage |
+| `tools/macos/` | macOS app and disk image (Homebrew GTK, bundled with dylibbundler) |
 | `tools/screenshots/`, `tools/promo/` | README screenshots and the promo video, made with the demo mouse |
 | `DESIGN.md` | UI design spec |
 </details>
@@ -279,9 +318,9 @@ mouse uses the profiles saved in it.
 The app finds any Logitech mouse with the HITS feature and was verified on a PRO X3 SUPERSTRIKE.
 The PRO X2 SUPERSTRIKE uses the same features; reports are welcome.
 
-**Why does the live click view only react over the window on Windows?**
-Windows does not let a program read the mouse buttons in the background the way Linux hidraw
-does. Everything else works the same.
+**Why does the live click view only react over the window on Windows and macOS?**
+Windows and macOS do not let a program read the mouse buttons in the background the way Linux
+hidraw does. Everything else works the same.
 
 **The app says "Mouse not found".**
 Switch the mouse on or move it, plug in the receiver, close G HUB, then **Retry**. On Linux, run
@@ -298,6 +337,7 @@ version (`superstrike-studio --version`), the mouse firmware (Device page) and y
   profiles with backup and restore, demo mode, 21 languages, Linux and Windows.
 - **1.1**: ✅ update check from GitHub releases.
 - **1.1.1**: ✅ one-file downloads: a Windows exe and a Linux AppImage (no zip), `build-windows.bat`.
+- **1.2**: ✅ macOS (Apple silicon and Intel), as an app in a disk image.
 - **Ideas, not scheduled**: AUR package and Flatpak; Windows installer; more Logitech mice with HITS.
 
 Missing something? [Open an issue](https://github.com/Adhamura/SuperStrike-Studio/issues/new/choose).
@@ -312,8 +352,9 @@ cmake --build build/release -j
 build/release/superstrike-studio --demo
 ```
 
-CI builds on Arch Linux and on Windows (MSYS2 UCRT64), checks that every translation is complete,
-and starts the app with the demo mouse to render every page on both systems.
+CI builds on Arch Linux, on Windows (MSYS2 UCRT64) and on macOS (Apple silicon and Intel), checks
+that every translation is complete, and starts the app with the demo mouse to render every page on
+every system, from the same files a release ships.
 
 - **Translations**: `po/<lang>.po` (GNU gettext). After changing strings run `po/update-pot.sh`
   and `msgmerge -U po/<lang>.po po/superstrike-studio.pot`.
@@ -324,11 +365,12 @@ and starts the app with the demo mouse to render every page on both systems.
 <summary>Versions and releases</summary>
 
 The version is in `CMakeLists.txt` (`project(superstrike_studio VERSION x.y.z)`). It is shown in
-**Device → About** and `--version`, and goes into the Windows exe.
+**Device → About** and `--version`, and goes into the Windows exe and the macOS app.
 
 **Releases are automatic.** Raise the version, add a `## <version>` section to `CHANGELOG.md`,
-and merge to `main`. GitHub Actions builds and tests on Linux and Windows, then publishes the
-release `v<version>` with the Windows exe, the Linux AppImage, `SHA256SUMS` and the changelog section as notes.
+and merge to `main`. GitHub Actions builds and tests on Linux, Windows and macOS, then publishes
+the release `v<version>` with the Windows exe, the Linux AppImage, the two macOS disk images,
+`SHA256SUMS` and the changelog section as notes.
 Releases from before 1.1.1 got the same one-file downloads afterwards with the **Repack an old
 release** workflow (`.github/workflows/repack.yml`).
 </details>

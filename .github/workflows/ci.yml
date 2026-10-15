@@ -132,8 +132,6 @@ jobs:
           path: dist/SuperStrike-Studio-windows-x64.exe
 
   macos:
-    permissions:
-      contents: write   # TEMP
     name: macOS (${{ matrix.arch }}) build and smoke test
     strategy:
       fail-fast: false
@@ -158,6 +156,7 @@ jobs:
           exe="/tmp/ss/SuperStrike Studio.app/Contents/MacOS/superstrike-studio"
           run() { perl -e 'alarm shift; exec @ARGV' "$@"; }   # macOS has no timeout(1)
           "$exe" --version
+          echo "minimum macOS: $(plutil -extract LSMinimumSystemVersion raw "/tmp/ss/SuperStrike Studio.app/Contents/Info.plist")"
           mkdir -p shots
           for page in hits buttons sensor profiles device; do
             SS_SHOT_CLEAN=1 GSK_RENDERER=cairo run 90 "$exe" --demo --shot "$page:$PWD/shots/macos-$page.png" || true
@@ -168,15 +167,6 @@ jobs:
           rc=0; run 60 "$exe" --check-updates || rc=$?
           [ "$rc" = 0 ] || [ "$rc" = 2 ] || { echo "::error::update check could not reach api.github.com"; exit 1; }
           hdiutil detach /tmp/ss
-      - name: TEMP commit macOS screenshots to the branch
-        if: github.ref == 'refs/heads/claude/zen-bardeen-m5a493'
-        shell: bash
-        run: |
-          mkdir -p tmp-shots && sips -Z 1100 shots/macos-*.png --out tmp-shots/ >/dev/null
-          for f in tmp-shots/*.png; do mv "$f" "tmp-shots/${{ matrix.arch }}-$(basename "$f")"; done
-          git config user.name ci; git config user.email ci@users.noreply.github.com
-          git fetch -q origin "$GITHUB_REF_NAME"; git checkout -q "origin/$GITHUB_REF_NAME"
-          git add tmp-shots && git commit -qm "TEMP macOS ${{ matrix.arch }} screenshots" && git push -q origin "HEAD:$GITHUB_REF_NAME" || true
       - uses: actions/upload-artifact@v4
         with:
           name: screenshots-macos-${{ matrix.arch }}
