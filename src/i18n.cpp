@@ -45,7 +45,7 @@ void i18n_init(const std::string& lang) {
     }
     set_language_env(lang);
     setlocale(LC_ALL, "");
-#ifdef __linux__
+#if defined(__linux__) || defined(__APPLE__)
     // GNU gettext ignores LANGUAGE in the "C" locale, so pick a real UTF-8 locale when needed.
     const char* msg = setlocale(LC_MESSAGES, nullptr);
     if (!msg || !strcmp(msg, "C") || !strcmp(msg, "POSIX")) {

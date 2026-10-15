@@ -1,10 +1,11 @@
 name: CI
 
-# Builds SuperStrike Studio on Linux (Arch: GTK 4 and libadwaita new enough) and on Windows
-# (MSYS2 UCRT64, the same script users run), then starts the real app with the demo mouse
-# (--demo, src/hid_sim.cpp) and renders every page to a PNG. It also makes the two one-file
-# releases and starts them the same way: the Linux AppImage and the Windows exe (built with
-# build-windows.bat). The PNGs and both files are kept as artifacts. Also used by release.yml.
+# Builds SuperStrike Studio on Linux (Arch: GTK 4 and libadwaita new enough), on Windows (MSYS2
+# UCRT64, the same script users run) and on macOS (Homebrew; Apple silicon and Intel), then starts
+# the real app with the demo mouse (--demo, src/hid_sim.cpp) and renders every page to a PNG. It
+# also makes the one-file releases and starts them the same way: the Linux AppImage, the Windows
+# exe (built with build-windows.bat) and the macOS app (from its disk image). The PNGs and the
+# release files are kept as artifacts. Also used by release.yml.
 on:
   push:
   pull_request:
@@ -129,3 +130,47 @@ jobs:
         with:
           name: SuperStrike-Studio-windows-x64
           path: dist/SuperStrike-Studio-windows-x64.exe
+
+  macos:
+    name: macOS (${{ matrix.arch }}) build and smoke test
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-latest       # Apple silicon
+            arch: arm64
+          - runner: macos-15-intel     # Intel
+            arch: x86_64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install packages (Homebrew)
+        run: brew install cmake pkgconf gettext gtk4 libadwaita librsvg json-glib adwaita-icon-theme dylibbundler
+      - name: Build the app and the disk image
+        run: tools/macos/build-macos.sh
+      - name: Smoke test the app from the disk image
+        shell: bash
+        run: |
+          set -euo pipefail
+          hdiutil attach "dist/SuperStrike-Studio-macos-${{ matrix.arch }}.dmg" -mountpoint /tmp/ss -nobrowse
+          exe="/tmp/ss/SuperStrike Studio.app/Contents/MacOS/superstrike-studio"
+          run() { perl -e 'alarm shift; exec @ARGV' "$@"; }   # macOS has no timeout(1)
+          "$exe" --version
+          mkdir -p shots
+          for page in hits buttons sensor profiles device; do
+            SS_SHOT_CLEAN=1 GSK_RENDERER=cairo run 90 "$exe" --demo --shot "$page:$PWD/shots/macos-$page.png" || true
+            test -s "shots/macos-$page.png" || { echo "::error::no screenshot of $page on macOS"; exit 1; }
+          done
+          ls -la shots
+          # 0 = latest release, 2 = GitHub answered with an error, 1 = no connection or TLS failure (a bug)
+          rc=0; run 60 "$exe" --check-updates || rc=$?
+          [ "$rc" = 0 ] || [ "$rc" = 2 ] || { echo "::error::update check could not reach api.github.com"; exit 1; }
+          hdiutil detach /tmp/ss
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-macos-${{ matrix.arch }}
+          path: shots/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SuperStrike-Studio-macos-${{ matrix.arch }}
+          path: dist/SuperStrike-Studio-macos-${{ matrix.arch }}.dmg

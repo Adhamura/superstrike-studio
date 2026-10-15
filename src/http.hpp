@@ -1,5 +1,6 @@
 // One HTTPS GET, blocking (call it off the main thread). Used only by the update check.
 // Linux: GIO sockets + TLS (glib-networking). Windows: WinHTTP (system TLS and proxy settings).
+// macOS: the system libcurl (system TLS and certificates).
 #pragma once
 #include <string>
 

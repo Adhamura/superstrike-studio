@@ -1,4 +1,4 @@
-// SuperStrike Studio — Linux and Windows editor for the Logitech PRO X2/X3 SUPERSTRIKE.
+// SuperStrike Studio — Linux, Windows and macOS editor for the Logitech PRO X2/X3 SUPERSTRIKE.
 // --demo: a simulated mouse (hid_sim.hpp), nothing is written to a real one.
 // Debug: --shot PAGE:FILE.png [--demo] renders the window after 5 s to a PNG and quits.
 #include <cstdio>
@@ -8,6 +8,7 @@
 #include "app_impl.hpp"
 #include "hid_sim.hpp"
 #include "i18n.hpp"
+#include "platform.hpp"
 #include "ui.hpp"
 #include "update.hpp"
 
@@ -92,6 +93,9 @@ static void take_shot() {
 }
 
 int main(int argc, char** argv) {
+#ifdef __APPLE__
+    platform_init();
+#endif
     for (int i = 1; i < argc; i++) {
         if (!strcmp(argv[i], "--shot") && i + 1 < argc) {
             std::string a = argv[++i];
