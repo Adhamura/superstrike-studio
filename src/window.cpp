@@ -1,4 +1,5 @@
 // Main window: sidebar (device card, navigation, edited profile), header (title, save), pages.
+#include <algorithm>
 #include "app_impl.hpp"
 #include "i18n.hpp"
 #include "ui.hpp"
@@ -259,7 +260,17 @@ void window_build(App& app, GtkApplication* gapp) {
     app.window = GTK_WINDOW(win);
     gtk_window_set_title(app.window, "SuperStrike Studio");
     gtk_window_set_icon_name(app.window, "io.github.superstrike.Studio");
-    gtk_window_set_default_size(app.window, 1320, 860);
+    // 1320 x 860, or less on a smaller screen (a small laptop, or a Mac, which would cut the window off)
+    int w = 1320, h = 860;
+    GListModel* monitors = gdk_display_get_monitors(gdk_display_get_default());
+    if (g_list_model_get_n_items(monitors) > 0) {
+        GdkMonitor* m = GDK_MONITOR(g_list_model_get_item(monitors, 0));
+        GdkRectangle r;
+        gdk_monitor_get_geometry(m, &r);
+        g_object_unref(m);
+        if (r.width > 0 && r.height > 0) w = std::min(w, r.width - 40), h = std::min(h, r.height - 80);
+    }
+    gtk_window_set_default_size(app.window, w, h);
     g_signal_connect(win, "close-request", G_CALLBACK(on_close), &app);
 
     p.split = adw_overlay_split_view_new();
@@ -272,7 +283,7 @@ void window_build(App& app, GtkApplication* gapp) {
     GtkEventController* keys = gtk_shortcut_controller_new();
     gtk_shortcut_controller_set_scope(GTK_SHORTCUT_CONTROLLER(keys), GTK_SHORTCUT_SCOPE_GLOBAL);
     gtk_shortcut_controller_add_shortcut(GTK_SHORTCUT_CONTROLLER(keys), gtk_shortcut_new(
-        gtk_shortcut_trigger_parse_string("<Control>s"),
+        gtk_shortcut_trigger_parse_string("<Control>s|<Meta>s"),  // <Meta>: Command on macOS
         gtk_callback_action_new([](GtkWidget*, GVariant*, gpointer d) -> gboolean { static_cast<App*>(d)->save(); return TRUE; },
                                 &app, nullptr)));
     gtk_widget_add_controller(win, keys);

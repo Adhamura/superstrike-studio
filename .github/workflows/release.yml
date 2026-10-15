@@ -3,6 +3,8 @@ name: Release
 # Publishes the GitHub Release v<version> automatically:
 #   SuperStrike-Studio-<version>-windows-x64.exe   Windows, one file (no installer, no zip)
 #   SuperStrike-Studio-<version>-x86_64.AppImage   Linux, one file (any x86_64 distro)
+#   SuperStrike-Studio-<version>-macos-arm64.dmg    macOS, Apple silicon (the app in a disk image)
+#   SuperStrike-Studio-<version>-macos-x86_64.dmg   macOS, Intel
 #   SHA256SUMS
 # Every push to main whose version (project(... VERSION x.y.z) in CMakeLists.txt) has no tag yet
 # is tested, built and published (it creates the tag). To release: raise the version, add a
@@ -86,6 +88,11 @@ jobs:
         with:
           name: SuperStrike-Studio-linux-x86_64
           path: artifacts
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: SuperStrike-Studio-macos-*
+          merge-multiple: true
+          path: artifacts
 
       - name: Name the files
         shell: bash
@@ -95,6 +102,9 @@ jobs:
           mv artifacts/SuperStrike-Studio-windows-x64.exe "dist/SuperStrike-Studio-$VERSION-windows-x64.exe"
           mv artifacts/SuperStrike-Studio-x86_64.AppImage "dist/SuperStrike-Studio-$VERSION-x86_64.AppImage"
           chmod +x "dist/SuperStrike-Studio-$VERSION-x86_64.AppImage"
+          for arch in arm64 x86_64; do
+            mv "artifacts/SuperStrike-Studio-macos-$arch.dmg" "dist/SuperStrike-Studio-$VERSION-macos-$arch.dmg"
+          done
           (cd dist && sha256sum SuperStrike-Studio-* > SHA256SUMS)
           ls -la dist
 
@@ -108,4 +118,6 @@ jobs:
           files: |
             dist/SuperStrike-Studio-${{ needs.check.outputs.version }}-windows-x64.exe
             dist/SuperStrike-Studio-${{ needs.check.outputs.version }}-x86_64.AppImage
+            dist/SuperStrike-Studio-${{ needs.check.outputs.version }}-macos-arm64.dmg
+            dist/SuperStrike-Studio-${{ needs.check.outputs.version }}-macos-x86_64.dmg
             dist/SHA256SUMS

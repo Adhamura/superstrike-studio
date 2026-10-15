@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0
+
+- **macOS.** SuperStrike Studio now runs on macOS 14 Sonoma or later, on Apple silicon and Intel Macs. It's one app,
+  `SuperStrike Studio.app`, in a disk image: `SuperStrike-Studio-<version>-macos-arm64.dmg` or
+  `-macos-x86_64.dmg`. Drag it to Applications. It talks to the mouse through Apple's own HID
+  framework (IOKit), and the update check uses the system's libcurl. As on Windows, the live
+  click view reacts while the pointer is over the window. **Cmd+S** saves, like Ctrl+S.
+- The window opens smaller on screens that can't fit 1320 × 860, instead of being cut off.
+- CI builds and starts the macOS app (from its disk image) on Apple silicon and Intel.
+
 ## 1.1.1
 
 - **One file per system in the releases, no more archives.** Windows gets

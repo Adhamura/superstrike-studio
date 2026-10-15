@@ -26,9 +26,10 @@ void pointer_cursor(GtkWidget* w) { gtk_widget_set_cursor_from_name(w, "pointer"
 std::string asset_path(const std::string& name) {
     std::vector<std::string> dirs;
     if (const char* e = g_getenv("SUPERSTRIKE_ASSETS")) dirs.push_back(e);
-#ifdef _WIN32
+#if defined(_WIN32) || defined(__APPLE__)
     std::string exe = exe_dir();
     if (!exe.empty()) {
+        dirs.push_back(exe + "/../Resources/assets");  // macOS: SuperStrike Studio.app/Contents/MacOS/..
         dirs.push_back(exe + "/assets");
         dirs.push_back(exe + "/../share/superstrike-studio/assets");
     }

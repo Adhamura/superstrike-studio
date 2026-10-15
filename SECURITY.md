@@ -37,3 +37,5 @@ Release files are built by GitHub Actions from the tagged commit and listed with
 signed with a paid code-signing certificate, so SmartScreen may warn about it. On its first start
 it unpacks the app (the same files as `build-windows.bat` makes) into
 `%LOCALAPPDATA%\SuperStrike-Studio\app` and runs it from there; older unpacked versions are removed.
+The macOS app is signed ad hoc only and not notarized by Apple, so macOS asks you to allow it once
+in **System Settings → Privacy & Security** (or remove the download's quarantine flag yourself).
