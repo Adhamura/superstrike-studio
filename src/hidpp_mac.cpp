@@ -2,6 +2,7 @@
 // A node is "DevSrvsID:<registry entry id>". macOS keeps the short (0x10) and long (0x11) HID++
 // reports of a receiver in one device, but like on Windows every request goes out as long.
 // Input reports arrive on a serial dispatch queue and wait in a small queue for hid_read.
+#include <IOKit/IOKitLib.h>
 #include <IOKit/hid/IOHIDDevice.h>
 #include <IOKit/hid/IOHIDKeys.h>
 #include <IOKit/hid/IOHIDManager.h>
