@@ -69,7 +69,7 @@ step "GLib schemas, icon themes, fonts config"
 mkdir -p "$R/share/glib-2.0/schemas" "$R/share/icons"
 cp "$BREW"/share/glib-2.0/schemas/*.xml "$R/share/glib-2.0/schemas/"
 glib-compile-schemas "$R/share/glib-2.0/schemas"
-cp -R "$BREW/share/icons/Adwaita" "$R/share/icons/"
+cp -RL "$BREW/share/icons/Adwaita" "$R/share/icons/"
 mkdir -p "$R/share/icons/hicolor"
 cp "$BREW/share/icons/hicolor/index.theme" "$R/share/icons/hicolor/" 2>/dev/null || true
 if [ -d "$BREW/etc/fonts" ]; then
@@ -110,6 +110,11 @@ done < <(find "$C/MacOS" "$C/Frameworks" "$L/loaders" -type f)
 [ "$bad" = 0 ] || { echo "ERROR: the app still needs Homebrew files"; exit 1; }
 
 step "Sign (ad hoc)"
+# the signature check refuses links that point outside the app or nowhere
+find "$APP" -type l | while IFS= read -r l; do
+    t="$(readlink "$l")"
+    if [ ! -e "$l" ] || [ "${t#/}" != "$t" ]; then echo "removing link $l -> $t"; rm "$l"; fi
+done
 codesign --force --deep --sign - "$APP"
 codesign --verify --deep --strict "$APP"
 
