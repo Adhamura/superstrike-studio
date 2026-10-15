@@ -2,7 +2,7 @@
 
 ## 1.2.0
 
-- **macOS.** SuperStrike Studio now runs on macOS, on Apple silicon and Intel Macs. It's one app,
+- **macOS.** SuperStrike Studio now runs on macOS 14 Sonoma or later, on Apple silicon and Intel Macs. It's one app,
   `SuperStrike Studio.app`, in a disk image: `SuperStrike-Studio-<version>-macos-arm64.dmg` or
   `-macos-x86_64.dmg`. Drag it to Applications. It talks to the mouse through Apple's own HID
   framework (IOKit), and the update check uses the system's libcurl. As on Windows, the live

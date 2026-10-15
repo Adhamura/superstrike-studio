@@ -149,8 +149,8 @@ has one file per system: no installer, no archive to unpack.
 |---|---|---|
 | Windows 10 / 11 (64-bit) | `SuperStrike-Studio-<version>-windows-x64.exe` | run it |
 | Linux (x86_64, any distro) | `SuperStrike-Studio-<version>-x86_64.AppImage` | `chmod +x`, run it |
-| macOS, Apple silicon (M1 and later) | `SuperStrike-Studio-<version>-macos-arm64.dmg` | drag the app to Applications |
-| macOS, Intel | `SuperStrike-Studio-<version>-macos-x86_64.dmg` | drag the app to Applications |
+| macOS 14+, Apple silicon (M1 and later) | `SuperStrike-Studio-<version>-macos-arm64.dmg` | drag the app to Applications |
+| macOS 14+, Intel | `SuperStrike-Studio-<version>-macos-x86_64.dmg` | drag the app to Applications |
 
 `SHA256SUMS` lists the checksums. macOS builds start with 1.2.0. Older releases (1.0.0 – 1.1.1)
 have the Windows exe and the Linux AppImage.
@@ -211,7 +211,8 @@ sudo ./install.sh --udev   # once, if the app says it has no permission for /dev
 1. Download **SuperStrike-Studio-&lt;version&gt;-macos-arm64.dmg** (Apple silicon: M1 and later) or
    **…-macos-x86_64.dmg** (Intel) from
    [**Releases**](https://github.com/Adhamura/SuperStrike-Studio/releases/latest).
-2. Open it and drag **SuperStrike Studio** to **Applications**. GTK 4 and libadwaita are inside the app.
+2. Open it and drag **SuperStrike Studio** to **Applications**. GTK 4 and libadwaita are inside the
+   app. It needs **macOS 14 Sonoma or later**.
 3. **First start:** the app is not notarized by Apple (that needs a paid developer account), so
    macOS blocks it once. Open **System Settings → Privacy & Security** and click **Open Anyway**,
    or run this once in Terminal:
