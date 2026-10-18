@@ -13,6 +13,8 @@ row .title { opacity: 1; }
 .ss-device-glyph { color: @ss_accent; }
 .ss-dot { font-size: 10px; color: alpha(currentColor, 0.35); }
 .ss-dot.ok { color: #3ddc84; }
+.ss-battery { font-size: 12.5px; font-weight: 600; font-feature-settings: "tnum"; opacity: 0.9; }
+.ss-battery.low { color: @warning_color; opacity: 1; }
 .ss-nav row { border-radius: 10px; min-height: 40px; }
 .ss-nav row:selected { background: alpha(@ss_accent, 0.18); color: @accent_color; }
 

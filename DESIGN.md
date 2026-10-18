@@ -21,8 +21,9 @@ dark), one accent (#3b9cff). Everything aligns to an 8 px grid. No emoji in the 
 +------------------+------------------------------------------------------------+
 ```
 - Sidebar 232 px (`AdwOverlaySplitView`, collapses under 900 px). Device card at top:
-  32 px mouse glyph, name (bold 13 px), status line (12 px dim): green dot + "Connected ·
-  82 %" or grey dot "Searching…". Nav rows 44 px, icon 18 px + label 14 px, 12 px gap.
+  40 px app logo, name (bold 13 px), status line (12 px dim): green dot + "Connected" or grey
+  dot "Searching…", then the battery on its own line ("82 %", "82 % ⚡" charging, warning
+  colour at 15 % or less) so it is never cut off. Nav rows 44 px, icon 18 px + label 14 px, 12 px gap.
 - Bottom of sidebar: "EDITING" section title + profile dropdown (full width).
 - Header bar: `AdwWindowTitle` (page name, subtitle "Profile 2 · Active" / "Profile 3 ·
   not active"). End: revert icon button (sensitive only when dirty) and the suggested
