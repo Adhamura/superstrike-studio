@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 # The one place for the version: shown in the app (About), the Windows exe and the release.
-project(superstrike_studio VERSION 1.2.0 LANGUAGES CXX)
+project(superstrike_studio VERSION 1.2.1 LANGUAGES CXX)
 if(WIN32)
   enable_language(RC)
 endif()

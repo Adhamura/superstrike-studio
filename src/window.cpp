@@ -48,14 +48,14 @@ static void update_status(App& app) {
     if (app.connected) gtk_widget_add_css_class(p.status_dot, "ok");
     bool charging = app.connected && app.info.battery_state.find("charg") == 0;
     bool level = app.connected && app.info.battery >= 0;
-    std::string text = !app.connected ? _("Searching for the mouse…")
-                       : level ? (charging
-                                      // TRANSLATORS: status line, %d is the battery level in percent
-                                      ? fmt(_("Connected · %d %% · charging"), app.info.battery)
-                                      // TRANSLATORS: status line, %d is the battery level in percent
-                                      : fmt(_("Connected · %d %%"), app.info.battery))
-                               : charging ? _("Connected · charging") : _("Connected");
-    gtk_label_set_text(GTK_LABEL(p.status_text), text.c_str());
+    gtk_label_set_text(GTK_LABEL(p.status_text), app.connected ? _("Connected") : _("Searching for the mouse…"));
+    // battery on its own line: "82 %", "82 % ⚡" while charging, "⚡" when the level is unknown
+    std::string bat = level ? fmt("%d %%", app.info.battery) : "";
+    if (charging) bat += bat.empty() ? "⚡" : " ⚡";
+    gtk_label_set_text(GTK_LABEL(p.battery), bat.c_str());
+    gtk_widget_set_visible(p.battery, !bat.empty());
+    gtk_widget_remove_css_class(p.battery, "low");
+    if (level && !charging && app.info.battery <= 15) gtk_widget_add_css_class(p.battery, "low");
     gtk_label_set_text(GTK_LABEL(p.device_name), app.info.name.c_str());
     adw_banner_set_revealed(p.banner, !app.connected);
     gtk_widget_set_sensitive(p.content, app.connected);
@@ -131,11 +131,17 @@ static GtkWidget* build_sidebar(App& app) {
     p.status_text = ui::label(_("Searching for the mouse…"), {"ss-hint"});
     gtk_label_set_ellipsize(GTK_LABEL(p.status_text), PANGO_ELLIPSIZE_END);  // or it widens the sidebar
     ui::add(st, {p.status_dot, p.status_text});
-    ui::add(info, {p.device_name, st});
+    p.battery = ui::label("", {"ss-battery"});
+    gtk_widget_set_visible(p.battery, FALSE);
+    ui::add(info, {p.device_name, st, p.battery});
     gtk_widget_set_valign(info, GTK_ALIGN_CENTER);
-    GtkWidget* logo = gtk_picture_new_for_filename(asset_path("io.github.superstrike.Studio.svg").c_str());
-    gtk_picture_set_content_fit(GTK_PICTURE(logo), GTK_CONTENT_FIT_CONTAIN);
-    gtk_widget_set_size_request(logo, 40, 40);
+    // a fixed 40 px (a GtkPicture asks for the SVG's own size and squeezes the name and status)
+    GFile* logo_file = g_file_new_for_path(asset_path("io.github.superstrike.Studio.svg").c_str());
+    GIcon* logo_icon = g_file_icon_new(logo_file);
+    GtkWidget* logo = gtk_image_new_from_gicon(logo_icon);
+    gtk_image_set_pixel_size(GTK_IMAGE(logo), 40);
+    g_object_unref(logo_icon);
+    g_object_unref(logo_file);
     gtk_widget_set_valign(logo, GTK_ALIGN_CENTER);
     ui::add(card, {logo, info});
     ui::add(side, {ui::margins(card, 18, 16, 14, 16)});

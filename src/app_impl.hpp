@@ -35,6 +35,7 @@ struct App::Impl {
     GtkWidget* savebar_text = nullptr;
     GtkWidget* status_dot = nullptr;
     GtkWidget* status_text = nullptr;
+    GtkWidget* battery = nullptr;  // own line under the status, never cut off
     GtkWidget* device_name = nullptr;
     GtkWidget* profile_dd = nullptr;
     GtkWidget* nav = nullptr;

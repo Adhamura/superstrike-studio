@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.1
+
+- **Battery level always visible.** The sidebar card shows the battery on its own line (`82 %`,
+  `82 % ⚡` while charging, in the warning colour at 15 % or less) instead of at the end of the
+  status line, where a narrow sidebar cut it off ("Connected…").
+- The logo in the sidebar card is a fixed 40 px again, so the mouse name fits.
+
 ## 1.2.0
 
 - **macOS.** SuperStrike Studio now runs on macOS 14 Sonoma or later, on Apple silicon and Intel Macs. It's one app,
